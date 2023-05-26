@@ -15,7 +15,8 @@ module.exports = {
                 sans: ["Inter", ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                "gre": "#0f2068",
+                // "gre": "#0f2068",
+                "gre": "#282828",
                 dark: {
                     bg: "#151823",
                     "eval-1": "#222738",

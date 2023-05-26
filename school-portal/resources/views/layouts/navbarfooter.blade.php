@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SSMTS</title>
+    <title>TINHS-PORTAL</title>
 
     <!-- Fonts -->
     <link
@@ -38,8 +38,8 @@
                     
                     {{-- primary --}}
                     <div class="flex flex-col">
-                    <h3 class="hidden md:block text-md pl-2 md:text-xl font-light text-sky-50">Sanctuario of St. Maria Theresa School Inc.</h3>
-                    <p class="hidden md:block text-md pl-2 md:text-xl font-light text-sky-50">School Portal</p>
+                    <h3 class="hidden md:block text-md pl-2 md:text-xl font-light text-sky-50">Tipas Integrated National Highschool</h3>
+                    <!-- <p class="hidden md:block text-md pl-2 md:text-xl font-light text-sky-50">School Portal</p> -->
                     </div>
                     {{-- hamburger menu --}}
                     <div class="flex md:hidden ml-auto mr-4">
