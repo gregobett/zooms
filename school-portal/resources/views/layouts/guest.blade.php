@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <div class="font-sans antialiased h-screen w-full  bg-no-repeat bg-cover bg-center" x-data="mainState" :class="{dark: isDarkMode}" x-cloak style="background-image: url({{ url('images/background1.png') }})">
+    <div class="font-sans antialiased h-screen w-full  bg-no-repeat bg-cover bg-center" x-data="mainState" :class="{dark: isDarkMode}" x-cloak style="background-image: url({{ url('images/background.webp') }})">
         
         <div class="flex flex-col min-h-screen text-gray-900   dark:text-gray-200" >
             {{ $slot }}

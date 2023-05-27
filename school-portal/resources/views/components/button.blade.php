@@ -6,13 +6,13 @@
 
     switch ($variant) {
         case 'primary':
-            $variantClasses = 'bg-gre text-white hover:bg-blue-700 focus:ring-gre';
+            $variantClasses = 'bg-gre text-white hover:bg-red-900 focus:ring-gre';
         break;
         case 'secondary':
             $variantClasses = 'bg-gre text-white hover:bg-gray-700 focus:ring-gre dark:text-gray-400 dark:bg-dark-eval-1 dark:hover:bg-dark-eval-2 dark:hover:text-gray-200';
         break;
         case 'success':
-            $variantClasses = 'bg-green-500 text-white hover:bg-blue-500 focus:ring-green-500';
+            $variantClasses = 'bg-green-500 text-white hover:bg-red-500 focus:ring-green-500';
         break;
         case 'danger':
             $variantClasses = 'bg-red-500 text-white hover:bg-red-600 focus:ring-red-500';

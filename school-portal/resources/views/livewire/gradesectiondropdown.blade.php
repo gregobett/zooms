@@ -3,7 +3,7 @@
     <div class="form-item mb-4">
         <label for="grade" class="text-md">Grade</label>
    
-            <select wire:model="selectedGrade" class="w-full appearance-none text-black text-opacity-70 rounded shadow py-1 px-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="grade" name="grade" required>
+            <select wire:model="selectedGrade" class="w-full appearance-none text-black text-opacity-70 rounded shadow py-1 px-2 focus:outline-none focus:shadow-outline focus:border-red-200 dark:bg-gray-600 dark:text-white" id="grade" name="grade" required>
                 <option value="" selected>Choose</option>
                 @foreach($grades as $grade)
                     <option value="{{ $grade->id }}" @if (old('grade') == "{{ $grade->id }}") {{ 'selected' }} @endif>{{ $grade->name }}</option>

@@ -49,14 +49,14 @@
                     file:text-md file:font-medium
                     file:bg-gre file:text-slate-50
                     hover:file:cursor-pointer hover:file:bg-gre
-                    hover:file:text-blue-700
+                    hover:file:text-red-700
                     hover:bg-gre" id="photo" name="photo" required>
                 </label>
             </div>
 
      
      
-            <button type='submit' class=" w-full bg-gre hover:bg-gre text-sm md:text-md  mt-6 hover:text-blue-700 text-slate-50 border-gray-200 rounded p-2 pt-2 px-10 shadow-lg">
+            <button type='submit' class=" w-full bg-gre hover:bg-gre text-sm md:text-md  mt-6 hover:text-red-700 text-slate-50 border-gray-200 rounded p-2 pt-2 px-10 shadow-lg">
                 Save
             </button>
             </div>

@@ -117,12 +117,12 @@
         {{-- content goes here --}}
         @yield('register')
 
-    <footer class="bg-[#001F52] dark:bg-[#222738] py-5">
+    <footer class="bg-[#282828] dark:bg-[#222738] py-5">
 
         <div class="flex flex-col justify-center items-center mx-10 md:mx-0">
-            <a href="#">
+            <!-- <a href="#">
                 <img src="/images/logo.png" alt="main logo" class="max-h-32">
-            </a>
+            </a> -->
             <p class="text-white text-center font-light py-3">For any concern, reach us in any of our social contact links below.</p>
             <div class="flex flex-row justify-end gap-4 py-2">
                 {{-- <a href="https://mail.google.com/mail/u/0/#inbox"><img src="/images/gmail-logo.png" alt="Gmail" class="max-h-8 cursor-pointer duration-300  hover:scale-110"></a> --}}
