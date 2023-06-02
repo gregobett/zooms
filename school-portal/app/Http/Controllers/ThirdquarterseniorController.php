@@ -92,4 +92,13 @@ class ThirdquarterseniorController extends Controller
         // $data = Student::where('user_id', '=', $user_id)->first();
         return view('pages.faculty.edit-student-grade-senior3', compact('data'));
     }
+
+
+    public function viewGrades(){
+
+        $data = Thirdquartersenior::where('user_id', '=', auth()->id())->first();
+        return view('pages.student.view-grades-senior3', compact('data'));
+     
+       
+    }
 }

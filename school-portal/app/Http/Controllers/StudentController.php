@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Student;
+use App\Models\Grade;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Auth;
@@ -97,7 +98,7 @@ class StudentController extends Controller
       
         $stud->save();
 
-       if($request->grade === 'Grade 11' || $request->grade === 'Grade 12' ){
+       if($request->grade === '11' || $request->grade === '12' ){
         return redirect()->to('register-grade-senior1')->with('success','Information Added Succesfuly');
 
        }else{
@@ -205,6 +206,13 @@ class StudentController extends Controller
         $data = Student::where('user_id', '=', auth()->id())->first();
         
         return view('pages.student.student-profile', compact('data'));
+    }
+
+
+    public function showGradesData(){
+        $data = Student::where('user_id', '=', auth()->id())->first();
+
+        return view('components.sidebar.content', compact('data'));
     }
 
 

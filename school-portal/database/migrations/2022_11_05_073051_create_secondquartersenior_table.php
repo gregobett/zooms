@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('secondquartersenior', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->references('id')->on('students')->onDelete('cascade');
+            $table->foreignId('user_id')->references('user_id')->on('students')->onDelete('cascade');
             $table->integer('oral')->default(0); 
             $table->integer('reading')->default(0);
             $table->integer('komunikasyon')->default(0);

@@ -3,7 +3,8 @@
     
     
     @if((Auth::user()->user_type === 'Student'))
-    @if((Route::is('add-student')) || (Route::is('register-grade1')) || (Route::is('register-grade2')) || (Route::is('register-grade3')) || (Route::is('register-grade4')))
+    @if((Route::is('add-student')) || (Route::is('register-grade1')) || (Route::is('register-grade2')) || (Route::is('register-grade3')) || (Route::is('register-grade4'))
+    || (Route::is('register-grade-senior1')) || (Route::is('register-grade-senior2')) || (Route::is('register-grade-senior3')) || (Route::is('register-grade-senior4')))
     <x-sidebar.link title="Student Dashboard"  :isActive="request()->routeIs('dashboard')">
         <x-slot name="icon">
             <x-icons.dashboard class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
@@ -26,8 +27,9 @@
             <img src="/images/profile-icon.png" alt="Profile logo" class="w-8 ">
         </x-slot>
 
-        {{-- @if(Route::is('add-student' || 'register-grade1' || 'register-grade2' || 'register-grade3'|| 'regiser-grade4' )) --}}
-        @if((Route::is('add-student')) || (Route::is('register-grade1')) || (Route::is('register-grade2')) || (Route::is('register-grade3')) || (Route::is('register-grade4')))
+      
+        @if((Route::is('add-student')) || (Route::is('register-grade1')) || (Route::is('register-grade2')) || (Route::is('register-grade3')) || (Route::is('register-grade4'))
+        || (Route::is('register-grade-senior1')) || (Route::is('register-grade-senior2')) || (Route::is('register-grade-senior3')) || (Route::is('register-grade-senior4')))
         <x-sidebar.link title="Edit Info " href='#'/>
         
         @else
@@ -42,18 +44,30 @@
             <img src="/images/grade-icon.png" alt="Grade logo" class="w-8 ">
         </x-slot>
 
-        @if((Route::is('add-student')) || (Route::is('register-grade1')) || (Route::is('register-grade2')) || (Route::is('register-grade3')) || (Route::is('register-grade4')))
+        @if((Route::is('add-student')) || (Route::is('register-grade1')) || (Route::is('register-grade2')) || (Route::is('register-grade3')) || (Route::is('register-grade4'))
+        || (Route::is('register-grade-senior1')) || (Route::is('register-grade-senior2')) || (Route::is('register-grade-senior3')) || (Route::is('register-grade-senior4')))
         <x-sidebar.link title="First Quarter " href='#' />
         <x-sidebar.link title="Second Quarter " href='#' />
         <x-sidebar.link title="Third Quarter " href='#' />
         <x-sidebar.link title="Fourth Quarter " href='#' />
         <x-sidebar.link title="General Average " href='#' />
         @else
-        <x-sidebar.link title="First Quarter " href='/view-grades' />
-        <x-sidebar.link title="Second Quarter " href='/view-grades2' />
-        <x-sidebar.link title="Third Quarter " href='/view-grades3' />
-        <x-sidebar.link title="Fourth Quarter " href='/view-grades4' />
-        <x-sidebar.link title="General Average " href='/ave' />
+          
+
+            <x-sidebar.link title="First Quarter " href='/view-grades-senior' /> 
+            <x-sidebar.link title="Second Quarter " href='/view-grades-senior2' />
+            <x-sidebar.link title="Third Quarter " href='/view-grades-senior3' />
+            <x-sidebar.link title="Fourth Quarter " href='/view-grades-senior4' />
+            <x-sidebar.link title="General Average " href='/ave' />
+     
+            <!-- <x-sidebar.link title="First Quarter " href='/view-grades' /> 
+            <x-sidebar.link title="Second Quarter " href='/view-grades2' />
+            <x-sidebar.link title="Third Quarter " href='/view-grades3' />
+            <x-sidebar.link title="Fourth Quarter " href='/view-grades4' />
+            <x-sidebar.link title="General Average " href='/ave' /> -->
+    
+          
+
         @endif
 
     </x-sidebar.dropdown>
@@ -63,7 +77,8 @@
             {{-- <x-heroicon-o-view-grid class="flex-shrink-0 w-6 h-6" aria-hidden="true" /> --}}
             <img src="/images/announcement-icon.png" alt="announcement logo" class="w-8 ">
         </x-slot>
-        @if((Route::is('add-student')) || (Route::is('register-grade1')) || (Route::is('register-grade2')) || (Route::is('register-grade3')) || (Route::is('register-grade4')))
+        @if((Route::is('add-student')) || (Route::is('register-grade1')) || (Route::is('register-grade2')) || (Route::is('register-grade3')) || (Route::is('register-grade4'))
+        || (Route::is('register-grade-senior1')) || (Route::is('register-grade-senior2')) || (Route::is('register-grade-senior3')) || (Route::is('register-grade-senior4')))
         <x-sidebar.link title="View Announcement " href='#' />
         
         @else
@@ -77,7 +92,8 @@
             {{-- <x-heroicon-o-view-grid class="flex-shrink-0 w-6 h-6" aria-hidden="true" /> --}}
             <img src="/images/mail.png" alt="mail logo" class="w-8 ">
         </x-slot>
-        @if((Route::is('add-student')) || (Route::is('register-grade1')) || (Route::is('register-grade2')) || (Route::is('register-grade3')) || (Route::is('register-grade4')))
+        @if((Route::is('add-student')) || (Route::is('register-grade1')) || (Route::is('register-grade2')) || (Route::is('register-grade3')) || (Route::is('register-grade4'))
+        || (Route::is('register-grade-senior1')) || (Route::is('register-grade-senior2')) || (Route::is('register-grade-senior3')) || (Route::is('register-grade-senior4')))
         <x-sidebar.link title="Mail " href='#' />
         
         @else

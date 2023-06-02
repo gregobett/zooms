@@ -78,6 +78,9 @@ Route::get('delete-student/{id}',[StudentController::class,'deleteStudent'])
 Route::get('dashboard',[StudentController::class,'studentSchedule'])
         ->middleware(['auth', 'verified','student-middleware'])->name('dashboard');
 
+Route::get('content',[StudentController::class,'showGradesData'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('content');
+
 
 
 // ******************* STUDENT MIDDLEWARE ***************************************************
@@ -172,6 +175,21 @@ Route::get('view-grades4',[FourthquarterController::class,'viewGrades4'])
 
 Route::get('ave',[GeneralAverageController::class,'averageall'])
         ->middleware(['auth', 'verified','student-middleware'])->name('ave');
+
+
+
+Route::get('view-grades-senior',[FirstquarterseniorController::class,'viewGrades'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
+
+
+Route::get('view-grades-senior2',[SecondquarterseniorController::class,'viewGrades'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
+
+Route::get('view-grades-senior3',[ThirdquarterseniorController::class,'viewGrades'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
+
+Route::get('view-grades-senior4',[FourthquarterseniorController::class,'viewGrades'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
 
 // Route::get('dashboard',[FourthquarterController::class,'StudentDashboard'])
 //         ->middleware(['auth', 'verified','student-middleware'])->name('dashboard');

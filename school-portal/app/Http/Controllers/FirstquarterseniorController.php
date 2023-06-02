@@ -78,7 +78,8 @@ class FirstquarterseniorController extends Controller
         $gradesen->save();
 
     
-        return redirect()->back()->with('success','Grade Added Succesfuly');
+        // return redirect()->back()->with('success','Grade Added Succesfuly');
+        return redirect()->to('register-grade-senior2')->with('success','Second Quarter Subject Added Succesfuly');
      
     }
 
@@ -92,5 +93,14 @@ class FirstquarterseniorController extends Controller
         $data = Firstquartersenior::where('id', '=', $id)->first();
 
         return view('pages.faculty.edit-student-grade-senior1', compact('data'));
+    }
+
+
+    public function viewGrades(){
+
+        $data = Firstquartersenior::where('user_id', '=', auth()->id())->first();
+        return view('pages.student.view-grades-senior', compact('data'));
+     
+       
     }
 }
