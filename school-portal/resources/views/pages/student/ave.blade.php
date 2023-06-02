@@ -19,9 +19,9 @@
     <img src="/images/logo.png" width="150">
 </div>
 <div class="flex flex-col items-center justify-center ">
-<h1 class="flex items-center text-sm md:text-xl justify-center font-extrabold mb-2 ">Sanctuario of St. Maria Theresa School Inc.</h1>
+<h1 class="flex items-center text-sm md:text-xl justify-center font-extrabold mb-2 ">Tipas Integrated National Highschool</h1>
 
-    {{-- <p class="flex items-center text-sm md:text-xl  justify-center mb-8 mt-0">Tambubong, San Rafael, Bulacan</p> --}}
+    {{-- <p class="flex items-center text-sm md:text-xl  justify-center mb-8 mt-0">Tipas San Juan, Batangas</p> --}}
 </div>
 
 <div class="overflow-auto pl-2 pr-2">

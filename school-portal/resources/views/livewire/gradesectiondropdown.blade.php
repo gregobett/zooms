@@ -14,7 +14,7 @@
 
     </div>
    
-    {{-- <option value="Grade 1" @if (old('grade') == "Grade 1") {{ 'selected' }} @endif>Grade 1</option> --}}
+  
   
         <div class="form-item ">
             <label for="city" class="text-md">Section</label>
