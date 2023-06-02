@@ -97,12 +97,12 @@ class StudentController extends Controller
       
         $stud->save();
 
-    //    if($request->grade === 'Grade 11' || $request->grade === 'Grade 12' ){
-    //     return redirect()->to('register-grade-senior1')->with('success','Information Added Succesfuly');
+       if($request->grade === 'Grade 11' || $request->grade === 'Grade 12' ){
+        return redirect()->to('register-grade-senior1')->with('success','Information Added Succesfuly');
 
-    //    }else{
+       }else{
         return redirect()->to('register-grade1')->with('success','Information Added Succesfuly');
-    //    }
+       }
 
 
         

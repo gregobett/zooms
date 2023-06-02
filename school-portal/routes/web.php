@@ -19,16 +19,6 @@ use App\Http\Controllers\GeneralAverageController;
 use App\Http\Livewire\Gradesectiondropdown;
 use App\Http\Controllers\ContactController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', function () {
     return view('welcome');
@@ -138,29 +128,29 @@ Route::post('save-fourthquarter',[FourthquarterController::class, 'saveFourthqua
 
 
 
-// Route::get('register-grade-senior1',[FirstquarterseniorController::class,'RegisterGradeSenior1'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior1');
+Route::get('register-grade-senior1',[FirstquarterseniorController::class,'RegisterGradeSenior1'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior1');
 
-// Route::post('save-firstquarter-senior',[FirstquarterseniorController::class, 'saveFirstquarterSenior'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
+Route::post('save-firstquarter-senior',[FirstquarterseniorController::class, 'saveFirstquarterSenior'])
+        ->middleware(['auth', 'verified', 'student-middleware']);
 
-// Route::get('register-grade-senior2',[SecondquarterseniorController::class,'RegisterGradeSenior2'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior2');
+Route::get('register-grade-senior2',[SecondquarterseniorController::class,'RegisterGradeSenior2'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior2');
 
-// Route::post('save-secondquarter-senior',[SecondquarterseniorController::class, 'saveSecondquarterSenior'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
+Route::post('save-secondquarter-senior',[SecondquarterseniorController::class, 'saveSecondquarterSenior'])
+        ->middleware(['auth', 'verified', 'student-middleware']);
 
-// Route::get('register-grade-senior3',[ThirdquarterseniorController::class,'RegisterGradeSenior3'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior3');
+Route::get('register-grade-senior3',[ThirdquarterseniorController::class,'RegisterGradeSenior3'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior3');
 
-// Route::post('save-thirdquarter-senior',[ThirdquarterseniorController::class, 'saveThirdquarterSenior'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
+Route::post('save-thirdquarter-senior',[ThirdquarterseniorController::class, 'saveThirdquarterSenior'])
+        ->middleware(['auth', 'verified', 'student-middleware']);
 
-// Route::get('register-grade-senior4',[FourthquarterseniorController::class,'RegisterGradeSenior4'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior4');
+Route::get('register-grade-senior4',[FourthquarterseniorController::class,'RegisterGradeSenior4'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior4');
 
-// Route::post('save-fourthquarter-senior',[FourthquarterseniorController::class, 'saveFourthquarterSenior'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
+Route::post('save-fourthquarter-senior',[FourthquarterseniorController::class, 'saveFourthquarterSenior'])
+        ->middleware(['auth', 'verified', 'student-middleware']);
 
 
 
@@ -243,29 +233,29 @@ Route::get('faculty-dashboard',[FacultyController::class,'facultySchedule'])
 
 
 
-// Route::get('edit-student-grade-senior1/{id}',[FirstquarterseniorController::class,'editStudentGradeSenior1'])
-//         ->middleware(['auth', 'verified','faculty-middleware']);
+Route::get('edit-student-grade-senior1/{id}',[FirstquarterseniorController::class,'editStudentGradeSenior1'])
+        ->middleware(['auth', 'verified','faculty-middleware']);
 
-// Route::post('update-firstquarter-senior',[FirstquarterseniorController::class, 'updateFirstquarterSenior'])
-//         ->middleware(['auth', 'verified', 'faculty-middleware'])->name('update-firstquarter-senior');
+Route::post('update-firstquarter-senior',[FirstquarterseniorController::class, 'updateFirstquarterSenior'])
+        ->middleware(['auth', 'verified', 'faculty-middleware'])->name('update-firstquarter-senior');
 
-// Route::get('edit-student-grade-senior2/{id}',[SecondquarterseniorController::class,'editStudentGradeSenior2'])
-//         ->middleware(['auth', 'verified','faculty-middleware']);
+Route::get('edit-student-grade-senior2/{id}',[SecondquarterseniorController::class,'editStudentGradeSenior2'])
+        ->middleware(['auth', 'verified','faculty-middleware']);
 
-// Route::post('update-secondquarter-senior',[SecondquarterseniorController::class, 'updateSecondquarterSenior'])
-//         ->middleware(['auth', 'verified', 'faculty-middleware']);
+Route::post('update-secondquarter-senior',[SecondquarterseniorController::class, 'updateSecondquarterSenior'])
+        ->middleware(['auth', 'verified', 'faculty-middleware']);
 
-// Route::get('edit-student-grade-senior3/{id}',[ThirdquarterseniorController::class,'editStudentGradeSenior3'])
-//         ->middleware(['auth', 'verified','faculty-middleware']);
+Route::get('edit-student-grade-senior3/{id}',[ThirdquarterseniorController::class,'editStudentGradeSenior3'])
+        ->middleware(['auth', 'verified','faculty-middleware']);
 
-// Route::post('update-thirdquarter-senior',[ThirdquarterseniorController::class, 'updateThirdquarterSenior'])
-//         ->middleware(['auth', 'verified', 'faculty-middleware']);
+Route::post('update-thirdquarter-senior',[ThirdquarterseniorController::class, 'updateThirdquarterSenior'])
+        ->middleware(['auth', 'verified', 'faculty-middleware']);
 
-// Route::get('edit-student-grade-senior4/{id}',[FourthquarterseniorController::class,'editStudentGradeSenior4'])
-//         ->middleware(['auth', 'verified','faculty-middleware']);
+Route::get('edit-student-grade-senior4/{id}',[FourthquarterseniorController::class,'editStudentGradeSenior4'])
+        ->middleware(['auth', 'verified','faculty-middleware']);
 
-// Route::post('update-fourthquarter-senior',[FourthquarterseniorController::class, 'updateFourthquarterSenior'])
-//         ->middleware(['auth', 'verified', 'faculty-middleware']);
+Route::post('update-fourthquarter-senior',[FourthquarterseniorController::class, 'updateFourthquarterSenior'])
+        ->middleware(['auth', 'verified', 'faculty-middleware']);
 
 
 
