@@ -19,7 +19,7 @@
         {{-- @foreach($datas as $data)
         @endforeach --}}
        
-        
+<!--         
         @if(($data->grade === '1') && ($data->section === 'Gold'))
         <div class="flex flex-col justify-center items-center mx-auto">
             <img src="/images/Grade1S1.png" alt="main logo" class="w-screen h-3/6 overflow-hidden ">
@@ -111,7 +111,7 @@
             <img src="/images/Grade6S3.png" alt="main logo" class="w-screen h-3/6 overflow-hidden ">
 
         </div>
-        @endif
+        @endif -->
   
 
    
