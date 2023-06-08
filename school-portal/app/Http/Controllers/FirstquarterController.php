@@ -101,6 +101,14 @@ class FirstquarterController extends Controller
        
     }
 
+
+    // public function showStudentGrade(){
+
+    //     $data = Student::where('user_id', '=', auth()->id())->first();
+        
+    //     return view('pages.student.view-grades', compact('data'));
+    // }
+
  
  
 }

@@ -100,6 +100,7 @@ Route::post('save-student',[StudentController::class, 'saveStudent'])
 Route::get('student-profile', [StudentController::class,'showStudentData'])
         ->middleware(['auth', 'verified','student-middleware'])->name('student-profile');
 
+
 Route::post('student-profile-update',[StudentController::class,'updateStudent'])
         ->middleware(['auth', 'verified','student-middleware']);
 
@@ -159,6 +160,13 @@ Route::post('save-fourthquarter-senior',[FourthquarterseniorController::class, '
 
 Route::get('view-grades',[FirstquarterController::class,'viewGrades'])
         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
+
+        
+        // showgrade
+Route::get('content',[StudentController::class,'showStudentGrade'])
+->middleware(['auth', 'verified','student-middleware'])->name('content');
+
+
 
 // Route::get('view-grades',[SecondquarterController::class,'viewGrades2']);
 

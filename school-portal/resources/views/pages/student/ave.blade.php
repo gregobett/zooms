@@ -78,6 +78,7 @@
                   <td class="border px-4 py-2 dark:border-gray-500">{{$student->epp}}</td>    
                   <td class="border px-4 py-2 dark:border-gray-500">{{$student->tle}}</td>  
                   <td class="flex items-center justify-center border px-4 py-2 font-bold dark:border-gray-500">{{$student->average1}}</td>   --}}
+                  
                   <td class="border px-4 py-1  dark:border-gray-500 ">Mother Toungue</td>
                   <td class="border px-4 py-1 dark:border-gray-500 ">{{$student->mothertongue}}</td>  
                   <td class="border px-4 py-1 dark:border-gray-500">{{$student->mothertongue2}}</td>  

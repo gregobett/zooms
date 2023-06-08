@@ -206,13 +206,18 @@ class StudentController extends Controller
         $data = Student::where('user_id', '=', auth()->id())->first();
         
         return view('pages.student.student-profile', compact('data'));
+
+   
+       
     }
 
+    public function showStudentGrade(){
 
-    public function showGradesData(){
-        $data = Student::where('user_id', '=', auth()->id())->first();
-
-        return view('components.sidebar.content', compact('data'));
+        $datas = Student::where('user_id', '=', auth()->id())->first();
+        
+        return view('content', compact('datas'));
+   
+       
     }
 
 

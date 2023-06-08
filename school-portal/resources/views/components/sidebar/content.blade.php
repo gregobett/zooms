@@ -53,19 +53,25 @@
         <x-sidebar.link title="General Average " href='#' />
         @else
           
-
+        
+<!-- 
+    
             <x-sidebar.link title="First Quarter " href='/view-grades-senior' /> 
             <x-sidebar.link title="Second Quarter " href='/view-grades-senior2' />
             <x-sidebar.link title="Third Quarter " href='/view-grades-senior3' />
             <x-sidebar.link title="Fourth Quarter " href='/view-grades-senior4' />
-            <x-sidebar.link title="General Average " href='/ave' />
+            <x-sidebar.link title="General Average " href='/ave' /> -->
+    
      
-            <!-- <x-sidebar.link title="First Quarter " href='/view-grades' /> 
+            <x-sidebar.link title="First Quarter" href='/view-grades' /> 
             <x-sidebar.link title="Second Quarter " href='/view-grades2' />
             <x-sidebar.link title="Third Quarter " href='/view-grades3' />
             <x-sidebar.link title="Fourth Quarter " href='/view-grades4' />
-            <x-sidebar.link title="General Average " href='/ave' /> -->
-    
+            <x-sidebar.link title="General Average " href='/ave' />
+
+            
+        
+           
           
 
         @endif
