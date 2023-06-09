@@ -213,13 +213,23 @@ class StudentController extends Controller
 
     public function showStudentGrade(){
 
-        $datas = Student::where('user_id', '=', auth()->id())->first();
-        
-        return view('content', compact('datas'));
-   
+        $data = Student::where('user_id', '=', auth()->id())->first();
+
+
+        return view('pages.student.view-grades', compact('data'));
+
+
        
     }
 
+
+      public function showStudentGrade2(){
+
+        $data = Student::where('user_id', '=', auth()->id())->first();
+
+        return view('pages.student.view-grades-two', compact('data'));
+       
+    }
 
 
     public function myEmail(){

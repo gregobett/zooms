@@ -9,7 +9,7 @@
   <table class="table-auto w-full mb-6  dark:bg-[#222738]">
       <thead>
           <tr>
-              <th class="px-4 py-2">THIRD QUARTER</th>
+              <th class="px-4 py-2">SECOND QUARTER</th>
             
           </tr>
       </thead>

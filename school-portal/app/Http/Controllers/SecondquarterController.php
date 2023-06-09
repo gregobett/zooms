@@ -77,7 +77,6 @@ class SecondquarterController extends Controller
 
     public function editStudentGrade2($user_id){
         $data = Secondquarter::where('user_id', '=', $user_id)->first();
-        // $data = Student::where('user_id', '=', $user_id)->first();
         return view('pages.faculty.edit-student-grade2', compact('data'));
     }
 
@@ -86,8 +85,18 @@ class SecondquarterController extends Controller
 
         $data = Secondquarter::where('user_id', '=', auth()->id())->first();
         
-        return view('pages.student.view-grades2', compact('data'));
+        return view('pages.student.view-grades-two', compact('data'));
     }
+
+
+    public function showStudentGrade2(){
+
+        $datas = Student::where('user_id', '=', auth()->id())->first();
+
+        return view('pages.student.view-grades-two', compact('datas'));
+       
+    }
+
 
 
 }

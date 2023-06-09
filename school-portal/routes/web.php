@@ -24,10 +24,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// for completing information of the student
-// Route::get('home', function () {
-//         return view('home');
-//     })->middleware(['auth'])->name('home');
+
     
 
 
@@ -163,16 +160,20 @@ Route::get('view-grades',[FirstquarterController::class,'viewGrades'])
 
         
         // showgrade
-Route::get('content',[StudentController::class,'showStudentGrade'])
-->middleware(['auth', 'verified','student-middleware'])->name('content');
+Route::get('view-grades',[StudentController::class,'showStudentGrade'])
+->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
+
+
+Route::get('view-grades-two',[StudentController::class,'showStudentGrade2'])
+->middleware(['auth', 'verified','student-middleware'])->name('view-grades-two');
 
 
 
-// Route::get('view-grades',[SecondquarterController::class,'viewGrades2']);
 
 
-Route::get('view-grades2',[SecondquarterController::class,'viewGrades2'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('view-grades2');
+
+Route::get('view-grades-two',[SecondquarterController::class,'viewGrades2'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('view-grades-two');
 
 Route::get('view-grades3',[ThirdquarterController::class,'viewGrades3'])
         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades3');
@@ -190,8 +191,8 @@ Route::get('view-grades-senior',[FirstquarterseniorController::class,'viewGrades
         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
 
 
-Route::get('view-grades-senior2',[SecondquarterseniorController::class,'viewGrades'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
+Route::get('view-grades-senior-two',[SecondquarterseniorController::class,'viewGrades'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('view-grades-senior-two');
 
 Route::get('view-grades-senior3',[ThirdquarterseniorController::class,'viewGrades'])
         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');

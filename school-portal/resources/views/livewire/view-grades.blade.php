@@ -1,5 +1,7 @@
-@extends('layouts.home')
-@section('content')	
+@foreach ($data as $datas)
+   
+    @endforeach
+
 
 <div>
 
@@ -9,7 +11,7 @@
   <table class="table-auto w-full mb-6  dark:bg-[#222738]">
       <thead>
           <tr>
-              <th class="px-4 py-2">SECOND QUARTER</th>
+              <th class="px-4 py-2">FIRST QUARTER </th>
       
           </tr>
       </thead>
@@ -18,76 +20,76 @@
         
             <tr >
                 <td class="border px-4 py-2  dark:border-gray-500">Mother Tongue</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->mothertongue2}}</td>     
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->mothertongue}}</td>     
             </tr>
 
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">Filipino</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->filipino2}}</td>
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->filipino}}</td>
             </tr>
 
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">English</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->english2}}</td>
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->english}}</td>
             </tr>
 
 
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">Mathematics</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->mathematics2}}</td>    
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->mathematics}}</td>    
             </tr>
 
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">Science</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->science2}}</td>
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->science}}</td>
             </tr>
 
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">Araling Panlipunan</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->ap2}}</td>
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->ap}}</td>
             </tr>
 
             
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">Edukasyon sa Pagpapahalaga</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->esp2}}</td>    
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->esp}}</td>    
             </tr>
 
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">Music</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->music2}}</td>
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->music}}</td>
             </tr>
 
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">Arts</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->arts2}}</td> 
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->arts}}</td> 
             </tr>
 
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">Physical Education</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->pe2}}</td>   
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->pe}}</td>   
             </tr>
 
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">Health</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->health2}}</td>
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->health}}</td>
             </tr>
 
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">Edukasyon sa Pagpapahalaga at Pagpapakatao</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->epp2}}</td>
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->epp}}</td>
             </tr>
 
             
             <tr>
                 <td class="border px-4 py-2 dark:border-gray-500">Technology and Livelihood Education</td>
-                <td class="border px-4 py-2 dark:border-gray-500">{{$data->tle2}}</td>
+                <td class="border px-4 py-2 dark:border-gray-500">{{$datas->tle}}</td>
             </tr>
 
             
             <tr>
                 <td class="border px-4 py-2 font-bold dark:border-gray-500">Average</td>
-                <td class="border px-4 py-2 font-bold dark:border-gray-500">{{$data->average2}} </td>
+                <td class="border px-4 py-2 font-bold dark:border-gray-500">{{$datas->average1}} </td>
             </tr>
        
        
@@ -99,5 +101,3 @@
 
   @include('sweetalert::alert')
 </div>
-
-@endsection

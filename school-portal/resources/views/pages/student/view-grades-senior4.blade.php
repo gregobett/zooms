@@ -98,7 +98,7 @@
 
             <tr>
                 <td class="border px-4 py-2 font-bold dark:border-gray-500">Average</td>
-                <td class="border px-4 py-2 font-bold dark:border-gray-500"> {{$data->average1}}</td>
+                <td class="border px-4 py-2 font-bold dark:border-gray-500"> {{$data->average}}</td>
             </tr>
        
        
