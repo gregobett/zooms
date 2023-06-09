@@ -7,9 +7,16 @@
 
         @if($data->grade === '11' || $data->grade === '12')
 
+       
+
             @livewireStyles
                 <div> <livewire:view-grades-senior></div>
             @livewireScripts
+
+            @livewireStyles
+                <div> <livewire:view-grades-senior-two></div>
+            @livewireScripts
+
         @else
             @livewireStyles
                 <div> <livewire:view-grades></div>

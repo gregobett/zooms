@@ -29,5 +29,6 @@ class GeneralAverageController extends Controller
     }
 
 
+    
   
 }

@@ -18,6 +18,7 @@ use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\GeneralAverageController;
 use App\Http\Livewire\Gradesectiondropdown;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SeniorGeneralAverageController;
 
 
 Route::get('/', function () {
@@ -164,7 +165,7 @@ Route::get('view-grades',[StudentController::class,'showStudentGrade'])
 ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
 
 
-Route::get('view-grades-two',[StudentController::class,'showStudentGrade2'])
+Route::get('view-grades-two',[StudentController::class,'showStudentGradeTwo'])
 ->middleware(['auth', 'verified','student-middleware'])->name('view-grades-two');
 
 
@@ -184,6 +185,10 @@ Route::get('view-grades4',[FourthquarterController::class,'viewGrades4'])
 
 Route::get('ave',[GeneralAverageController::class,'averageall'])
         ->middleware(['auth', 'verified','student-middleware'])->name('ave');
+
+
+Route::get('ave-senior',[SeniorGeneralAverageController::class,'averageall'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('ave-senior');
 
 
 

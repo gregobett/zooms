@@ -11,66 +11,66 @@
         @csrf
         {{-- <input type="hidden" value="{{ $data->$id }}" name="id" /> --}}
           <div class="flex flex-col mb-2">
-              <label class="  text-sm text-gray-900" for="oral">Oral Communication</label>
-              <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="oral" id="oral" >
+              <label class="  text-sm text-gray-900" for="oral3">Oral Communication</label>
+              <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="oral3" id="oral3" >
           </div>
           <div class="flex flex-col mb-2">
-              <label class="  text-sm text-gray-900" for="reading">Reading and Writing</label>
-              <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="reading" id="reading">
+              <label class="  text-sm text-gray-900" for="reading3">Reading and Writing</label>
+              <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="reading3" id="reading3">
           </div>
           <div class="flex flex-col mb-2">
-              <label class="  text-sm text-gray-900" for="komunikasyon">Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino</label>
-              <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="komunikasyon" id="komunikasyon">
+              <label class="  text-sm text-gray-900" for="komunikasyon3">Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino</label>
+              <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="komunikasyon3" id="komunikasyon3">
           </div>
           <div class="flex flex-col mb-2">
-              <label class=" text-sm text-gray-900" for="pagbasa">Pagbasa at Pagsusuri ng Iba't-Ibang Teksto Tungo sa Pananaliksik</label>
-              <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="pagbasa" id="pagbasa">
+              <label class=" text-sm text-gray-900" for="pagbasa3">Pagbasa at Pagsusuri ng Iba't-Ibang Teksto Tungo sa Pananaliksik</label>
+              <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="pagbasa3" id="pagbasa3">
           </div>
           <div class="flex flex-col mb-2">
-              <label class="text-sm text-gray-900" for="century">21st Century Literature from the Philippines and the World</label>
-              <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="century" id="century">
+              <label class="text-sm text-gray-900" for="century3">21st Century Literature from the Philippines and the World</label>
+              <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="century3" id="century3">
           </div>
 
           <div class="flex flex-col mb-2">
-            <label class="  text-sm text-gray-900" for="contemporary">Contemporary Philippine Arts from the Regions</label>
-            <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="contemporary" id="contemporary">
+            <label class="  text-sm text-gray-900" for="contemporary3">Contemporary Philippine Arts from the Regions</label>
+            <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="contemporary3" id="contemporary3">
         </div>
         <div class="flex flex-col mb-2">
-            <label class="  text-sm text-gray-900" for="media">Media and Information Literacy</label>
-            <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="media" id="media">
+            <label class="  text-sm text-gray-900" for="media3">Media and Information Literacy</label>
+            <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="media3" id="media3">
         </div>
         <div class="flex flex-col mb-2">
-            <label class="  text-sm text-gray-900" for="math">General Math</label>
-            <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="math" id="math">
+            <label class="  text-sm text-gray-900" for="math3">General Math</label>
+            <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="math3" id="math3">
         </div>
         <div class="flex flex-col mb-2">
-            <label class=" text-sm text-gray-900" for="statistics">Statistics and Probability</label>
-            <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="statistics" id="statistics">
+            <label class=" text-sm text-gray-900" for="statistics3">Statistics and Probability</label>
+            <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="statistics3" id="statistics3">
         </div>
         <div class="flex flex-col mb-2">
-            <label class="text-sm text-gray-900" for="earth">Earth and Life Science</label>
-            <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="earth" id="earth">
+            <label class="text-sm text-gray-900" for="earth3">Earth and Life Science</label>
+            <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="earth3" id="earth3">
         </div>
 
         <div class="flex flex-col mb-2">
-          <label class="  text-sm text-gray-900" for="science">Physical Science</label>
-          <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="science" id="science">
+          <label class="  text-sm text-gray-900" for="science3">Physical Science</label>
+          <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="science3" id="science3">
       </div>
       <div class="flex flex-col mb-2">
-          <label class=" text-sm text-gray-900" for="philosophy">Introduction to the Philosophy of the Human Person</label>
-          <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="philosophy" id="philosophy">
+          <label class=" text-sm text-gray-900" for="philosophy3">Introduction to the Philosophy of the Human Person</label>
+          <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="philosophy3" id="philosophy3">
       </div>
       <div class="flex flex-col mb-2">
-          <label class="text-sm text-gray-900" for="health">Physical Education and Health</label>
-          <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="health" id="health">
+          <label class="text-sm text-gray-900" for="health3">Physical Education and Health</label>
+          <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="health3" id="health3">
       </div>
       <div class="flex flex-col mb-2">
-        <label class="text-sm text-gray-900" for="personal">Personal Development</label>
-        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="personal" id="persoanl">
+        <label class="text-sm text-gray-900" for="personal3">Personal Development</label>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="personal3" id="persoanl3">
     </div>
     <div class="flex flex-col mb-2">
-        <label class="text-sm text-gray-900" for="culture">Understanding Culture, Society and Politics</label>
-        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="culture" id="culture">
+        <label class="text-sm text-gray-900" for="culture3">Understanding Culture, Society and Politics</label>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="culture3" id="culture3">
     </div>
           {{-- <div class="flex flex-col mb-4">
               <label class="mb-2 font-bold text-lg text-gray-900" for="File">File</label>

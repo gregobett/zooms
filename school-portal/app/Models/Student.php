@@ -80,30 +80,36 @@ class Student extends Model
         }
 
 
-        //  public function firstquartersenior(){
-        //     return $this->hasMany(Firstquartersenior::class, 'user_id');
+
+
+          // relationship with firstquartersenior
+          public function firstquartersenior(){
+            return $this->hasMany(Firstquartersenior::class, 'user_id');
                 
-        // }
+        }
        
     
-
-        //  public function Secondquartersenior(){
-        //     return $this->hasMany(Secondquartersenior::class, 'user_id');
+         // relationship with secondquartersenior
+         public function Secondquartersenior(){
+            return $this->hasMany(Secondquartersenior::class, 'user_id');
                 
-        // }
+        }
     
-
-        //     public function Thirdquartersenior(){
-        //         return $this->hasMany(Thirdquartersenior::class, 'user_id');
+      
+            public function Thirdquartersenior(){
+                return $this->hasMany(Thirdquartersenior::class, 'user_id');
                     
-        //     }
+            }
     
-
-        //     public function Fourthquartersenior(){
-        //     return $this->hasMany(Fourthquartersenior::class, 'user_id');
+    
+            public function Fourthquartersenior(){
+            return $this->hasMany(Fourthquartersenior::class, 'user_id');
                 
-        // }
-    
+        }
+
+
+
+
 
 
 

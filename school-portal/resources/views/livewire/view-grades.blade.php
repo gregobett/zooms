@@ -6,12 +6,13 @@
 <div>
 
   <div >
-      <h1 class="flex items-center justify-center text-2xl mb-10">My Grades</h1>
+      <h1 class="flex items-center justify-center text-2xl mb-10 ">My Grades</h1>
+      
   <div class="overflow-auto pl-2 pr-2">
   <table class="table-auto w-full mb-6  dark:bg-[#222738]">
-      <thead>
-          <tr>
-              <th class="px-4 py-2">FIRST QUARTER </th>
+      <thead >
+          <tr >
+              <th class=" px-4 py-2">FIRST QUARTER </th>
       
           </tr>
       </thead>

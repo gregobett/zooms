@@ -223,7 +223,14 @@ class StudentController extends Controller
     }
 
 
-      public function showStudentGrade2(){
+
+    public function myEmail(){
+
+        return view('emails.myMail');
+    }
+
+    
+    public function showStudentGradeTwo(){
 
         $data = Student::where('user_id', '=', auth()->id())->first();
 
@@ -231,11 +238,6 @@ class StudentController extends Controller
        
     }
 
-
-    public function myEmail(){
-
-        return view('emails.myMail');
-    }
 
 
 }

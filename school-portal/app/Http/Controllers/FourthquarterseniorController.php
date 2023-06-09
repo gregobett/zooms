@@ -11,40 +11,40 @@ class FourthquarterseniorController extends Controller
     public function saveFourthquarterSenior(Request $request){
     
     
-        $oral = $request->oral;
-        $reading = $request->reading;
-        $komunikasyon = $request->komunikasyon;
-        $pagbasa = $request->pagbasa;
-        $century = $request->century;
-        $contemporary = $request->contemporary;
-        $media = $request->media;
-        $math = $request->math;
-        $statistics = $request->statistics;
-        $earth= $request->earth;
-        $science = $request->science;
-        $philosophy = $request->philosophy;
-        $health = $request->health;
-        $personal = $request->personal;
-        $culture = $request->culture;
+        $oral4 = $request->oral4;
+        $reading4 = $request->reading4;
+        $komunikasyon4 = $request->komunikasyon4;
+        $pagbasa4 = $request->pagbasa4;
+        $century4 = $request->century4;
+        $contemporary4 = $request->contemporary4;
+        $media4 = $request->media4;
+        $math4 = $request->math4;
+        $statistics4 = $request->statistics4;
+        $earth4= $request->earth4;
+        $science4 = $request->science4;
+        $philosophy4 = $request->philosophy4;
+        $health4 = $request->health4;
+        $personal4 = $request->personal4;
+        $culture4 = $request->culture4;
     
 
         $grade = new Fourthquartersenior();
         $grade->user_id = auth()->user()->id;
-        $grade-> oral=$oral;
-        $grade->reading = $reading;
-        $grade->komunikasyon= $komunikasyon;
-        $grade->pagbasa = $pagbasa;
-        $grade->century = $century;
-        $grade->contemporary = $contemporary;
-        $grade->media = $media;
-        $grade->math = $math;
-        $grade->statistics = $statistics;
-        $grade->earth = $earth;
-        $grade->science = $science;
-        $grade->philosophy= $philosophy;
-        $grade->health= $health;
-        $grade->personal= $personal;
-        $grade->culture= $culture;
+        $grade-> oral4=$oral4;
+        $grade->reading4 = $reading4;
+        $grade->komunikasyon4= $komunikasyon4;
+        $grade->pagbasa4 = $pagbasa4;
+        $grade->century4 = $century4;
+        $grade->contemporary4 = $contemporary4;
+        $grade->media4 = $media4;
+        $grade->math4 = $math4;
+        $grade->statistics4 = $statistics4;
+        $grade->earth4 = $earth4;
+        $grade->science4 = $science4;
+        $grade->philosophy4= $philosophy4;
+        $grade->health4= $health4;
+        $grade->personal4= $personal4;
+        $grade->culture4= $culture4;
         $grade->save();
 
     
@@ -57,22 +57,22 @@ class FourthquarterseniorController extends Controller
     
         $grade = Fourthquartersenior::find($request->id);
         $grade->user_id = $request->user_id;
-        $grade->oral = $request->oral;
-        $grade->reading = $request->reading;
-        $grade->komunikasyon= $request->komunikasyon;
-        $grade->pagbasa = $request->pagbasa;
-        $grade->century= $request->century;
-        $grade->contemporary = $request->contemporary;
-        $grade->media = $request->media;
-        $grade->math = $request->math;
-        $grade->statistics = $request->statistics;
-        $grade->earth = $request->earth;
-        $grade->science = $request->science;
-        $grade->philosophy = $request->philosophy;
-        $grade->health = $request->health;
-        $grade->personal = $request->personal;
-        $grade->culture = $request->culture;
-        $grade->average=intval('oral') + intval('reading')+ intval('komunikasyon')+ intval('pagbasa')+ intval('century')+ intval('contemporary')+ intval('media') + intval('math')+ intval('statistics')+ intval('earth')+ intval('science')+ intval('philosophy') + intval('health')+ intval('personal') + intval('century');
+        $grade->oral4 = $request->oral4;
+        $grade->reading4 = $request->reading4;
+        $grade->komunikasyon4= $request->komunikasyon4;
+        $grade->pagbasa4 = $request->pagbasa4;
+        $grade->century4= $request->century4;
+        $grade->contemporary4 = $request->contemporary4;
+        $grade->media4 = $request->media4;
+        $grade->math4 = $request->math4;
+        $grade->statistics4 = $request->statistics4;
+        $grade->earth4 = $request->earth4;
+        $grade->science4 = $request->science4;
+        $grade->philosophy4 = $request->philosophy4;
+        $grade->health4 = $request->health4;
+        $grade->personal4 = $request->personal4;
+        $grade->culture4 = $request->culture4;
+        $grade->average=intval('oral4') + intval('reading4')+ intval('komunikasyon4')+ intval('pagbasa4')+ intval('century4')+ intval('contemporary4')+ intval('media4') + intval('math4')+ intval('statistics4')+ intval('earth4')+ intval('science4')+ intval('philosophy4') + intval('health4')+ intval('personal4') + intval('century4');
         $grade->save();
 
     

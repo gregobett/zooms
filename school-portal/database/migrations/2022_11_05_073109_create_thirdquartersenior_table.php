@@ -16,22 +16,22 @@ return new class extends Migration
         Schema::create('thirdquartersenior', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->references('user_id')->on('students')->onDelete('cascade');
-            $table->integer('oral')->default(0); 
-            $table->integer('reading')->default(0);
-            $table->integer('komunikasyon')->default(0);
-            $table->integer('pagbasa')->default(0);
-            $table->integer('century')->default(0);
-            $table->integer('contemporary')->default(0);
-            $table->integer('media')->default(0);
-            $table->integer('math')->default(0);
-            $table->integer('statistics')->default(0);
-            $table->integer('earth')->default(0);
-            $table->integer('science')->default(0);
-            $table->integer('philosophy')->default(0);
-            $table->integer('health')->default(0);
-            $table->integer('personal')->default(0);
-            $table->integer('culture')->default(0);
-            $table->integer('average')->default(0);
+            $table->integer('oral3')->default(0); 
+            $table->integer('reading3')->default(0);
+            $table->integer('komunikasyon3')->default(0);
+            $table->integer('pagbasa3')->default(0);
+            $table->integer('century3')->default(0);
+            $table->integer('contemporary3')->default(0);
+            $table->integer('media3')->default(0);
+            $table->integer('math3')->default(0);
+            $table->integer('statistics3')->default(0);
+            $table->integer('earth3')->default(0);
+            $table->integer('science3')->default(0);
+            $table->integer('philosophy3')->default(0);
+            $table->integer('health3')->default(0);
+            $table->integer('personal3')->default(0);
+            $table->integer('culture3')->default(0);
+            $table->integer('average3')->default(0);
             $table->timestamps();
         });
     }
