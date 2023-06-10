@@ -80,6 +80,10 @@ Route::get('content',[StudentController::class,'showGradesData'])
         ->middleware(['auth', 'verified','student-middleware'])->name('content');
 
 
+// Route::get('admin-dashboard',[StudentController::class,'getTotalStudentsCount'])
+//         ->middleware(['auth', 'verified','admin-middleware'])->name('admin-dashboard');
+
+
 
 // ******************* STUDENT MIDDLEWARE ***************************************************
 

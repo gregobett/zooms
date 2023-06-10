@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Faculty;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\DB;
 
 class FacultyController extends Controller
 {
@@ -162,4 +163,13 @@ public function updateFaculty(Request $request){
         
         return view('pages.faculty.faculty-profile', compact('data'));
     }
+
+
+    public function getTotalFacultiesCount()
+    {
+        $totalFacultiesCount = DB::table('faculties')->count();
+    
+        return view('admin-dashboard', ['totalFacultiesCount' => $totalFacultiesCount]);
+    }
+
 }

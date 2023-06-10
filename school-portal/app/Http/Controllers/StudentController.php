@@ -239,5 +239,21 @@ class StudentController extends Controller
     }
 
 
+    public function getTotalStudentsCount()
+    {
+        $totalStudentsCount = DB::table('students')->count();
+    
+        return view('admin-dashboard', ['totalStudentsCount' => $totalStudentsCount]);
+    }
+
+
+    public function getTotalMaleStudentsCount()
+    {
+        $totalMaleStudentsCount = DB::table('students')->where('gender', 'male')->count();
+
+        return view('admin-dashboard', ['totalMaleStudentsCount' => $totalMaleStudentsCount]);
+    }
+
+
 
 }

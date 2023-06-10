@@ -8,5 +8,9 @@
         </div>
     </x-slot>
 
+        @livewireStyles
+        <div class="form-item w-full"> <livewire:total-students></div>
+        @livewireScripts
+
     @yield('content')
 </x-app-layout>
