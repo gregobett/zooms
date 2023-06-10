@@ -6,9 +6,11 @@
       <!--Card 1-->
       <div class=" w-full lg:max-w-full items-center">
          
-              <p class="text-gray-900 dark:text-gray-100 font-semibold text-xl">{{$query->title}}</p>
+              <p class="text-gray-900 dark:text-gray-100  text-sm lg:text-xl">Title: <span class="font-semibold">{{$query->title}}</span></p>
   
-              <p class="text-gray-800 dark:text-gray-300 font-normal text-base my-2 ">{{$query->message}}</p>
+              <p class="text-gray-800 dark:text-gray-300 font-normal text-sm lg:text-lg my-2 ">Details:  <span class="font-semibold">{{$query->message}}</span></p>
+
+              <p class="text-gray-800 dark:text-gray-300 font-normal text-xs my-2 ">Posted:  {{$query->created_at->format('F j, Y g:i A')}}</p>
   
               <div class="flex justify-center">
                 <img src="{{url('uploads/announcement/'.$query->photo)}}" alt="announcement photo" class="shadow-xl">
