@@ -41,17 +41,17 @@
 
         
             <button type="submit" class="w-full bg-gre text-slate-50 text-xs lg:text-base hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 mt-2 lg:mb-4 lg:mt-4">Update</button>
-            {{-- @if($data->grade === 'Grade 11' || $data->grade === 'Grade 12')
+             @if($data->grade === '11' || $data->grade === '12')
             <a href="{{url('edit-student-grade-senior1/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 1st Quarter Grade</a>
             <a href="{{url('edit-student-grade-senior2/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 2nd Quarter Grade</a>
             <a href="{{url('edit-student-grade-senior3/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 3rd Quarter Grade</a>
             <a href="{{url('edit-student-grade-senior4/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center">Add 4th Quarter Grade</a>
-            @else --}}
+            @else
             <a href="{{url('edit-student-grade1/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 1st Quarter Grade</a>
             <a href="{{url('edit-student-grade2/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 2nd Quarter Grade</a>
             <a href="{{url('edit-student-grade3/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 3rd Quarter Grade</a>
             <a href="{{url('edit-student-grade4/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center">Add 4th Quarter Grade</a>
-            {{-- @endif --}}
+            @endif
       
         
         </div>
@@ -135,12 +135,12 @@
                 <div class="form-item w-full">
                     <label class="text-md ">Grade</label>
                         <select class="w-full appearance-none text-black text-opacity-70 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 " id="grade" name="grade" >
-                            <option  @if($data->grade == '1') selected @endif>Grade 1</option>
-                            <option  @if($data->grade == '2') selected @endif>Grade 2</option>   
-                            <option  @if($data->grade == '3') selected @endif>Grade 3</option>
-                            <option  @if($data->grade == '4') selected @endif>Grade 4</option>   
-                            <option  @if($data->grade == '5') selected @endif>Grade 5</option>
-                            <option  @if($data->grade == '6') selected @endif>Grade 6</option>   
+                            <option  @if($data->grade == '7') selected @endif>7</option>
+                            <option  @if($data->grade == '8') selected @endif>8</option>   
+                            <option  @if($data->grade == '9') selected @endif>9</option>
+                            <option  @if($data->grade == '10') selected @endif>10</option>   
+                            <option  @if($data->grade === '11') selected @endif>11</option>
+                            <option  @if($data->grade == '12') selected @endif>12</option>   
                         </select>
                     @error('grade')
            

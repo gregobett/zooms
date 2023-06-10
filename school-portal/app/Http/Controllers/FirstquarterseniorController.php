@@ -74,7 +74,7 @@ class FirstquarterseniorController extends Controller
         $gradesen->health = $request->health;
         $gradesen->personal = $request->personal;
         $gradesen->culture = $request->culture;
-        $gradesen->average = intval('oral') + intval('reading')+ intval('komunikasyon')+ intval('pagbasa')+ intval('century')+ intval('contemporary')+ intval('media') + intval('math')+ intval('statistics')+ intval('earth')+ intval('science')+ intval('philosophy') + intval('health')+ intval('personal') + intval('century');
+        $gradesen->average = number_format(($gradesen->oral + $gradesen->reading + $gradesen->komunikasyon + $gradesen->pagbasa + $gradesen->century + $gradesen->contemporary + $gradesen->media + $gradesen->math + $gradesen->statistics + $gradesen->earth + $gradesen->science + $gradesen->philosophy + $gradesen->health + $gradesen->personal + $gradesen->culture  )/15);
         $gradesen->save();
 
     
@@ -89,8 +89,8 @@ class FirstquarterseniorController extends Controller
     }
 
 
-    public function editStudentGradeSenior1($id){
-        $data = Firstquartersenior::where('id', '=', $id)->first();
+    public function editStudentGradeSenior1($user_id){
+        $data = Firstquartersenior::where('user_id', '=', $user_id)->first();
 
         return view('pages.faculty.edit-student-grade-senior1', compact('data'));
     }

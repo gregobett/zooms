@@ -73,7 +73,7 @@ class ThirdquarterseniorController extends Controller
         $grade->health3 = $request->health3;
         $grade->personal3 = $request->personal3;
         $grade->culture3 = $request->culture3;
-        $grade->average=intval('oral3') + intval('reading3')+ intval('komunikasyon3')+ intval('pagbasa3')+ intval('century3')+ intval('contemporary3')+ intval('media3') + intval('math3')+ intval('statistics3')+ intval('earth3')+ intval('science3')+ intval('philosophy3') + intval('health3')+ intval('personal3') + intval('century3');
+        $grade->average = number_format(($grade->oral3 + $grade->reading3 + $grade->komunikasyon3 + $grade->pagbasa3 + $grade->century3 + $grade->contemporary3 + $grade->media3 + $grade->math3 + $grade->statistics3 + $grade->earth3 + $grade->science3 + $grade->philosophy3 + $grade->health3 + $grade->personal3 + $grade->culture3  )/15);
         $grade->save();
 
     
@@ -87,9 +87,8 @@ class ThirdquarterseniorController extends Controller
     }
 
     
-    public function editStudentGradeSenior3($id){
-        $data = Thirdquartersenior::where('id', '=', $id)->first();
-        // $data = Student::where('user_id', '=', $user_id)->first();
+    public function editStudentGradeSenior3($user_id){
+        $data = Thirdquartersenior::where('user_id', '=', $user_id)->first();
         return view('pages.faculty.edit-student-grade-senior3', compact('data'));
     }
 

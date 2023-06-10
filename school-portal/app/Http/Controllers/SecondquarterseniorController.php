@@ -73,7 +73,7 @@ class SecondquarterseniorController extends Controller
         $grade->health2 = $request->health2;
         $grade->personal2 = $request->personal2;
         $grade->culture2 = $request->culture2;
-        $grade->average=intval('oral2') + intval('reading2')+ intval('komunikasyon2')+ intval('pagbasa2')+ intval('century2')+ intval('contemporary2')+ intval('media2') + intval('math2')+ intval('statistics2')+ intval('earth2')+ intval('science2')+ intval('philosophy2') + intval('health2')+ intval('personal2') + intval('century2');
+        $grade->average = number_format(($grade->oral2 + $grade->reading2 + $grade->komunikasyon2 + $grade->pagbasa2 + $grade->century2 + $grade->contemporary2 + $grade->media2 + $grade->math2 + $grade->statistics2 + $grade->earth2 + $grade->science2 + $grade->philosophy2 + $grade->health2 + $grade->personal2 + $grade->culture2  )/15);
         $grade->save();
 
     
@@ -86,8 +86,8 @@ class SecondquarterseniorController extends Controller
         return view ('pages.student.register-grade-senior2');
     }
 
-    public function editStudentGradeSenior2($id){
-        $data = Secondquartersenior::where('id', '=', $id)->first();
+    public function editStudentGradeSenior2($user_id){
+        $data = Secondquartersenior::where('user_id', '=', $user_id)->first();
         // $data = Student::where('user_id', '=', $user_id)->first();
         return view('pages.faculty.edit-student-grade-senior2', compact('data'));
     }

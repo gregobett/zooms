@@ -5,7 +5,7 @@
 
 <div class="flex flex-col items-center justify-center overflow-hidden">
 
-{{-- <div class="h-full w-full bg-no-repeat bg-cover bg-center object-contain flex flex-col justify-center items-center "  --}}
+
 <div class="font-sans antialiased  h-screen w-full bg-no-repeat bg-cover bg-center" x-data="mainState" :class="{dark: isDarkMode}" x-cloak style="background-image: url({{ url('images/background.webp') }})">
       
         {{-- <div class="flex flex-col justify-center items-center w-10/12 md:w-6/12 mt-10 h-full mx-auto"> --}}

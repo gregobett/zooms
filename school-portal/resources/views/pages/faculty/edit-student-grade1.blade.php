@@ -74,7 +74,7 @@
         
           <div class="flex-between items-center justify-center">
           <button class="block w-full bg-gre  text-white text-sm mx-auto p-1 hover:text-amber-700 rounded py-1.5 mb-2 px-5" type="submit">Save</button>
-          <a href="{{url('edit-student-faculty/'.$data->id )}}" type="btn" class="bg-gre text-sm  text-slate-50  hover:text-amber-700 border-gray-200 rounded py-1 px-5 shadow-lg flex  justify-center">Back</a>
+          <a href="{{url('edit-student-faculty/'.$data->user_id )}}" type="btn" class="bg-gre text-sm  text-slate-50  hover:text-amber-700 border-gray-200 rounded py-1 px-5 shadow-lg flex  justify-center">Back</a>
           </div>
       </form>
       {{-- <a href="javascript:history.back()" class="btn btn-default">Back</a> --}}

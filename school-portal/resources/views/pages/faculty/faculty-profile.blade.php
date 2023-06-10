@@ -122,12 +122,12 @@
                 <div class="form-item w-full">
                     <label class="text-md ">Grade</label>
                         <select class="w-full appearance-none text-black text-opacity-70 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 " id="grade" name="grade" >
-                            <option  @if($data->grade == '1') selected @endif>1</option>
-                            <option  @if($data->grade == '2') selected @endif>2</option>   
-                            <option  @if($data->grade == '3') selected @endif>3</option>
-                            <option  @if($data->grade == '4') selected @endif>4</option>   
-                            <option  @if($data->grade == '5') selected @endif>5</option>
-                            <option  @if($data->grade == '6') selected @endif>6</option>   
+                            <option  @if($data->grade == '7') selected @endif>7</option>
+                            <option  @if($data->grade == '8') selected @endif>8</option>   
+                            <option  @if($data->grade == '9') selected @endif>9</option>
+                            <option  @if($data->grade == '10') selected @endif>10</option>   
+                            <option  @if($data->grade == '11') selected @endif>11</option>
+                            <option  @if($data->grade == '12') selected @endif>12</option>   
                         </select>
                     @error('grade')
            

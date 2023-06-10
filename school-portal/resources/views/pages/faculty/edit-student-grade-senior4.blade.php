@@ -13,66 +13,66 @@
         <input type="hidden" value="{{ $data->id }}" name="id" />
         <input type="hidden" value="{{ $data->user_id }}" name="user_id" />
           <div class="flex flex-col mb-2">
-              <label class="  text-sm text-gray-900" for="oral">Oral Communication</label>
-              <input value="{{$data->oral}}" class="border py-0 px-3 text-grey-800" type="text" name="oral" id="oral" >
+              <label class="  text-sm text-gray-900" for="oral4">Oral Communication</label>
+              <input value="{{$data->oral}}" class="border py-0 px-3 text-grey-800" type="text" name="oral4" id="oral4" >
           </div>
           <div class="flex flex-col mb-2">
-              <label class="  text-sm text-gray-900" for="reading">Reading and Writing</label>
-              <input value="{{$data->reading}}" class="border py-0 px-3 text-grey-800" type="text" name="reading" id="reading">
+              <label class="  text-sm text-gray-900" for="reading4">Reading and Writing</label>
+              <input value="{{$data->reading}}" class="border py-0 px-3 text-grey-800" type="text" name="reading4" id="reading4">
           </div>
           <div class="flex flex-col mb-2">
-              <label class="  text-sm text-gray-900" for="komunikasyon">Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino</label>
-              <input value="{{$data->komunikasyon}}" class="border py-0 px-3 text-grey-800" type="text" name="komunikasyon" id="komunikasyon">
+              <label class="  text-sm text-gray-900" for="komunikasyon4">Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino</label>
+              <input value="{{$data->komunikasyon}}" class="border py-0 px-3 text-grey-800" type="text" name="komunikasyon4" id="komunikasyon4">
           </div>
           <div class="flex flex-col mb-2">
-              <label class=" text-sm text-gray-900" for="pagbasa">Pagbasa at Pagsusuri ng Iba't-Ibang Teksto Tungo sa Pananaliksik</label>
-              <input value="{{$data->pagbasa}}" class="border py-0 px-3 text-grey-800" type="text" name="pagbasa" id="pagbasa">
+              <label class=" text-sm text-gray-900" for="pagbasa4">Pagbasa at Pagsusuri ng Iba't-Ibang Teksto Tungo sa Pananaliksik</label>
+              <input value="{{$data->pagbasa}}" class="border py-0 px-3 text-grey-800" type="text" name="pagbasa4" id="pagbasa4">
           </div>
           <div class="flex flex-col mb-2">
-              <label class="text-sm text-gray-900" for="century">21st Century Literature from the Philippines and the World</label>
-              <input value="{{$data->century}}" class="border py-0 px-3 text-grey-800" type="text" name="century" id="century">
+              <label class="text-sm text-gray-900" for="century4">21st Century Literature from the Philippines and the World</label>
+              <input value="{{$data->century}}" class="border py-0 px-3 text-grey-800" type="text" name="century4" id="century4">
           </div>
 
           <div class="flex flex-col mb-2">
-            <label class="  text-sm text-gray-900" for="contemporary">Contemporary Philippine Arts from the Regions</label>
-            <input value="{{$data->contemporary}}" class="border py-0 px-3 text-grey-800" type="text" name="contemporary" id="contemporary">
+            <label class="  text-sm text-gray-900" for="contemporary4">Contemporary Philippine Arts from the Regions</label>
+            <input value="{{$data->contemporary}}" class="border py-0 px-3 text-grey-800" type="text" name="contemporary4" id="contemporary4">
         </div>
         <div class="flex flex-col mb-2">
-            <label class="  text-sm text-gray-900" for="media">Media and Information Literacy</label>
-            <input value="{{$data->media}}" class="border py-0 px-3 text-grey-800" type="text" name="media" id="media">
+            <label class="  text-sm text-gray-900" for="media4">Media and Information Literacy</label>
+            <input value="{{$data->media}}" class="border py-0 px-3 text-grey-800" type="text" name="media4" id="media4">
         </div>
         <div class="flex flex-col mb-2">
-            <label class="  text-sm text-gray-900" for="math">General Math</label>
-            <input value="{{$data->math}}" class="border py-0 px-3 text-grey-800" type="text" name="math" id="math">
+            <label class="  text-sm text-gray-900" for="math4">General Math</label>
+            <input value="{{$data->math}}" class="border py-0 px-3 text-grey-800" type="text" name="math4" id="math4">
         </div>
         <div class="flex flex-col mb-2">
-            <label class=" text-sm text-gray-900" for="statistics">Statistics and Probability</label>
-            <input value="{{$data->statistics}}" class="border py-0 px-3 text-grey-800" type="text" name="statistics" id="statistics">
+            <label class=" text-sm text-gray-900" for="statistics4">Statistics and Probability</label>
+            <input value="{{$data->statistics}}" class="border py-0 px-3 text-grey-800" type="text" name="statistics4" id="statistics4">
         </div>
         <div class="flex flex-col mb-2">
-            <label class="text-sm text-gray-900" for="earth">Earth and Life Science</label>
-            <input value="{{$data->earth}}" class="border py-0 px-3 text-grey-800" type="text" name="earth" id="earth">
+            <label class="text-sm text-gray-900" for="earth4">Earth and Life Science</label>
+            <input value="{{$data->earth}}" class="border py-0 px-3 text-grey-800" type="text" name="earth4" id="earth4">
         </div>
 
         <div class="flex flex-col mb-2">
-          <label class="  text-sm text-gray-900" for="science">Physical Science</label>
-          <input value="{{$data->science}}" class="border py-0 px-3 text-grey-800" type="text" name="science" id="science">
+          <label class="  text-sm text-gray-900" for="science4">Physical Science</label>
+          <input value="{{$data->science}}" class="border py-0 px-3 text-grey-800" type="text" name="science4" id="science4">
       </div>
       <div class="flex flex-col mb-2">
-          <label class=" text-sm text-gray-900" for="philosophy">Introduction to the Philosophy of the Human Person</label>
-          <input value="{{$data->philosophy}}" class="border py-0 px-3 text-grey-800" type="text" name="philosophy" id="philosophy">
+          <label class=" text-sm text-gray-900" for="philosophy4">Introduction to the Philosophy of the Human Person</label>
+          <input value="{{$data->philosophy}}" class="border py-0 px-3 text-grey-800" type="text" name="philosophy4" id="philosophy4">
       </div>
       <div class="flex flex-col mb-2">
-          <label class="text-sm text-gray-900" for="health">Physical Education and Health</label>
-          <input value="{{$data->health}}" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="health" id="health">
+          <label class="text-sm text-gray-900" for="health4">Physical Education and Health</label>
+          <input value="{{$data->health}}" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="health4" id="health4">
       </div>
       <div class="flex flex-col mb-2">
-        <label class="text-sm text-gray-900" for="personal">Personal Development</label>
-        <input value="{{$data->personal}}" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="personal" id="persoanl">
+        <label class="text-sm text-gray-900" for="personal4">Personal Development</label>
+        <input value="{{$data->personal}}" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="personal4" id="persoanl4">
     </div>
     <div class="flex flex-col mb-2">
-        <label class="text-sm text-gray-900" for="culture">Understanding Culture, Society and Politics</label>
-        <input value="{{$data->culture}}" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="culture" id="culture">
+        <label class="text-sm text-gray-900" for="culture4">Understanding Culture, Society and Politics</label>
+        <input value="{{$data->culture}}" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="culture4" id="culture4">
     </div>
           {{-- <div class="flex flex-col mb-4">
               <label class="mb-2 font-bold text-lg text-gray-900" for="File">File</label>
