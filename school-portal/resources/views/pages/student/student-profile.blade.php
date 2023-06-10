@@ -34,12 +34,12 @@
                 file:text-sm file:font-medium
                 file:bg-gre file:text-slate-50
                 hover:file:cursor-pointer hover:file:bg-gre
-                hover:file:text-amber-700
+                hover:file:text-red-700
             " id="photo" name="photo" />
             </label>
             </div>
 
-        <button type="submit" class="bg-gre text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-10 shadow-lg">Update</button>
+        <button type="submit" class="bg-gre text-slate-50 hover:text-red-700 border-gray-200 rounded py-2 px-10 shadow-lg">Update</button>
 
   
       </div>
