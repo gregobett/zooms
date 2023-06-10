@@ -38,7 +38,7 @@
 
     </x-sidebar.dropdown>
 
-    <x-sidebar.dropdown title="My Grades" :active="Str::startsWith(request()->route()->uri(), 'buttons' )  ">
+    <x-sidebar.dropdown title="Grades" :active="Str::startsWith(request()->route()->uri(), 'buttons' )  ">
         <x-slot name="icon">
             {{-- <x-heroicon-o-view-grid class="flex-shrink-0 w-6 h-6" aria-hidden="true" /> --}}
             <img src="/images/grade-icon.png" alt="Grade logo" class="w-8 ">
@@ -46,33 +46,11 @@
 
         @if((Route::is('add-student')) || (Route::is('register-grade1')) || (Route::is('register-grade2')) || (Route::is('register-grade3')) || (Route::is('register-grade4'))
         || (Route::is('register-grade-senior1')) || (Route::is('register-grade-senior2')) || (Route::is('register-grade-senior3')) || (Route::is('register-grade-senior4')))
-        <x-sidebar.link title="First Quarter " href='#' />
-        <x-sidebar.link title="Second Quarter " href='#' />
-        <x-sidebar.link title="Third Quarter " href='#' />
-        <x-sidebar.link title="Fourth Quarter " href='#' />
-        <x-sidebar.link title="General Average " href='#' />
+        
+            <x-sidebar.link title="My Grades " href='#' />
         @else
-          
-        
-<!-- 
-    
-            <x-sidebar.link title="First Quarter " href='/view-grades-senior' /> 
-            <x-sidebar.link title="Second Quarter " href='/view-grades-senior2' />
-            <x-sidebar.link title="Third Quarter " href='/view-grades-senior3' />
-            <x-sidebar.link title="Fourth Quarter " href='/view-grades-senior4' />
-            <x-sidebar.link title="General Average " href='/ave' /> -->
-    
-     
-            <x-sidebar.link title="First Quarter" href='/view-grades' /> 
-            <x-sidebar.link title="Second Quarter " href='/view-grades-two' />
-            <x-sidebar.link title="Third Quarter " href='/view-grades3' />
-            <x-sidebar.link title="Fourth Quarter " href='/view-grades4' />
-            <x-sidebar.link title="General Average " href='/ave' />
 
-            
-        
-           
-          
+            <x-sidebar.link title="My Grades " href='/ave' />
 
         @endif
 

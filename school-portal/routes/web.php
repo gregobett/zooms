@@ -187,8 +187,15 @@ Route::get('ave',[GeneralAverageController::class,'averageall'])
         ->middleware(['auth', 'verified','student-middleware'])->name('ave');
 
 
-Route::get('ave-senior',[SeniorGeneralAverageController::class,'averageall'])
+Route::get('ave',[GeneralAverageController::class,'showAverage'])
+        ->middleware(['auth', 'verified','student-middleware'])->name('ave');
+
+
+Route::get('ave-senior',[SeniorGeneralAverageController::class,'averageall2'])
         ->middleware(['auth', 'verified','student-middleware'])->name('ave-senior');
+
+
+// Route::get('ave-senior', SeniorGeneralAverageController::class)->name('ave-senior');
 
 
 

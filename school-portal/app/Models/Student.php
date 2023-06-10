@@ -83,7 +83,7 @@ class Student extends Model
 
 
           // relationship with firstquartersenior
-          public function firstquartersenior(){
+          public function Firstquartersenior(){
             return $this->hasMany(Firstquartersenior::class, 'user_id');
                 
         }

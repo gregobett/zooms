@@ -40,4 +40,6 @@ class Firstquartersenior extends Model
           return $this->belongsTo(Student::class, 'user_id');
       }
 
+  
+      
 }
