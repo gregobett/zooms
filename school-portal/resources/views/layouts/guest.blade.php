@@ -25,9 +25,9 @@
 </head>
 
 <body>
-    <div class="font-sans antialiased h-screen w-full  bg-no-repeat bg-cover bg-center" x-data="mainState" :class="{dark: isDarkMode}" x-cloak style="background-image: url({{ url('images/background.webp') }})">
+    <div class="font-sans antialiased h-screen w-full  bg-no-repeat bg-cover bg-center" x-data="mainState" :class="{dark: isDarkMode}" x-cloak style="background-image: url({{ url('images/header.png') }})">
         
-        <div class="flex flex-col min-h-screen text-gray-900   dark:text-gray-200" >
+        <div class="flex flex-col min-h-screen text-gray-900 pt-10 lg:pt-12 xl:pt-0 dark:text-gray-200" >
             {{ $slot }}
 
             <x-footer />

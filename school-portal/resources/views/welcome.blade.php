@@ -3,7 +3,7 @@
 @extends('layouts.navbarfooter')
 @section('LandingContent')
 
-<div class="flex flex-col items-center justify-center overflow-hidden">
+<!-- <div class="flex flex-col items-center justify-center overflow-hidden">
 
 
 <div class="font-sans antialiased  h-screen w-full bg-no-repeat bg-cover bg-center" x-data="mainState" :class="{dark: isDarkMode}" x-cloak style="background-image: url({{ url('images/background.webp') }})">
@@ -14,86 +14,64 @@
         {{-- </div> --}}
 </div>
 
+</div> -->
 
-<!-- <section class="dark:bg-[#151823] py-4">
-    <div class="flex flex-col items-center text-center">
-        <h2 class="inline-block text-lg md:text-2xl px-4 text-sky-50 bg-[#004AAD] bg-opacity-90 dark:bg-[#222738] dark:text-sky-500 py-1 mb-2 rounded-md font-light">
-            Philosophy
-        </h2>
-        <p class="dark:text-[#FFFFFF] text-md w-10/12 md:w-6/12">
-            To provide sustainable development of the human potentials in its pursuit for quality education in the K-12 program for democracy, peace, excellence, truth and justice in all its endeavors toward the needs of society of the twenty-first century
-        </p>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rainblur Landing Page Template: Tailwind Toolbox</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+      html {
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+    </style>
+  </head>
+
+  <body class=" text-indigo-400 m-6  h-screen w-full bg-cover bg-no-repeat bg-center" style="background-image: url('images/header.png')">
+    <div class="h-full">
+      <!--Nav-->
+
+      <!--Main-->
+      <div class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <!--Left Col-->
+        <div class="flex flex-col w-full xl:w-2/5  justify-center lg:items-center  overflow-y-hidden">
+          <h1 class="my-4 text-3xl md:text-5xl md:text-center text-white opacity-75 font-bold leading-tight text-center md:text-left lg:text-center">
+            Tipas
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+              Integrated
+            </span>
+            National Highschool
+          </h1>
+          <p class="leading-normal text-white md:text-2xl  md:mx-auto mb-8 text-center">
+          Nurturing Minds, Transforming Lives
+          </p>
+
+      
+        </div>
+
+        <!--Right Col-->
+        <div class="w-full xl:w-3/5  lg:w-4/5 lg:items-center mx-auto p-12 overflow-hidden">
+          <img class="mx-auto w-full md:w-4/5  transform -rotate-6  transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 " src="images/macbook.webp" />
+        </div>
+
+      </div>
+    
     </div>
-</section>
-
-<section class="dark:bg-[#151823] py-4">
-    <div class="flex flex-col items-center text-center">
-        <h2 class="inline-block text-lg md:text-2xl px-4 text-sky-50 bg-[#004AAD] bg-opacity-90 dark:bg-[#222738] dark:text-sky-500 py-1 mb-2 rounded-md font-light">
-            Mission
-        </h2>
-        <p class="dark:text-[#FFFFFF] text-md w-10/12 md:w-6/12">
-            Inspired with the strength of its vision and its educational philosophy of the K-12 program, the school addressed itself to provide educational opportunities to every Filipino, develop among its administrations, faculty, support personnel and the studentry its moral and spiritual values, self-discipline, especially the performance task of the K-12 program, cares for the environment and demonstrates pride in being a Filipino. 
-        </p>
-    </div>
-</section>
+    @endsection
+  </body>
 
 
-<section class="dark:bg-[#151823] py-4">
-    <div class="flex flex-col items-center text-center">
-        <h2 class="inline-block text-lg md:text-2xl px-4 text-sky-50 bg-[#004AAD] bg-opacity-90 dark:bg-[#222738] dark:text-sky-500 py-1 mb-2 rounded-md font-light">
-            Vision
-        </h2>
-        <p class="dark:text-[#FFFFFF] text-md w-10/12 md:w-6/12">
-            The Sanctuario of St. Maria Theresa School, Inc. envisions to uphold the K-12 program in order to produce highly competitive graduates with developed character traits, competence in information and communication technology and research who will be in the forefront to render services in both private and public offices.
+</html>
 
-        </p>
-    </div>
-</section>
-
-
-<section class="dark:bg-[#151823] py-4">
-    <div class="flex flex-col items-center text-center">
-        <h2 class="inline-block text-lg md:text-2xl px-4 text-sky-50 bg-[#004AAD] bg-opacity-90 dark:bg-[#222738] dark:text-sky-500 py-1 mb-2 rounded-md font-light">
-            Goals
-        </h2>
-        <p class="dark:text-[#FFFFFF] text-md w-10/12 md:w-6/12">
-            The Sanctuario of St. Maria Theresa School, Inc. envisions to uphold the K-12 program in order to produce highly competitive graduates with developed character traits, competence in information and communication technology and research who will be in the forefront to render services in both private and public offices.
-
-
-        </p>
-    </div>
-</section> -->
-
-
-{{-- Features of the website --}}
-
-{{-- Carousel --}}
-
-
-
-
-
-
-
-{{-- One of the main features --}}
-{{-- <section class="dark:bg-[#151823] flex flex-col md:flex-row justify-between items-center px-10 md:px-15 lg:px-20 pt-1 pb-4 md:gap-10"> --}}
-
-<!-- <section class="dark:bg-[#151823] md:w-full flex flex-col p-5 items-center px-5 md:px-12.5 lg:px-20 "> -->
-    {{-- Picture of the one of the main features --}}
-    <!-- <div class="col-span-2 md:col-span-1 w-full flex items-center justify-center ">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hatnUegeXMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div> -->
-
-   
-<!-- </section> -->
-
- {{-- Short description about it and about button --}}
- <!-- <section class=" dark:text-[#FFFFFF] dark:bg-[#151823] text-md  md:w-full ">
-    <p class="dark:text-[#FFFFFF] my-2 lg:my-10 xl:mb-7 text-md text-center flex items-center justify-center pl-4 pr-4">Inspired with the strength of its vision and its educational philosophy of the K-12 program, the school addressed itself to provide educational opportunities to every Filipino, develop among its administrations, faculty, support personnel and the studentry its moral and spiritual values, self-discipline, especially the performance task of the K-12 program, cares for the environment and demonstrates pride in being a Filipino. </p>
-   
- </section> -->
-
-
-</div>
-
-@endsection

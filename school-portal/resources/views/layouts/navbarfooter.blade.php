@@ -26,7 +26,7 @@
 
 <body class="font-sans antialiased " x-data="mainState" :class="{dark: isDarkMode}" x-cloak>
     {{-- nav bar goes heres --}}
-    <nav class="bg-gre dark:bg-[#222738] shadow py-2 fixed top-0 left-0 right-0 z-10 " >
+    <nav class="bg-gre opacity-75 dark:bg-[#222738]  py-2 fixed top-0 left-0 right-0 z-10 " >
         <div x-data="{isOpen: false}" class="mx-auto px-5 md:px-12.5 lg:px-20">
             
             <div class="md:flex md:justify-between items-center">
@@ -38,7 +38,7 @@
                     
                     {{-- primary --}}
                     <div class="flex flex-col">
-                    <h3 class="hidden md:block text-md pl-2 md:text-xl font-light text-sky-50">Tipas Integrated National Highschool</h3>
+                    <h3 class="hidden md:block text-md  pl-2 md:text-xl font-bold text-sky-50 " >TINHS-PORTAL</h3>
                     <!-- <p class="hidden md:block text-md pl-2 md:text-xl font-light text-sky-50">School Portal</p> -->
                     </div>
                     {{-- hamburger menu --}}
@@ -117,7 +117,7 @@
         {{-- content goes here --}}
         @yield('register')
 
-    <footer class="bg-[#282828] dark:bg-[#222738] py-5">
+    <footer class="bg-gre dark:bg-[#222738] py-5">
 
         <div class="flex flex-col justify-center items-center mx-10 md:mx-0">
             <!-- <a href="#">

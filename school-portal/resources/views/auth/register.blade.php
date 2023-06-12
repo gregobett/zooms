@@ -3,6 +3,25 @@
 
 
 <x-guest-layout>
+<div class="container  lg:mt-0 xl:pt-16 mx-auto flex flex-wrap flex-col md:flex-row items-center 2xl:mt-16">
+        <!--Left Col-->
+    
+        <div class=" hidden xl:block flex flex-col w-full xl:w-2/5  justify-center lg:items-center ">
+          <h1 class="my-4 text-2xl md:text-3xl  xl:text-5xl  md:text-center text-white opacity-75 font-bold leading-tight text-center md:text-left lg:text-center">
+            Tipas
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+              Integrated
+            </span>
+            National Highschool
+          </h1>
+          <p class="leading-normal text-white md:text-2xl  md:mx-auto mb-8 text-center">
+          Nurturing Minds, Transforming Lives
+          </p>
+     
+      
+        </div>
+
+
     <x-auth-card>
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
@@ -26,7 +45,7 @@
                 </div>
 
                 <!-- Email Address -->
-                <div class="space-y-2">
+                <div class="space-y-0">
                     <x-label for="email" :value="__('Email')" />
                     <x-input-with-icon-wrapper>
                         <x-slot name="icon">
@@ -92,8 +111,9 @@
                         {{ __('Login') }}
                     </a>
                 </p>
-            </div>
+                </div>
         </form>
+      
     </x-auth-card>
 </x-guest-layout>
 

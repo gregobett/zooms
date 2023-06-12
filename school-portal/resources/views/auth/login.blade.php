@@ -3,6 +3,22 @@
 
 
 <x-guest-layout>
+<div class="container pt-14 xl:pt-16 mx-auto flex flex-wrap flex-col md:flex-row items-center 2xl:mt-16">
+        <!--Left Col-->
+        <div class="flex flex-col w-full xl:w-2/5  justify-center lg:items-center  overflow-y-hidden">
+          <h1 class="my-4 text-2xl md:text-3xl lg:text-5xl md:text-center text-white opacity-75 font-bold leading-tight text-center md:text-left lg:text-center">
+            Tipas
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+              Integrated
+            </span>
+            National Highschool
+          </h1>
+          <p class="leading-normal text-white md:text-2xl  md:mx-auto mb-8 text-center">
+          Nurturing Minds, Transforming Lives
+          </p>
+
+      
+        </div>
     <x-auth-card>
         <!-- Session Status -->
         <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -81,3 +97,6 @@
 </x-guest-layout>
 
 @endsection
+
+
+
