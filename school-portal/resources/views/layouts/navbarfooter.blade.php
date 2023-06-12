@@ -58,15 +58,13 @@
                     <div class="flex flex-col md:flex-row gap-3 md:gap-x-7 transition ease-in-out duration-1000">
 
                         @if (Route::is('login'))
-                            {{-- <a href="{{ url('contact-us') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Contacts</a>
-                            <a href="{{ url('about') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">About</a> --}}
-                            <a href="/" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Home</a>
+                
+                            <a href="/" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300" >Home</a>
 
-                            <a href="{{ route('register') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Register</a>
+                            <a href="{{ route('register') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300" >Register</a>
                             
                         @elseif (Route::is('register'))
-                        {{-- <a href="{{ url('contact-us') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Contacts</a>
-                        <a href="{{ url('about') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">About</a> --}}
+               
                         <a href="/" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Home</a>
                         <a href="{{ url('login') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">
                             Log in
@@ -108,28 +106,25 @@
         </div>
     </nav>
 
-        {{-- content goes here --}}
         @yield('LandingContent')
 
-        {{-- content goes here --}}
+       
         @yield('login')
 
-        {{-- content goes here --}}
+
         @yield('register')
 
     <footer class="bg-gre dark:bg-[#222738] py-5">
 
         <div class="flex flex-col justify-center items-center mx-10 md:mx-0">
-            <!-- <a href="#">
-                <img src="/images/logo.png" alt="main logo" class="max-h-32">
-            </a> -->
+          
             <p class="text-white text-center font-light py-3">For any concern, reach us in any of our social contact links below.</p>
             <div class="flex flex-row justify-end gap-4 py-2">
-                {{-- <a href="https://mail.google.com/mail/u/0/#inbox"><img src="/images/gmail-logo.png" alt="Gmail" class="max-h-8 cursor-pointer duration-300  hover:scale-110"></a> --}}
+             
                 <a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="/images/Facebook.webp" alt="Facebook" class="max-h-8 cursor-pointer duration-300  hover:scale-110"></a>
                 <a href="https://www.instagram.com/"><img src="/images/instagram-logo.png" alt="Instagram" class="max-h-8 cursor-pointer duration-300  hover:scale-110"></a>
                 <a href="https://twitter.com/?lang=en"><img src="/images/linkedin.png" alt="Twitter" class="max-h-8 cursor-pointer duration-300  hover:scale-110"></a>
-                {{-- <a href="https://twitter.com/"><img src="/images/tik-tok-logo.png" alt="Tik-Tok" class="max-h-8 cursor-pointer duration-300  hover:scale-110"></a> --}}
+             
             </div>
 
             {{-- <a href="{{ url('about') }}" class="md:text-md text-white hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Developers</a> --}}

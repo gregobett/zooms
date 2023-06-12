@@ -2,7 +2,7 @@
 @section('login')
 
 
-<x-guest-layout>
+<x-guest-layout >
 <div class="container pt-14 xl:pt-16 mx-auto flex flex-wrap flex-col md:flex-row items-center 2xl:mt-16">
         <!--Left Col-->
         <div class="flex flex-col w-full xl:w-2/5  justify-center lg:items-center  overflow-y-hidden">
