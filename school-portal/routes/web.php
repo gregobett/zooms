@@ -19,6 +19,7 @@ use App\Http\Controllers\GeneralAverageController;
 use App\Http\Livewire\Gradesectiondropdown;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SeniorGeneralAverageController;
+use App\Http\Controllers\FullCalenderController;
 
 
 Route::get('/', function () {
@@ -338,3 +339,14 @@ Route::get('contactForm', [ContactController::class, 'index'])->name('contactFor
 Route::post('contact-us', [ContactController::class, 'store'])->name('contact.us.store');
 
 Route::get('gradesectiondropdown', Gradesectiondropdown::class)->name('gradesectiondropdown');
+
+
+
+
+
+    Route::middleware(['auth', 'verified','admin-middleware'])->group(function () {
+        Route::controller(FullCalenderController::class, '')->group(function () {
+            Route::get('fullcalender', 'index');
+            Route::post('fullcalenderAjax', 'ajax');
+        });
+    });
