@@ -24,7 +24,7 @@
       <form action="{{url('save-firstquarter')}}" method="post" enctype="multipart/form-data"  id="my-form">
         @csrf
   
-        {{-- <input type="hidden" value="{{ $data->$id }}" name="id" /> --}}
+  
 
         <div class=" lg:flex  mb-2 mt-6">
 

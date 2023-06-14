@@ -11,4 +11,9 @@
     <script>
         Swal.fire({!! Session::pull('alert.config') !!});
     </script>
+
+
 @endif
+
+
+

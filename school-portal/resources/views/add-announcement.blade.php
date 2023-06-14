@@ -7,7 +7,7 @@
       
     <div class="w-11/12 p-12 bg-white dark:bg-[#222738] sm:w-8/12  md:w-1/2 lg:w-5/12 shadow-xl">
     <div class="flex justify-center mb-4">
-            <img src="{{url('images/announce.png')}}" alt="announcement photo" class=" h-20">
+            <img src="{{url('images/announcement-icon.png')}}" alt="announcement photo" class=" h-20">
           </div>
       <h1 class="text-xl font-semibold flex items-center justify-center">Create Announcements or Activity</h1>
       

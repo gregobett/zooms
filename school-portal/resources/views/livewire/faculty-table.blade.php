@@ -2,12 +2,12 @@
 
  
  <div class="pl-2 pr-2 shadow-xl">
-    <div class="w-full flex flex-col md:flex-row  pb-10 ">
-        <div class="w-full md:w-3/6 mx-1 mb-2">
+    <div class="w-full flex flex-col lg:flex-row  pb-10 ">
+        <div class="w-full lg:w-3/6 mx-0 mb-2 lg:pr-2">
             <label class="text-sm">Search</label>
             <input wire:model.debounce.300ms="search" type="text" class="appearance-none block w-full mr-2 bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-lg"  placeholder="Search Teacher...">
         </div>
-        <div class="w-full  md:w-1/6  mx-1 mb-2">
+        <div class="w-full  lg:w-1/6  mx-0 mb-2 lg:pr-2">
             <label class="text-sm">Filter by</label>
             <select wire:model="orderBy" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-lg" id="grid-state">
                 <option value="id">ID</option>
@@ -19,7 +19,7 @@
                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
             </div>
         </div>
-        <div class= "w-full md:w-1/6 mx-1 mb-2">
+        <div class= "w-full lg:w-1/6 mx-0 mb-2 lg:pr-2">
             <label class="text-sm">Sort by</label>
             <select wire:model="orderAsc" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-lg" id="grid-state">
                 <option value="1">Ascending</option>
@@ -29,7 +29,7 @@
                 <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
             </div>
         </div>
-        <div class="w-full md:w-1/6  mx-1">
+        <div class="w-full lg:w-1/6  mx-0 ">
             <label class="text-sm">Display by</label>
             <select wire:model="perPage" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-lg" id="grid-state">
                 <option>10</option>

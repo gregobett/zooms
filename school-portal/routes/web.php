@@ -22,14 +22,10 @@ use App\Http\Controllers\SeniorGeneralAverageController;
 use App\Http\Controllers\FullCalenderController;
 
 
+
 Route::get('/', function () {
     return view('welcome');
 });
-
-
-    
-
-
 
 
 
@@ -161,29 +157,6 @@ Route::post('save-fourthquarter-senior',[FourthquarterseniorController::class, '
 
 
 
-// Route::get('view-grades',[FirstquarterController::class,'viewGrades'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
-
-        
-    
-// Route::get('view-grades',[StudentController::class,'showStudentGrade'])
-// ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
-
-
-// Route::get('view-grades-two',[StudentController::class,'showStudentGradeTwo'])
-// ->middleware(['auth', 'verified','student-middleware'])->name('view-grades-two');
-
-
-// Route::get('view-grades-two',[SecondquarterController::class,'viewGrades2'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades-two');
-
-// Route::get('view-grades3',[ThirdquarterController::class,'viewGrades3'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades3');
-
-// Route::get('view-grades4',[FourthquarterController::class,'viewGrades4'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades4');
-
-
 Route::get('ave',[GeneralAverageController::class,'averageall'])
         ->middleware(['auth', 'verified','student-middleware'])->name('ave');
 
@@ -196,22 +169,7 @@ Route::get('ave-senior',[SeniorGeneralAverageController::class,'averageall2'])
         ->middleware(['auth', 'verified','student-middleware'])->name('ave-senior');
 
 
-// Route::get('ave-senior', SeniorGeneralAverageController::class)->name('ave-senior');
 
-
-
-// Route::get('view-grades-senior',[FirstquarterseniorController::class,'viewGrades'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
-
-
-// Route::get('view-grades-senior-two',[SecondquarterseniorController::class,'viewGrades'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades-senior-two');
-
-// Route::get('view-grades-senior3',[ThirdquarterseniorController::class,'viewGrades'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
-
-// Route::get('view-grades-senior4',[FourthquarterseniorController::class,'viewGrades'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('view-grades');
 
 
 // ******************* FACULTY MIDDLEWARE ***************************************************
@@ -344,9 +302,10 @@ Route::get('gradesectiondropdown', Gradesectiondropdown::class)->name('gradesect
 
 
 
-    Route::middleware(['auth', 'verified','admin-middleware'])->group(function () {
+Route::middleware(['auth', 'verified','admin-middleware'])->group(function () {
         Route::controller(FullCalenderController::class, '')->group(function () {
-            Route::get('fullcalender', 'index');
-            Route::post('fullcalenderAjax', 'ajax');
+        Route::get('fullcalender', 'index');
+        Route::post('fullcalenderAjax', 'ajax');
         });
     });
+

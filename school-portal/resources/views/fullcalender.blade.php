@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel Fullcalender Tutorial Tutorial - ItSolutionStuff.com</title>
+    <title>School Calendar</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 <body >
     
 <div class="container h-screen w-full overflow-hidden">
-    <p class="text-sm lg:text-3xl">My Calendar Schedule</p>
+    <p class="text-sm lg:text-3xl">School Calendar Schedule</p>
     <div id='calendar'></div>
 </div>
   

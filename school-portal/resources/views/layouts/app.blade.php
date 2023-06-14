@@ -15,6 +15,7 @@
         rel="stylesheet" />
  
 
+
     <!-- Styles -->
     <style>
         [x-cloak] {
@@ -60,6 +61,9 @@
             </div>
         </div>
     </div>
+
+
+
 </body>
 {{-- @livewireScripts --}}
 

@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Student;
 use App\Models\Faculty;
+use App\Models\Firstquarter;
+use App\Models\Secondquarter;
+use App\Models\Thirdquarter;
+use App\Models\Fourthquarter;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -52,6 +56,7 @@ class AuthenticatedSessionController extends Controller
             if( Student::where('user_id', '=', auth()->id())->first()){
                 return redirect()->route('dashboard'); 
             }
+        
             else{
                 return redirect()->route('add-student'); 
             }

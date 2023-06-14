@@ -1,12 +1,12 @@
 
 
     <div class="shadow-xl pl-2 pr-2">
-        <div class="w-full flex flex-col md:flex-row  pb-10">
-            <div class="w-full md:w-3/6 mx-1">
+        <div class="w-full flex flex-col lg:flex-row  pb-10">
+            <div class="w-full lg:w-3/6 mx-0 lg:pr-2">
                 <label class="text-xs ">Search</label>
                 <input wire:model.debounce.300ms="search" type="text" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-lg"placeholder="Search students...">
             </div>
-            <div class="w-full md:w-1/6 mx-1">
+            <div class="w-full lg:w-1/6 mx-0 lg:pr-2">
                 <label class="text-xs">Filter by</label>
                 <select wire:model="orderBy" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-lg" id="grid-state">
                     <option value="id">ID</option>
@@ -18,7 +18,7 @@
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                 </div>
             </div>
-            <div class="w-full md:w-1/6  mx-1">
+            <div class="w-full lg:w-1/6  mx-0 lg:pr-2">
                 <label class="text-xs">Sort by</label>
                 <select wire:model="orderAsc" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-lg" id="grid-state">
                     <option value="1">Ascending</option>
@@ -28,7 +28,7 @@
                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                 </div>
             </div>
-            <div class="w-full md:w-1/6 mx-1">
+            <div class="w-full lg:w-1/6 mx-0">
                 <label class="text-xs">Display by</label>
                 <select wire:model="perPage" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-1 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 shadow-lg" id="grid-state">
                     <option>10</option>
@@ -106,9 +106,8 @@
 
                             @endif
 
-
                             @if(Auth::user()->user_type === "admin")
-                            <a href="{{url('delete-student/'.$student->id)}}"> 
+                            <a href="{{url('delete-student/'.$student->id)}}" onclick="showConfirmAlert()"> 
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F05252" class="w-6 h-6" >
                                     <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
                                 </svg>
