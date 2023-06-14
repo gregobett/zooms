@@ -77,9 +77,6 @@ Route::get('content',[StudentController::class,'showGradesData'])
         ->middleware(['auth', 'verified','student-middleware'])->name('content');
 
 
-// Route::get('admin-dashboard',[StudentController::class,'getTotalStudentsCount'])
-//         ->middleware(['auth', 'verified','admin-middleware'])->name('admin-dashboard');
-
 
 
 // ******************* STUDENT MIDDLEWARE ***************************************************
@@ -103,57 +100,57 @@ Route::get('student-profile', [StudentController::class,'showStudentData'])
 Route::post('student-profile-update',[StudentController::class,'updateStudent'])
         ->middleware(['auth', 'verified','student-middleware']);
 
-Route::get('register-grade1',[FirstquarterController::class,'RegisterGrade1'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade1');
+// Route::get('register-grade1',[FirstquarterController::class,'RegisterGrade1'])
+//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade1');
 
-Route::post('save-firstquarter',[FirstquarterController::class, 'saveFirstquarter'])
-        ->middleware(['auth', 'verified', 'student-middleware']);
+// Route::post('save-firstquarter',[FirstquarterController::class, 'saveFirstquarter'])
+//         ->middleware(['auth', 'verified', 'student-middleware']);
 
-Route::get('register-grade2',[SecondquarterController::class,'RegisterGrade2'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade2');
+// Route::get('register-grade2',[SecondquarterController::class,'RegisterGrade2'])
+//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade2');
 
-Route::post('save-secondquarter',[SecondquarterController::class, 'saveSecondquarter'])
-        ->middleware(['auth', 'verified', 'student-middleware']);
-
-
-Route::get('register-grade3',[ThirdquarterController::class,'RegisterGrade3'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade3');
-
-Route::post('save-thirdquarter',[ThirdquarterController::class, 'saveThirdquarter'])
-        ->middleware(['auth', 'verified', 'student-middleware']);
-
-Route::get('register-grade4',[FourthquarterController::class,'RegisterGrade4'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade4');
-
-Route::post('save-fourthquarter',[FourthquarterController::class, 'saveFourthquarter'])
-        ->middleware(['auth', 'verified', 'student-middleware']);
+// Route::post('save-secondquarter',[SecondquarterController::class, 'saveSecondquarter'])
+//         ->middleware(['auth', 'verified', 'student-middleware']);
 
 
+// Route::get('register-grade3',[ThirdquarterController::class,'RegisterGrade3'])
+//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade3');
+
+// Route::post('save-thirdquarter',[ThirdquarterController::class, 'saveThirdquarter'])
+//         ->middleware(['auth', 'verified', 'student-middleware']);
+
+// Route::get('register-grade4',[FourthquarterController::class,'RegisterGrade4'])
+//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade4');
+
+// Route::post('save-fourthquarter',[FourthquarterController::class, 'saveFourthquarter'])
+//         ->middleware(['auth', 'verified', 'student-middleware']);
 
 
-Route::get('register-grade-senior1',[FirstquarterseniorController::class,'RegisterGradeSenior1'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior1');
 
-Route::post('save-firstquarter-senior',[FirstquarterseniorController::class, 'saveFirstquarterSenior'])
-        ->middleware(['auth', 'verified', 'student-middleware']);
 
-Route::get('register-grade-senior2',[SecondquarterseniorController::class,'RegisterGradeSenior2'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior2');
+// Route::get('register-grade-senior1',[FirstquarterseniorController::class,'RegisterGradeSenior1'])
+//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior1');
 
-Route::post('save-secondquarter-senior',[SecondquarterseniorController::class, 'saveSecondquarterSenior'])
-        ->middleware(['auth', 'verified', 'student-middleware']);
+// Route::post('save-firstquarter-senior',[FirstquarterseniorController::class, 'saveFirstquarterSenior'])
+//         ->middleware(['auth', 'verified', 'student-middleware']);
 
-Route::get('register-grade-senior3',[ThirdquarterseniorController::class,'RegisterGradeSenior3'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior3');
+// Route::get('register-grade-senior2',[SecondquarterseniorController::class,'RegisterGradeSenior2'])
+//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior2');
 
-Route::post('save-thirdquarter-senior',[ThirdquarterseniorController::class, 'saveThirdquarterSenior'])
-        ->middleware(['auth', 'verified', 'student-middleware']);
+// Route::post('save-secondquarter-senior',[SecondquarterseniorController::class, 'saveSecondquarterSenior'])
+//         ->middleware(['auth', 'verified', 'student-middleware']);
 
-Route::get('register-grade-senior4',[FourthquarterseniorController::class,'RegisterGradeSenior4'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior4');
+// Route::get('register-grade-senior3',[ThirdquarterseniorController::class,'RegisterGradeSenior3'])
+//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior3');
 
-Route::post('save-fourthquarter-senior',[FourthquarterseniorController::class, 'saveFourthquarterSenior'])
-        ->middleware(['auth', 'verified', 'student-middleware']);
+// Route::post('save-thirdquarter-senior',[ThirdquarterseniorController::class, 'saveThirdquarterSenior'])
+//         ->middleware(['auth', 'verified', 'student-middleware']);
+
+// Route::get('register-grade-senior4',[FourthquarterseniorController::class,'RegisterGradeSenior4'])
+//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior4');
+
+// Route::post('save-fourthquarter-senior',[FourthquarterseniorController::class, 'saveFourthquarterSenior'])
+//         ->middleware(['auth', 'verified', 'student-middleware']);
 
 
 
