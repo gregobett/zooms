@@ -47,7 +47,6 @@ Route::get('admin-dashboard',[DashboardController::class,'AdminDashboard'])
 
 
 // ******************* ADMIN MIDDLEWARE ***************************************************
-
 Route::middleware(['auth', 'verified', 'admin-middleware'])->group(function () {
         Route::get('student-all-list', [StudentController::class, 'studentAllList'])->name('student-all-list');
         Route::get('edit-student/{id}', [StudentController::class, 'editStudent'])->name('edit-student');
@@ -84,12 +83,11 @@ Route::middleware(['auth', 'verified', 'student-middleware'])->group(function ()
 
 
 // ******************* FACULTY MIDDLEWARE ***************************************************
-
 Route::middleware(['auth', 'verified', 'faculty-middleware'])->group(function () {
         Route::get('add-faculty', [FacultyController::class, 'addFaculty'])->name('add-faculty');
         Route::post('save-faculty', [FacultyController::class, 'saveFaculty']);
         Route::get('student-all-faculty', [StudentController::class, 'studentAllFaculty'])->name('student-all-faculty');
-        Route::get('edit-student-faculty/{id}', [StudentController::class, 'editStudentFaculty'])->name('edit-student-faculty');
+        Route::get('edit-student-faculty/{user_id}', [StudentController::class, 'editStudentFaculty'])->name('edit-student-faculty');
         Route::post('update-student-faculty', [StudentController::class, 'updateStudent']);
         Route::get('faculty-profile', [FacultyController::class, 'showFacultyData'])->name('faculty-profile');
         Route::post('faculty-profile-update', [FacultyController::class, 'updateFaculty']);

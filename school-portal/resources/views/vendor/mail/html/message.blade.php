@@ -21,7 +21,7 @@
 {{-- Footer --}}
 <x-slot:footer>
 <x-mail::footer>
-© {{ date('Y') }} Sanctuario of St Maria Theresa. @lang('All rights reserved.')
+© {{ date('Y') }} Tipas Integrated National Highschool @lang('All rights reserved.')
 </x-mail::footer>
 </x-slot:footer>
 </x-mail::layout>

@@ -41,7 +41,7 @@
 @else
 @lang('Regards'),<br>
 {{-- {{ config('app.name') }} --}}
-Sanctuario of St Maria Theresa School
+Tipas Integrated National Highschool
 @endif
 
 {{-- Subcopy --}}

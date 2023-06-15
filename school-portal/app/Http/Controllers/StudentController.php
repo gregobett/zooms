@@ -420,8 +420,8 @@ class StudentController extends Controller
 
     }
 
-    public function editStudentFaculty($id){
-        $data = Student::where('id', '=', $id)->first();
+    public function editStudentFaculty($user_id){
+        $data = Student::where('user_id', '=', $user_id)->first();
       
         return view('pages.faculty.edit-student-faculty', compact('data'));
 

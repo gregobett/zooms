@@ -8,49 +8,49 @@ use App\Models\Student;
 
 class FirstquarterseniorController extends Controller
 {
-    public function saveFirstquarterSenior(Request $request){
+    // public function saveFirstquarterSenior(Request $request){
     
     
-        $oral = $request->oral;
-        $reading = $request->reading;
-        $komunikasyon = $request->komunikasyon;
-        $pagbasa = $request->pagbasa;
-        $century = $request->century;
-        $contemporary = $request->contemporary;
-        $media = $request->media;
-        $math = $request->math;
-        $statistics = $request->statistics;
-        $earth= $request->earth;
-        $science = $request->science;
-        $philosophy = $request->philosophy;
-        $health = $request->health;
-        $personal = $request->personal;
-        $culture = $request->culture;
+    //     $oral = $request->oral;
+    //     $reading = $request->reading;
+    //     $komunikasyon = $request->komunikasyon;
+    //     $pagbasa = $request->pagbasa;
+    //     $century = $request->century;
+    //     $contemporary = $request->contemporary;
+    //     $media = $request->media;
+    //     $math = $request->math;
+    //     $statistics = $request->statistics;
+    //     $earth= $request->earth;
+    //     $science = $request->science;
+    //     $philosophy = $request->philosophy;
+    //     $health = $request->health;
+    //     $personal = $request->personal;
+    //     $culture = $request->culture;
     
 
-        $grade = new Firstquartersenior();
-        $grade->user_id = auth()->user()->id;
-        $grade-> oral=$oral;
-        $grade->reading = $reading;
-        $grade->komunikasyon= $komunikasyon;
-        $grade->pagbasa = $pagbasa;
-        $grade->century = $century;
-        $grade->contemporary = $contemporary;
-        $grade->media = $media;
-        $grade->math = $math;
-        $grade->statistics = $statistics;
-        $grade->earth = $earth;
-        $grade->science = $science;
-        $grade->philosophy= $philosophy;
-        $grade->health= $health;
-        $grade->personal= $personal;
-        $grade->culture= $culture;
-        $grade->save();
+    //     $grade = new Firstquartersenior();
+    //     $grade->user_id = auth()->user()->id;
+    //     $grade-> oral=$oral;
+    //     $grade->reading = $reading;
+    //     $grade->komunikasyon= $komunikasyon;
+    //     $grade->pagbasa = $pagbasa;
+    //     $grade->century = $century;
+    //     $grade->contemporary = $contemporary;
+    //     $grade->media = $media;
+    //     $grade->math = $math;
+    //     $grade->statistics = $statistics;
+    //     $grade->earth = $earth;
+    //     $grade->science = $science;
+    //     $grade->philosophy= $philosophy;
+    //     $grade->health= $health;
+    //     $grade->personal= $personal;
+    //     $grade->culture= $culture;
+    //     $grade->save();
 
     
-            return redirect()->to('register-grade-senior2')->with('success','First Quarter Subject Added Succesfuly');
+    //         return redirect()->to('register-grade-senior2')->with('success','First Quarter Subject Added Succesfuly');
      
-    }
+    // }
 
 
 
@@ -78,8 +78,8 @@ class FirstquarterseniorController extends Controller
         $gradesen->save();
 
     
-        // return redirect()->back()->with('success','Grade Added Succesfuly');
-        return redirect()->to('register-grade-senior2')->with('success','Second Quarter Subject Added Succesfuly');
+        return redirect()->back()->with('success','Grade Added Succesfuly');
+     
      
     }
 

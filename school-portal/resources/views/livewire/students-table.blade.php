@@ -1,4 +1,4 @@
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <div class="shadow-xl pl-2 pr-2">
         <div class="w-full flex flex-col lg:flex-row  pb-10">
@@ -66,7 +66,7 @@
                     <tr>
                         @if(Auth::user()->user_type === "Faculty")
                         <td class="border px-4 py-2  dark:border-gray-500">
-                            <a href="{{url('edit-student-faculty/'.$student->id)}}"><img src="{{asset('uploads/students/'.$student->photo)}}" width="20" height="20" alt="image" class="border rounded-full"></a>
+                            <a href="{{url('edit-student-faculty/'.$student->user_id)}}"><img src="{{asset('uploads/students/'.$student->photo)}}" width="20" height="20" alt="image" class="border rounded-full"></a>
                         </td>
                         @else
                         <td class="border px-4 py-2  dark:border-gray-500">
@@ -74,7 +74,7 @@
                         </td>
 
                         @endif
-                        <td class="border px-4 py-2 dark:border-gray-500" >{{ $student->id }}</td>
+                        <td class="border px-4 py-2 dark:border-gray-500" >{{ $student->user_id }}</td>
                         <td class="border px-4 py-2 dark:border-gray-500" >{{ ucfirst($student->lastname) }}</td>
                         <td class="border px-4 py-2 dark:border-gray-500">{{ ucfirst($student->firstname) }}</td>
                         <td class="border px-4 py-2 dark:border-gray-500">{{ ucfirst($student->middlename) }}</td>
@@ -89,7 +89,7 @@
                         
                         
                             @if(Auth::user()->user_type === "Faculty")
-                            <a href="{{url('edit-student-faculty/'.$student->id)}}" >  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3F83F8" class="w-6 h-6 mr-2">
+                            <a href="{{url('edit-student-faculty/'.$student->user_id)}}" >  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3F83F8" class="w-6 h-6 mr-2">
                                 <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z" />
                                 <path d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z" />
                             </svg>
@@ -97,7 +97,7 @@
 
                             @else
 
-                            <a href="{{url('edit-student/'.$student->id)}}" >  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3F83F8" class="w-6 h-6 mr-2">
+                            <a href="{{url('edit-student/'.$student->user_id)}}" >  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3F83F8" class="w-6 h-6 mr-2">
                                 <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z" />
                                 <path d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z" />
                             </svg>
@@ -107,7 +107,7 @@
                             @endif
 
                             @if(Auth::user()->user_type === "admin")
-                            <a href="{{url('delete-student/'.$student->id)}}" onclick="showConfirmAlert()"> 
+                            <a href="{{url('delete-student/'.$student->id)}}" onclick="confirmation(event)"> 
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#F05252" class="w-6 h-6" >
                                     <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
                                 </svg>
@@ -125,3 +125,30 @@
         @include('sweetalert::alert')
     </div>
 
+    <script>
+      function confirmation(ev) {
+        ev.preventDefault();
+        var urlToRedirect = ev.currentTarget.getAttribute('href');  
+        console.log(urlToRedirect); 
+        swal({
+            title: "Are you sure to Delete this data",
+            text: "You will not be able to revert this!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+        .then((willCancel) => {
+            if (willCancel) {
+
+
+                 
+                window.location.href = urlToRedirect;
+               
+            }  
+
+
+        });
+
+        
+    }
+</script>
