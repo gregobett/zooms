@@ -48,255 +48,78 @@ Route::get('admin-dashboard',[DashboardController::class,'AdminDashboard'])
 
 // ******************* ADMIN MIDDLEWARE ***************************************************
 
-Route::get('student-all-list',[StudentController::class,'studentAllList'])
-        ->middleware(['auth', 'verified','admin-middleware'])->name('student-all-list');
-
-Route::get('edit-student/{id}',[StudentController::class,'editStudent'])
-        ->middleware(['auth', 'verified','admin-middleware'])->name('edit-student');
-
-Route::post('update-student',[StudentController::class,'updateStudent'])
-        ->middleware(['auth', 'verified','admin-middleware']);
-
-Route::get('faculty-all-list',[FacultyController::class,'facultyAllList'])
-        ->middleware(['auth', 'verified','admin-middleware']);
-
-Route::get('edit-faculty/{id}',[FacultyController::class,'editFaculty'])
-        ->middleware(['auth', 'verified','admin-middleware'])->name('edit-faculty'); 
-
-Route::post('update-faculty',[FacultyController::class,'updateFaculty'])
-        ->middleware(['auth', 'verified','admin-middleware']);
-
-Route::get('delete-student/{id}',[StudentController::class,'deleteStudent'])
-        ->middleware(['auth', 'verified','admin-middleware']);
-
-
-Route::get('dashboard',[StudentController::class,'studentSchedule'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('dashboard');
-
-Route::get('content',[StudentController::class,'showGradesData'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('content');
-
-
+Route::middleware(['auth', 'verified', 'admin-middleware'])->group(function () {
+        Route::get('student-all-list', [StudentController::class, 'studentAllList'])->name('student-all-list');
+        Route::get('edit-student/{id}', [StudentController::class, 'editStudent'])->name('edit-student');
+        Route::post('update-student', [StudentController::class, 'updateStudent']);
+        Route::get('faculty-all-list', [FacultyController::class, 'facultyAllList']);
+        Route::get('edit-faculty/{id}', [FacultyController::class, 'editFaculty'])->name('edit-faculty');
+        Route::post('update-faculty', [FacultyController::class, 'updateFaculty']);
+        Route::get('delete-student/{id}', [StudentController::class, 'deleteStudent']);
+        Route::get('announcement-all-list', [AnnouncementController::class, 'announcementAllList']);
+        Route::post('save-announcement', [AnnouncementController::class, 'saveAnnouncement']);
+        Route::get('add-announcement', [AnnouncementController::class, 'announcementsfunc']);
+        Route::get('edit-announcement/{id}', [AnnouncementController::class, 'editAnnouncement']);
+        Route::post('update-announcement', [AnnouncementController::class, 'updateAnnouncement']);
+        Route::get('delete-announcement/{id}', [AnnouncementController::class, 'deleteAnnouncement']);
+    });
+    
 
 
 // ******************* STUDENT MIDDLEWARE ***************************************************
-
-Route::get('add-student',[StudentController::class,'addStudent'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('add-student');
-
-
-Route::get('gradesectiondropdown', [Gradesectiondropdown::class, 'gradeSection'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('gradesectiondropdown');
-
-
-Route::post('save-student',[StudentController::class, 'saveStudent'])
-        ->middleware(['auth', 'verified', 'student-middleware']);
-
-
-Route::get('student-profile', [StudentController::class,'showStudentData'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('student-profile');
-
-
-Route::post('student-profile-update',[StudentController::class,'updateStudent'])
-        ->middleware(['auth', 'verified','student-middleware']);
-
-// Route::get('register-grade1',[FirstquarterController::class,'RegisterGrade1'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade1');
-
-// Route::post('save-firstquarter',[FirstquarterController::class, 'saveFirstquarter'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
-
-// Route::get('register-grade2',[SecondquarterController::class,'RegisterGrade2'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade2');
-
-// Route::post('save-secondquarter',[SecondquarterController::class, 'saveSecondquarter'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
-
-
-// Route::get('register-grade3',[ThirdquarterController::class,'RegisterGrade3'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade3');
-
-// Route::post('save-thirdquarter',[ThirdquarterController::class, 'saveThirdquarter'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
-
-// Route::get('register-grade4',[FourthquarterController::class,'RegisterGrade4'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade4');
-
-// Route::post('save-fourthquarter',[FourthquarterController::class, 'saveFourthquarter'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
-
-
-
-
-// Route::get('register-grade-senior1',[FirstquarterseniorController::class,'RegisterGradeSenior1'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior1');
-
-// Route::post('save-firstquarter-senior',[FirstquarterseniorController::class, 'saveFirstquarterSenior'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
-
-// Route::get('register-grade-senior2',[SecondquarterseniorController::class,'RegisterGradeSenior2'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior2');
-
-// Route::post('save-secondquarter-senior',[SecondquarterseniorController::class, 'saveSecondquarterSenior'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
-
-// Route::get('register-grade-senior3',[ThirdquarterseniorController::class,'RegisterGradeSenior3'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior3');
-
-// Route::post('save-thirdquarter-senior',[ThirdquarterseniorController::class, 'saveThirdquarterSenior'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
-
-// Route::get('register-grade-senior4',[FourthquarterseniorController::class,'RegisterGradeSenior4'])
-//         ->middleware(['auth', 'verified','student-middleware'])->name('register-grade-senior4');
-
-// Route::post('save-fourthquarter-senior',[FourthquarterseniorController::class, 'saveFourthquarterSenior'])
-//         ->middleware(['auth', 'verified', 'student-middleware']);
-
-
-
-Route::get('ave',[GeneralAverageController::class,'averageall'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('ave');
-
-
-Route::get('ave',[GeneralAverageController::class,'showAverage'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('ave');
-
-
-Route::get('ave-senior',[SeniorGeneralAverageController::class,'averageall2'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('ave-senior');
-
-
-
+Route::middleware(['auth', 'verified', 'student-middleware'])->group(function () {
+        Route::get('add-student', [StudentController::class, 'addStudent'])->name('add-student');
+        Route::get('gradesectiondropdown', [Gradesectiondropdown::class, 'gradeSection'])->name('gradesectiondropdown');
+        Route::post('save-student', [StudentController::class, 'saveStudent']);
+        Route::get('student-profile', [StudentController::class, 'showStudentData'])->name('student-profile');
+        Route::post('student-profile-update', [StudentController::class, 'updateStudent']);
+        Route::get('ave', [GeneralAverageController::class, 'averageall'])->name('ave');
+        Route::get('ave', [GeneralAverageController::class, 'showAverage'])->name('ave');
+        Route::get('ave-senior', [SeniorGeneralAverageController::class, 'averageall2'])->name('ave-senior');
+        Route::get('dashboard', [StudentController::class, 'studentSchedule'])->name('dashboard');
+        Route::get('content', [StudentController::class, 'showGradesData'])->name('content');
+        Route::get('view-announcement', [AnnouncementController::class, 'studentHome'])->name('view-announcement');
+    });
+    
 
 
 // ******************* FACULTY MIDDLEWARE ***************************************************
 
-
-Route::get('add-faculty',[FacultyController::class,'addFaculty'])
-        ->middleware(['auth', 'verified','faculty-middleware'])->name('add-faculty');
-
-Route::post('save-faculty',[FacultyController::class, 'saveFaculty'])
-        ->middleware(['auth', 'verified', 'faculty-middleware']);
-
-Route::get('student-all-faculty',[StudentController::class,'studentAllFaculty'])
-        ->middleware(['auth', 'verified','faculty-middleware'])->name('student-all-faculty');
-
-Route::get('edit-student-faculty/{id}',[StudentController::class,'editStudentFaculty'])
-        ->middleware(['auth', 'verified','faculty-middleware'])->name('edit-student-faculty');
-
-Route::post('update-student-faculty',[StudentController::class,'updateStudent'])
-        ->middleware(['auth', 'verified','faculty-middleware']);
-
-
-
-Route::get('faculty-profile', [FacultyController::class,'showFacultyData'])
-        ->middleware(['auth', 'verified','faculty-middleware'])->name('faculty-profile');
-
-Route::post('faculty-profile-update',[FacultyController::class,'updateFaculty'])
-        ->middleware(['auth', 'verified','faculty-middleware']);
-
-
-
-Route::get('edit-student-grade1/{user_id}',[FirstquarterController::class,'editStudentGrade1'])
-        ->middleware(['auth', 'verified','faculty-middleware']);
-
-Route::post('update-firstquarter',[FirstquarterController::class, 'updateFirstquarter'])
-        ->middleware(['auth', 'verified', 'faculty-middleware']);
-
-Route::get('edit-student-grade2/{user_id}',[SecondquarterController::class,'editStudentGrade2'])
-        ->middleware(['auth', 'verified','faculty-middleware']);
-
-Route::post('update-secondquarter',[SecondquarterController::class, 'updateSecondquarter'])
-        ->middleware(['auth', 'verified', 'faculty-middleware']);
-
-Route::get('edit-student-grade3/{user_id}',[ThirdquarterController::class,'editStudentGrade3'])
-        ->middleware(['auth', 'verified','faculty-middleware']);
-
-Route::post('update-thirdquarter',[ThirdquarterController::class, 'updateThirdquarter'])
-        ->middleware(['auth', 'verified', 'faculty-middleware']);
-
-Route::get('edit-student-grade4/{user_id}',[FourthquarterController::class,'editStudentGrade4'])
-        ->middleware(['auth', 'verified','faculty-middleware']);
-
-Route::post('update-fourthquarter',[FourthquarterController::class, 'updateFourthquarter'])
-        ->middleware(['auth', 'verified', 'faculty-middleware']);
-
-
-Route::get('faculty-dashboard',[FacultyController::class,'facultySchedule'])
-        ->middleware(['auth', 'verified','faculty-middleware'])->name('faculty-dashboard');
-
-
-
-Route::get('edit-student-grade-senior1/{user_id}',[FirstquarterseniorController::class,'editStudentGradeSenior1'])
-        ->middleware(['auth', 'verified','faculty-middleware']);
-
-Route::post('update-firstquarter-senior',[FirstquarterseniorController::class, 'updateFirstquarterSenior'])
-        ->middleware(['auth', 'verified', 'faculty-middleware'])->name('update-firstquarter-senior');
-
-Route::get('edit-student-grade-senior2/{user_id}',[SecondquarterseniorController::class,'editStudentGradeSenior2'])
-        ->middleware(['auth', 'verified','faculty-middleware']);
-
-Route::post('update-secondquarter-senior',[SecondquarterseniorController::class, 'updateSecondquarterSenior'])
-        ->middleware(['auth', 'verified', 'faculty-middleware']);
-
-Route::get('edit-student-grade-senior3/{user_id}',[ThirdquarterseniorController::class,'editStudentGradeSenior3'])
-        ->middleware(['auth', 'verified','faculty-middleware']);
-
-Route::post('update-thirdquarter-senior',[ThirdquarterseniorController::class, 'updateThirdquarterSenior'])
-        ->middleware(['auth', 'verified', 'faculty-middleware']);
-
-Route::get('edit-student-grade-senior4/{user_id}',[FourthquarterseniorController::class,'editStudentGradeSenior4'])
-        ->middleware(['auth', 'verified','faculty-middleware']);
-
-Route::post('update-fourthquarter-senior',[FourthquarterseniorController::class, 'updateFourthquarterSenior'])
-        ->middleware(['auth', 'verified', 'faculty-middleware']);
-
-
-
-
-// ####################### ANNOUNCEMENTS ########################################################
-
-Route::get('announcement-all-list',[AnnouncementController::class, 'announcementAllList']
-        )->middleware(['auth', 'verified', 'admin-middleware']);
-
-
-Route::post('save-announcement',[AnnouncementController::class, 'saveAnnouncement']
-        )->middleware(['auth', 'verified', 'admin-middleware']);
-
-
-Route::get('add-announcement',[AnnouncementController::class, 'announcementsfunc']
-        )->middleware(['auth', 'verified', 'admin-middleware']);
-
-Route::get('edit-announcement/{id}',[AnnouncementController::class, 'editAnnouncement']
-        )->middleware(['auth', 'verified', 'admin-middleware']);
-
-Route::post('update-announcement',[AnnouncementController::class, 'updateAnnouncement']
-        )->middleware(['auth', 'verified', 'admin-middleware']);
-
-
-Route::get('delete-announcement/{id}',[AnnouncementController::class,'deleteAnnouncement'])
-        ->middleware(['auth', 'verified','admin-middleware']);
-
-
-Route::get('view-announcement',[AnnouncementController::class,'studentHome'])
-        ->middleware(['auth', 'verified','student-middleware'])->name('view-announcement');
-
-// Route::get('view-announcement',[AnnouncementController::class,'facultyHome'])
-//         ->middleware(['auth', 'verified','faculty-middleware'])->name('view-announcement');
-
-Route::get('view-announcement-faculty',[AnnouncementController::class,'facultyHome'])
-        ->middleware(['auth', 'verified','faculty-middleware'])->name('view-announcement-faculty');
-
-
+Route::middleware(['auth', 'verified', 'faculty-middleware'])->group(function () {
+        Route::get('add-faculty', [FacultyController::class, 'addFaculty'])->name('add-faculty');
+        Route::post('save-faculty', [FacultyController::class, 'saveFaculty']);
+        Route::get('student-all-faculty', [StudentController::class, 'studentAllFaculty'])->name('student-all-faculty');
+        Route::get('edit-student-faculty/{id}', [StudentController::class, 'editStudentFaculty'])->name('edit-student-faculty');
+        Route::post('update-student-faculty', [StudentController::class, 'updateStudent']);
+        Route::get('faculty-profile', [FacultyController::class, 'showFacultyData'])->name('faculty-profile');
+        Route::post('faculty-profile-update', [FacultyController::class, 'updateFaculty']);
+        Route::get('edit-student-grade1/{user_id}', [FirstquarterController::class, 'editStudentGrade1']);
+        Route::post('update-firstquarter', [FirstquarterController::class, 'updateFirstquarter']);
+        Route::get('edit-student-grade2/{user_id}', [SecondquarterController::class, 'editStudentGrade2']);
+        Route::post('update-secondquarter', [SecondquarterController::class, 'updateSecondquarter']);
+        Route::get('edit-student-grade3/{user_id}', [ThirdquarterController::class, 'editStudentGrade3']);
+        Route::post('update-thirdquarter', [ThirdquarterController::class, 'updateThirdquarter']);
+        Route::get('edit-student-grade4/{user_id}', [FourthquarterController::class, 'editStudentGrade4']);
+        Route::post('update-fourthquarter', [FourthquarterController::class, 'updateFourthquarter']);
+        Route::get('faculty-dashboard', [FacultyController::class, 'facultySchedule'])->name('faculty-dashboard');
+        Route::get('edit-student-grade-senior1/{user_id}', [FirstquarterseniorController::class, 'editStudentGradeSenior1']);
+        Route::post('update-firstquarter-senior', [FirstquarterseniorController::class, 'updateFirstquarterSenior'])->name('update-firstquarter-senior');
+        Route::get('edit-student-grade-senior2/{user_id}', [SecondquarterseniorController::class, 'editStudentGradeSenior2']);
+        Route::post('update-secondquarter-senior', [SecondquarterseniorController::class, 'updateSecondquarterSenior']);
+        Route::get('edit-student-grade-senior3/{user_id}', [ThirdquarterseniorController::class, 'editStudentGradeSenior3']);
+        Route::post('update-thirdquarter-senior', [ThirdquarterseniorController::class, 'updateThirdquarterSenior']);
+        Route::get('edit-student-grade-senior4/{user_id}', [FourthquarterseniorController::class, 'editStudentGradeSenior4']);
+        Route::post('update-fourthquarter-senior', [FourthquarterseniorController::class, 'updateFourthquarterSenior']);
+        Route::get('view-announcement-faculty',[AnnouncementController::class,'facultyHome']);
+    });
+    
 
 
 Route::get('contactForm', [ContactController::class, 'index'])->name('contactForm');
+
 Route::post('contact-us', [ContactController::class, 'store'])->name('contact.us.store');
 
 Route::get('gradesectiondropdown', Gradesectiondropdown::class)->name('gradesectiondropdown');
-
-
-
 
 
 Route::middleware(['auth', 'verified','admin-middleware'])->group(function () {
