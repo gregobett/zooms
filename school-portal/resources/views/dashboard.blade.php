@@ -12,23 +12,22 @@
 
        
 <!-- component -->
-<!-- <div class="h-screen bg-gray-50 flex items-start">
-	<section class="bg-cover bg-center py-32 w-full" style="background-image: url('https://source.unsplash.com/random');">
+<div class=" bg-gray-50 flex items-start">
+	<section class=" bg-center py-32 w-full" style="background-image: url('https://source.unsplash.com/random');">
 		<div class="container mx-auto text-left text-white">
 			<div class="flex items-center">
 				<div class="w-1/2">
-					<h1 class="text-5xl font-medium mb-6">Welcome to My Agency</h1>
-					<p class="text-xl mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
-						euismod odio, gravida pellentesque urna varius vitae.</p>
-					<a href="#" class="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600">Demo</a>
+					<h1 class="text-5xl font-medium mb-6">Steps to Successfully Complete Your Studies: A Guide to Achieving Your Educational Goals</h1>
+					<p class="text-xl mb-12">By following these steps and maintaining a disciplined approach, you can successfully complete your studies and achieve your educational goals.</p>
+					<!-- <a href="#" class="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600">Demo</a> -->
 				</div>
 				<div class="w-1/2 pl-16">
 					<img src="https://source.unsplash.com/random?ux" class="h-64 w-full object-cover rounded-xl" alt="Layout Image">
-      </div>
+                </div>
 				</div>
 			</div>
 	</section>
-</div> -->
+</div>
 <!-- component -->
 <section class="max-w-5xl mx-auto py-10">
    <div>
