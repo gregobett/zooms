@@ -113,7 +113,7 @@
 
 
         @yield('register')
-
+<!-- 
     <footer class="bg-gre dark:bg-[#222738] py-5">
 
         <div class="flex flex-col justify-center items-center mx-10 md:mx-0">
@@ -130,7 +130,7 @@
             {{-- <a href="{{ url('about') }}" class="md:text-md text-white hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Developers</a> --}}
         </div>
 
-    </footer>
+    </footer> -->
 
 </body>
 
