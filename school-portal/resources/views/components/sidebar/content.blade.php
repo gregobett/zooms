@@ -138,13 +138,13 @@
         @if(Route::is('add-faculty'))
             <x-sidebar.link title="Faculty Dashboard"  :isActive="request()->routeIs('dashboard')">
                 <x-slot name="icon">
-                    <img src="/images/dashboard.png" alt="dashboard logo" class="w-8 ">
+                    <x-icons.dashboard class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
                 </x-slot>
             </x-sidebar.link>
         @else
             <x-sidebar.link title="Faculty Dashboard" href="{{ route('faculty-dashboard') }}" :isActive="request()->routeIs('dashboard')">
                 <x-slot name="icon">
-                    <img src="/images/dashboard.png" alt="dashboard logo" class="w-8 "> 
+                    <x-icons.dashboard class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
                 </x-slot>
             </x-sidebar.link>
         @endif
