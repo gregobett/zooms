@@ -156,10 +156,34 @@
 
             <tr  class="shadow-sm">
                 <td class="border px-4 py-1  dark:border-gray-500 font-bold">General Average</td>
-                <td class="border px-4 py-1 dark:border-gray-500"></td>  
-                <td class="border px-4 py-1 dark:border-gray-500"></td>  
-                <td class="border px-4 py-1 dark:border-gray-500"></td>  
-                <td class="border px-4 py-1 dark:border-gray-500"></td>  
+
+                <td class="border px-4 py-1 dark:border-gray-500 font-bold">
+                    {{number_format(($student->tle +  $student->epp + $student->health +
+                    $student->pe + $student->arts + $student->music +   $student->esp +
+                    $student->ap + $student->science +  $student->mathematics + 
+                    $student->english + $student->filipino + $student->mothertongue)/13)}}   
+                </td>  
+
+                <td class="border px-4 py-1 dark:border-gray-500 font-bold">
+                    {{number_format(($student->tle2 +  $student->epp2 + $student->health2 +
+                    $student->pe2 + $student->arts2 + $student->music2 +   $student->esp2 +
+                    $student->ap2 + $student->science2 +  $student->mathematics2 + 
+                    $student->english2 + $student->filipino2 + $student->mothertongue2)/13)}} 
+                </td> 
+
+                <td class="border px-4 py-1 dark:border-gray-500 font-bold">
+                    {{number_format(($student->tle3 +  $student->epp3 + $student->health3 +
+                    $student->pe3 + $student->arts3 + $student->music3 +   $student->esp3 +
+                    $student->ap3 + $student->science3 +  $student->mathematics3 + 
+                    $student->english3 + $student->filipino3 + $student->mothertongue3)/13)}} 
+                </td>  
+
+                <td class="border px-4 py-1 dark:border-gray-500 font-bold">
+                    {{number_format(($student->tle4 +  $student->epp4 + $student->health4 +
+                    $student->pe4 + $student->arts4 + $student->music4 +   $student->esp4 +
+                    $student->ap4 + $student->science4 +  $student->mathematics4 + 
+                    $student->english4 + $student->filipino4 + $student->mothertongue4)/13)}}   
+                </td>  
                 <td class="border px-4 py-1 dark:border-gray-500 font-bold">
                     
                     {{number_format(($student->tle +$student->tle2 + $student->tle3 + $student->tle4 +

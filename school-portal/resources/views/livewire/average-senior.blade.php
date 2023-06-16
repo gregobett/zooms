@@ -173,10 +173,34 @@
 
             <tr class="shadow-sm">
                 <td class="border px-4 py-1  dark:border-gray-500 font-bold">General Average</td>
-                <td class="border px-4 py-1 dark:border-gray-500"></td>  
-                <td class="border px-4 py-1 dark:border-gray-500"></td>  
-                <td class="border px-4 py-1 dark:border-gray-500"></td>  
-                <td class="border px-4 py-1 dark:border-gray-500"></td>  
+
+                <td class="border px-4 py-1 dark:border-gray-500 font-bold">
+                    {{number_format(($student->culture + $student->health +   $student->philosophy +
+                    $student->personal + $student->science + $student->earth +  $student->statistics + $student->math +
+                    $student->media + $student->contemporary + $student->century + $student->pagbasa +
+                    $student->komunikasyon + $student->reading + $student->oral )/15)}}               
+                </td>  
+
+                <td class="border px-4 py-1 dark:border-gray-500 font-bold">
+                    {{number_format(($student->culture2 + $student->health2 +   $student->philosophy2 +
+                    $student->personal2 + $student->science2 + $student->earth2 +  $student->statistics2 + $student->math2 +
+                    $student->media2 + $student->contemporary2 + $student->century2 + $student->pagbasa2 +
+                    $student->komunikasyon2 + $student->reading2 + $student->oral2 )/15)}}   
+                </td>  
+
+                <td class="border px-4 py-1 dark:border-gray-500 font-bold">
+                    {{number_format(($student->culture3 + $student->health3 +   $student->philosophy3 +
+                    $student->personal3 + $student->science3 + $student->earth3 +  $student->statistics3 + $student->math3 +
+                    $student->media3 + $student->contemporary3 + $student->century3 + $student->pagbasa3 +
+                    $student->komunikasyon3 + $student->reading3 + $student->oral3 )/15)}}   
+                </td>  
+
+                <td class="border px-4 py-1 dark:border-gray-500 font-bold">
+                    {{number_format(($student->culture4 + $student->health4 +   $student->philosophy4 +
+                    $student->personal4 + $student->science4 + $student->earth4 +  $student->statistics4 + $student->math4 +
+                    $student->media4 + $student->contemporary4 + $student->century4 + $student->pagbasa4 +
+                    $student->komunikasyon4 + $student->reading4 + $student->oral4 )/15)}}   
+                </td>  
                 <td class="border px-4 py-1 dark:border-gray-500 font-bold">
                     
                     {{number_format(($student->culture +$student->culture2 + $student->culture3 + $student->culture4 +
