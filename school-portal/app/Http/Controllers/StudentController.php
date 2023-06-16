@@ -42,6 +42,12 @@ class StudentController extends Controller
         return view('todos');
     }
 
+    public function studentTodo(){
+
+        return view('student-todo');
+    }
+
+
 
     public function saveStudent(Request $request){
         $request-> validate([

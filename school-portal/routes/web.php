@@ -62,6 +62,7 @@ Route::middleware(['auth', 'verified', 'admin-middleware'])->group(function () {
         Route::post('update-announcement', [AnnouncementController::class, 'updateAnnouncement']);
         Route::get('delete-announcement/{id}', [AnnouncementController::class, 'deleteAnnouncement']);
         Route::get('todos', [StudentController::class, 'toDos'])->name('todos');
+      
     });
     
 
@@ -79,6 +80,7 @@ Route::middleware(['auth', 'verified', 'student-middleware'])->group(function ()
         Route::get('dashboard', [StudentController::class, 'studentSchedule'])->name('dashboard');
         Route::get('content', [StudentController::class, 'showGradesData'])->name('content');
         Route::get('view-announcement', [AnnouncementController::class, 'studentHome'])->name('view-announcement');
+        Route::get('student-todo', [StudentController::class, 'studentTodo'])->name('student-todo');
        
     });
     
