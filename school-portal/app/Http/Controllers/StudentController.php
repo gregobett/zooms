@@ -25,6 +25,7 @@ class StudentController extends Controller
         return view('pages.student.add-student');
     }
 
+
     public function studentAllList(){
         $students = Student::get();
         return view('pages.student.student-all-list', compact('students'));
@@ -36,7 +37,10 @@ class StudentController extends Controller
         return view('pages.faculty.student-all-faculty', compact('students'));
     }
 
+    public function toDos(){
 
+        return view('todos');
+    }
 
 
     public function saveStudent(Request $request){

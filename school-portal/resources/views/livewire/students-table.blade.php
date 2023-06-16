@@ -74,7 +74,7 @@
                         </td>
 
                         @endif
-                        <td class="border px-4 py-2 dark:border-gray-500" >{{ $student->user_id }}</td>
+                        <td class="border px-4 py-2 dark:border-gray-500" >{{ $student->id }}</td>
                         <td class="border px-4 py-2 dark:border-gray-500" >{{ ucfirst($student->lastname) }}</td>
                         <td class="border px-4 py-2 dark:border-gray-500">{{ ucfirst($student->firstname) }}</td>
                         <td class="border px-4 py-2 dark:border-gray-500">{{ ucfirst($student->middlename) }}</td>

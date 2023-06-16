@@ -1,9 +1,6 @@
 <nav aria-label="secondary" x-data="{ open: false }"
     class="sticky top-0 z-10 flex items-center justify-between px-4 py-2 lg:py-4 sm:px-6 transition-transform duration-500 bg-gre dark:bg-dark-eval-1"
-    :class="{
-        '-translate-y-full': scrollingDown,
-        'translate-y-0': scrollingUp,
-    }">
+   >
 
     <div class="flex items-center gap-3">
         <x-button type="button" class="md:hidden" iconOnly variant="secondary" srText="Toggle dark mode"
