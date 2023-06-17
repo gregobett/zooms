@@ -113,6 +113,7 @@ Route::middleware(['auth', 'verified', 'faculty-middleware'])->group(function ()
         Route::get('edit-student-grade-senior4/{user_id}', [FourthquarterseniorController::class, 'editStudentGradeSenior4']);
         Route::post('update-fourthquarter-senior', [FourthquarterseniorController::class, 'updateFourthquarterSenior']);
         Route::get('view-announcement-faculty',[AnnouncementController::class,'facultyHome']);
+        Route::get('faculty-todo', [FacultyController::class, 'facultyTodo'])->name('faculty-todo');
     });
     
 

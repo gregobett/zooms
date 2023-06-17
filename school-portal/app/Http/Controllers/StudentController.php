@@ -21,7 +21,6 @@ use Illuminate\Support\Facades\DB;
 class StudentController extends Controller
 {
     public function addStudent(){
-
         return view('pages.student.add-student');
     }
 
@@ -32,18 +31,15 @@ class StudentController extends Controller
     }
 
     public function studentAllFaculty(){
-        $students = Student::get();
-      
+        $students = Student::get(); 
         return view('pages.faculty.student-all-faculty', compact('students'));
     }
 
     public function toDos(){
-
         return view('todos');
     }
 
     public function studentTodo(){
-
         return view('student-todo');
     }
 
@@ -409,38 +405,33 @@ class StudentController extends Controller
     //     return redirect()->to('register-grade1')->with('success','Information Added Succesfuly');
     //    }
 
-       return redirect()->to('dashboard')->with('success','Information Added Succesfuly');
-        
-       
+       return redirect()->to('dashboard')->with('success','Information Added Succesfuly');  
     }
 
 
     public function editStudent($id){
-        $data = Student::where('id', '=', $id)->first();
-      
+        $data = Student::where('id', '=', $id)->first();   
         return view('pages.student.edit-student', compact('data'));
-
     }
 
 
     public function studentSchedule(){
-
         $data = Student::where('user_id', '=', auth()->id())->first();
         return view('dashboard', compact('data'));
-
     }
+
 
     public function editStudentFaculty($user_id){
-        $data = Student::where('user_id', '=', $user_id)->first();
-      
+        $data = Student::where('user_id', '=', $user_id)->first();  
         return view('pages.faculty.edit-student-faculty', compact('data'));
-
     }
+
 
     public function deleteStudent($id){
         Student::where('id', '=', $id)->delete();
         return redirect()->back()->with('success','Student deleted Succesfuly');
     }
+
 
     public function updateStudent(Request $request){
         $request-> validate([
@@ -497,64 +488,44 @@ class StudentController extends Controller
             }
 
         $data->save();
-        return redirect()->back()->with('success','Student Updated Succesfuly');
-       
-        
+        return redirect()->back()->with('success','Student Updated Succesfuly');   
     }
 
 
    
 
     public function showStudentData(){
-
-        $data = Student::where('user_id', '=', auth()->id())->first();
-        
+        $data = Student::where('user_id', '=', auth()->id())->first();   
         return view('pages.student.student-profile', compact('data'));
-
-   
-       
     }
 
+
     public function showStudentGrade(){
-
         $data = Student::where('user_id', '=', auth()->id())->first();
-
-
-        return view('pages.student.view-grades', compact('data'));
-
-
-       
+        return view('pages.student.view-grades', compact('data'));   
     }
 
 
 
     public function myEmail(){
-
         return view('emails.myMail');
     }
 
     
     public function showStudentGradeTwo(){
-
         $data = Student::where('user_id', '=', auth()->id())->first();
-
-        return view('pages.student.view-grades-two', compact('data'));
-       
+        return view('pages.student.view-grades-two', compact('data'));  
     }
 
 
-    public function getTotalStudentsCount()
-    {
+    public function getTotalStudentsCount(){
         $totalStudentsCount = DB::table('students')->count();
-    
         return view('admin-dashboard', ['totalStudentsCount' => $totalStudentsCount]);
     }
 
 
-    public function getTotalMaleStudentsCount()
-    {
+    public function getTotalMaleStudentsCount(){
         $totalMaleStudentsCount = DB::table('students')->where('gender', 'male')->count();
-
         return view('admin-dashboard', ['totalMaleStudentsCount' => $totalMaleStudentsCount]);
     }
 

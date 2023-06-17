@@ -92,10 +92,12 @@
                         <option value = "">Select</option>
                         <option value="Student" @if (old('user_type') == "Student") {{ 'selected' }} @endif>Student</option>
                         <option value="Faculty" @if (old('user_type') == "Faculty") {{ 'selected' }} @endif>Faculty</option>
+                        <option value="Admin" @if (old('user_type') == "Admin") {{ 'selected' }} @endif>Admin</option>
                        
                     </select>
                        
                     </x-input-with-icon-wrapper>
+                    @include('sweetalert::alert')
                 </div>
 
                 <div>
@@ -111,10 +113,17 @@
                         {{ __('Login') }}
                     </a>
                 </p>
+            
                 </div>
+              
         </form>
-      
+ 
     </x-auth-card>
 </x-guest-layout>
 
+
 @endsection
+
+
+
+

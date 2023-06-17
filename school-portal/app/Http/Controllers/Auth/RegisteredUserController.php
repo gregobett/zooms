@@ -33,12 +33,25 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+
+     $validatedData =  $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'ends_with:tinhs-portal.tech', 'max:255', 'unique:users'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'user_type'=>[ 'required','max:255']
         ]);
+
+        // Query to check if an admin user already exists
+        $existingAdmin = User::where('user_type', 'Admin')->first();
+
+        if ($validatedData['user_type'] === 'Admin' && $existingAdmin) {
+            // An admin user already exists, show an error message to the user
+            // return back()->with('error', 'Only one admin user is allowed.');
+            return redirect()->back()->with('error', 'Only one admin user is allowed.');
+        }
+
+        
+
 
         $user = User::create([
             'name' => $request->name,

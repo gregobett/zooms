@@ -27,6 +27,11 @@ class FacultyController extends Controller
 
 }
 
+public function facultyTodo(){
+    return view('faculty-todo');
+}
+
+
 
   public function facultyAllList(){
     $data = Faculty::get();
