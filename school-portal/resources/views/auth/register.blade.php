@@ -25,6 +25,7 @@
     <x-auth-card>
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
+       
 
         <form method="POST" action="{{ route('register') }}" >
             @csrf
@@ -95,6 +96,9 @@
                         <option value="Admin" @if (old('user_type') == "Admin") {{ 'selected' }} @endif>Admin</option>
                        
                     </select>
+                    @if ($errors->has('user_type'))
+            <span class="text-danger">{{ $errors->first('user_type') }}</span>
+        @endif
                        
                     </x-input-with-icon-wrapper>
                     @include('sweetalert::alert')

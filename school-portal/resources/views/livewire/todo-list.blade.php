@@ -4,7 +4,7 @@
     <h1 class="flex text-3xl mb-8 font-bold text-grey-darkest">Todo List</h1>
         <form wire:submit.prevent="addTodo" class="mb-12 ">
             <div class="flex mt-4">
-                <input type="text" wire:model="title" class="shadow appearance-none  w-full py-2 text-grey-darker" placeholder="Add Todo">
+                <input type="text" wire:model="title" class="shadow appearance-none font-2xl w-full py-2 text-grey-darker" placeholder="Add Todo">
                 <button type="submit" class=" pl-2 pr-2 md:pl-12 md:pr-12  text-white border-teal bg-gre hover:text-white hover:bg-gray-500">
                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />

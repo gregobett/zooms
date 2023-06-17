@@ -47,7 +47,8 @@ class RegisteredUserController extends Controller
         if ($validatedData['user_type'] === 'Admin' && $existingAdmin) {
             // An admin user already exists, show an error message to the user
             // return back()->with('error', 'Only one admin user is allowed.');
-            return redirect()->back()->with('error', 'Only one admin user is allowed.');
+            $authError = ['user_type' => 'Only one admin user is allowed.'];
+            return back()->withErrors($authError)->withInput();
         }
 
         
