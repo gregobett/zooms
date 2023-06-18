@@ -32,7 +32,7 @@
                 file:mr-5 pl-12 file:lg:py-1 file:px-16  file:lg:px-14 lg:pl-6
                 file:rounded-full file:border-0 
                 file:text-sm file:font-medium
-                file:bg-gre file:text-slate-50
+                file:bg-gre file:text-slate-50 dark:bg-[#222738] dark:border dark:file:bg-[#222738]
                 hover:file:cursor-pointer hover:file:bg-gre
                 hover:file:text-amber-700
             " id="photo" name="photo" />
@@ -40,17 +40,17 @@
             </div>
 
         
-            <button type="submit" class="w-full bg-gre text-slate-50 text-xs lg:text-base hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 mt-2 lg:mb-4 lg:mt-4">Update</button>
+            <button type="submit" class="w-full bg-gre text-slate-50 text-xs lg:text-base hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 mt-2 lg:mb-4 lg:mt-4 dark:bg-[#222738] dark:border">Update</button>
              @if($data->grade === '11' || $data->grade === '12')
-            <a href="{{url('edit-student-grade-senior1/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 1st Quarter Grade</a>
-            <a href="{{url('edit-student-grade-senior2/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 2nd Quarter Grade</a>
-            <a href="{{url('edit-student-grade-senior3/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 3rd Quarter Grade</a>
-            <a href="{{url('edit-student-grade-senior4/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center">Add 4th Quarter Grade</a>
+            <a href="{{url('edit-student-grade-senior1/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border">Add 1st Quarter Grade</a>
+            <a href="{{url('edit-student-grade-senior2/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border">Add 2nd Quarter Grade</a>
+            <a href="{{url('edit-student-grade-senior3/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border">Add 3rd Quarter Grade</a>
+            <a href="{{url('edit-student-grade-senior4/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center dark:bg-[#222738] border">Add 4th Quarter Grade</a>
             @else
-            <a href="{{url('edit-student-grade1/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 1st Quarter Grade</a>
-            <a href="{{url('edit-student-grade2/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 2nd Quarter Grade</a>
-            <a href="{{url('edit-student-grade3/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4">Add 3rd Quarter Grade</a>
-            <a href="{{url('edit-student-grade4/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center">Add 4th Quarter Grade</a>
+            <a href="{{url('edit-student-grade1/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border">Add 1st Quarter Grade</a>
+            <a href="{{url('edit-student-grade2/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border">Add 2nd Quarter Grade</a>
+            <a href="{{url('edit-student-grade3/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border">Add 3rd Quarter Grade</a>
+            <a href="{{url('edit-student-grade4/'.$data->user_id )}}" type="btn" class="bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center dark:bg-[#222738] dark:borderr">Add 4th Quarter Grade</a>
             @endif
       
         
@@ -70,7 +70,7 @@
             <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
                 <div class="form-item w-full">
                     <label class="text-md ">Last Name</label>
-                    <input type="text" value="{{$data->lastname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 lg:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200" id="lastname" name="lastname">
+                    <input type="text" value="{{$data->lastname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 lg:mb-4 focus:outline-none dark:bg-gray-400 focus:shadow-outline focus:border-blue-200" id="lastname" name="lastname">
                     @error('lastname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -85,7 +85,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">First Name</label>
-                    <input type="text" value="{{$data->firstname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" id="firstname" name="firstname" >
+                    <input type="text" value="{{$data->firstname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400  focus:border-blue-200" id="firstname" name="firstname" >
                     @error('firstname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -100,7 +100,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Middle Name</label>
-                    <input type="text" value="{{$data->middlename}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" id="middlename" name="middlename" >
+                    <input type="text" value="{{$data->middlename}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400  focus:border-blue-200" id="middlename" name="middlename" >
                     @error('middlename')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -119,7 +119,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Email</label>
-                    <input type="text" value="{{ $data->email }}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 lg:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200" id="email" name="email" >
+                    <input type="text" value="{{ $data->email }}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 lg:mb-4 focus:outline-none dark:bg-gray-400  focus:shadow-outline focus:border-blue-200" id="email" name="email" >
                     @error('email')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -134,7 +134,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Grade</label>
-                        <select class="w-full appearance-none text-black text-opacity-70 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 " id="grade" name="grade" >
+                        <select class="w-full appearance-none text-black text-opacity-70 rounded shadow py-1 px-2 mr-2 focus:outline-none dark:bg-gray-400  focus:shadow-outline focus:border-blue-200 " id="grade" name="grade" >
                             <option  @if($data->grade == '7') selected @endif>7</option>
                             <option  @if($data->grade == '8') selected @endif>8</option>   
                             <option  @if($data->grade == '9') selected @endif>9</option>
@@ -152,13 +152,13 @@
                         </div>
                       </div>
                       @enderror
-                    {{-- <input type="text" value="{{old('grade')}}" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" id="grade" name="grade"> --}}
+                    {{-- <input type="text" value="{{old('grade')}}" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mr-2 focus:outline-none dark:bg-gray-400  focus:shadow-outline focus:border-blue-200" id="grade" name="grade"> --}}
                 </div>
 
 
                 {{-- <div class="form-item w-full">
                     <label class="text-md ">Section</label>
-                    <input type="text" value="{{$data->section}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-100 dark:text-black" placeholder="" id="section" name="section">
+                    <input type="text" value="{{$data->section}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400  focus:border-blue-200 dark:bg-gray-100 dark:text-black" placeholder="" id="section" name="section">
                     @error('section')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -173,7 +173,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Section</label>
-                        <select class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 " id="section" name="section" >
+                        <select class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none dark:bg-gray-400  focus:shadow-outline focus:border-blue-200 " id="section" name="section" >
                             <option  @if($data->section == 'Gold') selected @endif>Gold</option>
                             <option  @if($data->section == 'Silver') selected @endif>Silver</option>   
                             <option  @if($data->section == 'Bronze') selected @endif>Bronze</option>
@@ -203,12 +203,12 @@
                         </div>
                       </div>
                       @enderror
-                    {{-- <input type="text" value="{{old('grade')}}" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" id="grade" name="grade"> --}}
+                    {{-- <input type="text" value="{{old('grade')}}" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mr-2 focus:outline-none dark:bg-gray-400  focus:shadow-outline focus:border-blue-200" id="grade" name="grade"> --}}
                 </div>
   
                 <div class="form-item w-full">
                     <label class="text-md ">Date of Birth</label>
-                    <input type="date" value="{{$data->dateofbirth}}" class="w-full appearance-none text-black  rounded shadow py-1 mb-4 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 " id="dateofbirth" name="dateofbirth">
+                    <input type="date" value="{{$data->dateofbirth}}" class="w-full appearance-none text-black  rounded shadow py-1 mb-4 px-2 mr-2 focus:outline-none dark:bg-gray-400  focus:shadow-outline focus:border-blue-200 " id="dateofbirth" name="dateofbirth">
                     @error('dob')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -228,7 +228,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Phone</label>
-                    <input type="text" value="{{$data->phone}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 lg:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200" id="phone" name="phone">
+                    <input type="text" value="{{$data->phone}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 lg:mb-4 focus:outline-none dark:bg-gray-400  focus:shadow-outline focus:border-blue-200" id="phone" name="phone">
                     @error('phone')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -243,7 +243,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Gender</label>
-                        <select class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 " id="gender" name="gender" >
+                        <select class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400  focus:border-blue-200 " id="gender" name="gender" >
                             <option  @if($data->gender == 'Male') selected @endif>Male</option>
                             <option @if($data->gender == "Female") selected @endif>Female</option>                
                         </select>
@@ -262,7 +262,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Religion</label>
-                    <input type="text" value="{{$data->religion}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" id="religion" name="religion">
+                    <input type="text" value="{{$data->religion}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none dark:bg-gray-400  focus:shadow-outline focus:border-blue-200" id="religion" name="religion">
                     @error('religion')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -277,7 +277,7 @@
   
                 <div class="form-item w-full">
                     <label class="text-md ">Nationality</label>
-                    <input type="text" value="{{$data->nationality}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" id="nationality" name="nationality">
+                    <input type="text" value="{{$data->nationality}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none dark:bg-gray-400  focus:shadow-outline focus:border-blue-200" id="nationality" name="nationality">
                     @error('nationality')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -296,7 +296,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Fathers Name</label>
-                    <input type="text" value="{{$data->fathersname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 lg:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 "  id="fathersname" name="fathersname" >
+                    <input type="text" value="{{$data->fathersname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 lg:mb-4 focus:outline-none focus:shadow-outline dark:bg-gray-400  focus:border-blue-200 "  id="fathersname" name="fathersname" >
                     @error('fathersname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -311,7 +311,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Occupation</label>
-                    <input type="text" value="{{$data->foccupation}}" class="w-full appearance-none text-black rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" id="foccupation" name="foccupation">
+                    <input type="text" value="{{$data->foccupation}}" class="w-full appearance-none text-black rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400  focus:border-blue-200" id="foccupation" name="foccupation">
                     @error('foccupation')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -326,7 +326,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Mothers Name</label>
-                    <input type="text" value="{{$data->mothersname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" id="mothersname" name="mothersname">
+                    <input type="text" value="{{$data->mothersname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400  focus:border-blue-200" id="mothersname" name="mothersname">
                     @error('mothersname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -341,7 +341,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Occupation</label>
-                    <input type="text" value="{{$data->moccupation}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 " id="moccupation" name="moccupation">
+                    <input type="text" value="{{$data->moccupation}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400  focus:border-blue-200 " id="moccupation" name="moccupation">
                     @error('moccupation')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -358,7 +358,7 @@
 
             <div class="form-item w-full">
                 <label class="text-md ">Address</label>
-                <textarea type="text"  class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" id="address" name="address">{{$data->address}}</textarea>
+                <textarea type="text"  class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400  focus:border-blue-200" id="address" name="address">{{$data->address}}</textarea>
                 @error('address')
            
                 <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">

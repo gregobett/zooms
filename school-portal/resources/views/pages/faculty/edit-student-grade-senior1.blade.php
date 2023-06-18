@@ -7,7 +7,7 @@
 {{-- <h6 class="block w-full text-center text-gray-800 text-2xl  mb-6">{{ $data->lastname}}, {{ $data->firstname}}</h6> --}}
 <div class="flex justify-center items-center w-full bg-white overflow-hidden dark:bg-[#222738]">
   <div class="w-1/8 bg-white rounded shadow-2xl p-8 m-4 dark:bg-[#222738]">
-      <h1 class="block w-full text-center text-gray-800 text-2xl font-bold mb-6">First Quarter</h1>
+      <h1 class="block w-full text-center text-gray-800 text-2xl dark:text-gray-300 font-bold mb-6">First Quarter</h1>
       <form action="{{url('update-firstquarter-senior')}}" method="post" enctype="multipart/form-data" id="my-form">
         @csrf
         <input type="hidden" value="{{ $data->id }}" name="id" />
@@ -92,8 +92,8 @@
         
         
         <div class="flex-between items-center justify-center">
-            <button class="block w-full bg-gre  text-white text-sm mx-auto p-1 hover:text-amber-700 rounded py-1.5 mb-2 px-5" type="submit">Save</button>
-            <a href="{{url('edit-student-faculty/'.$data->user_id )}}" type="btn" class="bg-gre text-sm  text-slate-50  hover:text-amber-700 border-gray-200 rounded py-1 px-5 shadow-lg flex  justify-center">Back</a>
+            <button class="block w-full bg-gre  text-white text-sm mx-auto p-1 hover:text-amber-700 rounded py-1.5 mb-2 px-5 dark:bg-[#222738] dark:shadow-xl border" type="submit">Save</button>
+            <a href="{{url('edit-student-faculty/'.$data->user_id )}}" type="btn" class="bg-gre text-sm  text-slate-50  hover:text-amber-700 border-gray-200 rounded py-1 px-5 shadow-lg flex  justify-center dark:bg-[#222738] dark:shadow-xl border">Back</a>
         </div>
       </form>
   </div>
