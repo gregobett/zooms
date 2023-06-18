@@ -13,59 +13,59 @@
         <input type="hidden" value="{{ $data->id }}" name="id" />
         <input type="hidden" value="{{ $data->user_id }}" name="user_id" />
 
-          <div class="flex flex-col mb-2">
-              <label class="  text-xs lg:text-sm text-gray-900" for="mothertongue">Mother Tongue</label>
-              <input value="{{$data->mothertongue}}" class="border py-0 px-3 text-black" type="text" name="mothertongue" id="mothertongue" >
+          <div class="flex mb-4 shadow-lg">
+              <label class="w-full p-1 pl-2  bg-gray-200 font-bold  text-xs lg:text-sm text-gray-900" for="mothertongue">Mother Tongue</label>
+              <input value="{{$data->mothertongue}}" class="border py-0 w-24 text-black" type="text" name="mothertongue" id="mothertongue" >
           </div>
-          <div class="flex flex-col mb-2">
-              <label class="  text-xs lg:text-sm text-gray-900" for="filipino">Filipino</label>
-              <input value="{{$data->filipino}}" class="border py-0 px-3 text-black" type="text" name="filipino" id="filipino">
+          <div class="flex mb-4 shadow-lg">
+              <label class="w-full p-1 pl-2  bg-gray-200 font-bold  text-xs lg:text-sm text-gray-900" for="filipino">Filipino</label>
+              <input value="{{$data->filipino}}" class="border py-0 w-24 text-black" type="text" name="filipino" id="filipino">
           </div>
-          <div class="flex flex-col mb-2">
-              <label class="  text-xs lg:text-sm text-gray-900" for="english">English</label>
-              <input value="{{$data->english}}" class="border py-0 px-3 text-black" type="text" name="english" id="english">
+          <div class="flex mb-4 shadow-lg">
+              <label class="w-full p-1 pl-2  bg-gray-200 font-bold  text-xs lg:text-sm text-gray-900" for="english">English</label>
+              <input value="{{$data->english}}" class="border py-0 w-24 text-black" type="text" name="english" id="english">
           </div>
-          <div class="flex flex-col mb-2">
-              <label class=" text-xs lg:text-sm text-gray-900" for="mathematics">Mathematics</label>
-              <input value="{{$data->mathematics}}" class="border py-0 px-3 text-black" type="text" name="mathematics" id="mathematics">
+          <div class="flex mb-4 shadow-lg">
+              <label class="w-full p-1 pl-2  bg-gray-200 font-bold text-xs lg:text-sm text-gray-900" for="mathematics">Mathematics</label>
+              <input value="{{$data->mathematics}}" class="border py-0 w-24 text-black" type="text" name="mathematics" id="mathematics">
           </div>
-          <div class="flex flex-col mb-2">
-              <label class="text-xs lg:text-sm text-gray-900" for="science">Science</label>
-              <input value="{{$data->science}}" class="border py-0 px-3 text-black" type="text" name="science" id="science">
+          <div class="flex mb-4 shadow-lg">
+              <label class="w-full p-1 pl-2  bg-gray-200 font-bold text-xs lg:text-sm text-gray-900" for="science">Science</label>
+              <input value="{{$data->science}}" class="border py-0 w-24 text-black" type="text" name="science" id="science">
           </div>
 
-          <div class="flex flex-col mb-2">
-            <label class="  text-xs lg:text-sm text-gray-900" for="ap">Araling Panlipunan</label>
-            <input value="{{$data->ap}}" class="border py-0 px-3 text-black" type="text" name="ap" id="ap">
+          <div class="flex mb-4 shadow-lg">
+            <label class="w-full p-1 pl-2  bg-gray-200 font-bold  text-xs lg:text-sm text-gray-900" for="ap">Araling Panlipunan</label>
+            <input value="{{$data->ap}}" class="border py-0 w-24 text-black" type="text" name="ap" id="ap">
         </div>
-        <div class="flex flex-col mb-2">
-            <label class="  text-xs lg:text-sm text-gray-900" for="esp">Edukasyon sa Pagpapalkatao</label>
-            <input value="{{$data->esp}}" class="border py-0 px-3 text-black" type="text" name="esp" id="esp">
+        <div class="flex mb-4 shadow-lg">
+            <label class="w-full p-1 pl-2  bg-gray-200 font-bold  text-xs lg:text-sm text-gray-900" for="esp">Edukasyon sa Pagpapalkatao</label>
+            <input value="{{$data->esp}}" class="border py-0 w-24 text-black" type="text" name="esp" id="esp">
         </div>
-        <div class="flex flex-col mb-2">
-            <label class="  text-xs lg:text-sm text-gray-900" for="music">Music</label>
-            <input value="{{$data->music}}" class="border py-0 px-3 text-black" type="text" name="music" id="music">
+        <div class="flex mb-4 shadow-lg">
+            <label class="w-full p-1 pl-2  bg-gray-200 font-bold  text-xs lg:text-sm text-gray-900" for="music">Music</label>
+            <input value="{{$data->music}}" class="border py-0 w-24 text-black" type="text" name="music" id="music">
         </div>
-        <div class="flex flex-col mb-2">
-            <label class=" text-xs lg:text-sm text-gray-900" for="arts">Arts</label>
-            <input value="{{$data->arts}}" class="border py-0 px-3 text-black" type="text" name="arts" id="arts">
+        <div class="flex mb-4 shadow-lg">
+            <label class="w-full p-1 pl-2  bg-gray-200 font-bold text-xs lg:text-sm text-gray-900" for="arts">Arts</label>
+            <input value="{{$data->arts}}" class="border py-0 w-24 text-black" type="text" name="arts" id="arts">
         </div>
-        <div class="flex flex-col mb-2">
-            <label class="text-xs lg:text-sm text-gray-900" for="pe">Physical Educataion</label>
-            <input value="{{$data->pe}}" class="border py-0 px-3 text-black" type="text" name="pe" id="pe">
+        <div class="flex mb-4 shadow-lg">
+            <label class="w-full p-1 pl-2  bg-gray-200 font-bold text-xs lg:text-sm text-gray-900" for="pe">Physical Educataion</label>
+            <input value="{{$data->pe}}" class="border py-0 w-24 text-black" type="text" name="pe" id="pe">
         </div>
 
-        <div class="flex flex-col mb-2">
-          <label class="  text-xs lg:text-sm text-gray-900" for="health">Health</label>
-          <input value="{{$data->health}}" class="border py-0 px-3 text-black" type="text" name="health" id="health">
+        <div class="flex mb-4 shadow-lg">
+          <label class="w-full p-1 pl-2  bg-gray-200 font-bold  text-xs lg:text-sm text-gray-900" for="health">Health</label>
+          <input value="{{$data->health}}" class="border py-0 w-24 text-black" type="text" name="health" id="health">
       </div>
-      <div class="flex flex-col mb-2">
-          <label class=" text-xs lg:text-sm text-gray-900" for="epp">Edukasyon Pantahanan at Pangkabuhayan</label>
-          <input value="{{$data->epp}}" class="border py-0 px-3 text-black" type="text" name="epp" id="epp">
+      <div class="flex mb-4 shadow-lg">
+          <label class="w-full p-1 pl-2  bg-gray-200 font-bold text-xs lg:text-sm text-gray-900" for="epp">Edukasyon Pantahanan at Pangkabuhayan</label>
+          <input value="{{$data->epp}}" class="border py-0 w-24 text-black" type="text" name="epp" id="epp">
       </div>
-      <div class="flex flex-col mb-2">
-          <label class="text-xs lg:text-sm text-gray-900" for="tle">Technology and Livelihood Education</label>
-          <input value="{{$data->tle}}" class="border py-0 px-3 text-black mb-2" type="text" name="tle" id="tle">
+      <div class="flex mb-4 shadow-lg">
+          <label class="w-full p-1 pl-2  bg-gray-200 font-bold text-xs lg:text-sm text-gray-900" for="tle">Technology and Livelihood Education</label>
+          <input value="{{$data->tle}}" class="border py-0 w-24 text-black " type="text" name="tle" id="tle">
       </div>
       
         
