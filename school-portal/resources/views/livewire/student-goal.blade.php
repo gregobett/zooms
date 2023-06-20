@@ -11,7 +11,7 @@
 					<!-- <a href="#" class="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600">Demo</a> -->
 				</div>
 				<div class=" w-full items-center pl-4 pr-4 xl:pl-16 xl:w-1/2 xl:rounded-full">
-					<img src="https://source.unsplash.com/random?ux" class=" h-64 w-full xl:rounded-xl " alt="Layout Image">
+					<img src="images/flag.png" class=" h-64 w-full xl:rounded-xl " alt="Layout Image">
                 </div>
 				</div>
 			</div>
