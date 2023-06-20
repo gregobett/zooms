@@ -23,14 +23,6 @@ class AnnouncementController extends Controller
     }
 
 
-    // public function viewAnnouncement()
-    // {
-    //     $querys = Announcement::latest('updated_at')->get();
-  
-    //     return view('view-announcement', compact('querys'));
-
-    // }
-
     public function editAnnouncement($id)
     {
         $data = Announcement::where('id', '=', $id)->first();

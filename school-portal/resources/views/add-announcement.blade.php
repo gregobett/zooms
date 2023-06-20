@@ -6,7 +6,7 @@
             
       
     <div class="w-11/12 p-12 bg-white dark:bg-[#222738] sm:w-8/12  md:w-1/2 lg:w-5/12 shadow-xl">
-    <div class="flex justify-center mb-4">
+          <div class="flex justify-center mb-4">
             <img src="{{url('images/announcement-icon.png')}}" alt="announcement photo" class=" h-20">
           </div>
       <h1 class="text-xl font-semibold flex items-center justify-center">Create Announcements or Activity</h1>
@@ -25,7 +25,7 @@
                 
                 " id="photo" name="photo" required>
             </label>
-            </div>
+        </div>
 
         <label for="title" class="block mt-4 text-xs font-semibold text-gray-600 dark:text-gray-100 uppercase">Title</label>
         <input id="title" value="{{old('title')}}" type="text" name="title"   class="block w-full p-3 mt-0 text-gray-700 bg-gray-200  appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />

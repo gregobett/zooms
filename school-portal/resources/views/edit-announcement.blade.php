@@ -15,16 +15,16 @@
             <img src="{{asset('uploads/announcement/'.$data->photo)}}"  alt="image" class="h-24 w-24 object-cover rounded-full">
         </div>
 
-        <div class=" rounded-md bg-blue-900">
+        <div class=" border-3 rounded-md bg-gre lg:border-2 dark:border">
             <label>
-                <input type="file" class=" w-full text-md text-grey-500 p-2 text-blue-900
-                file:mr-5 pl-6 file:py-1 file:px-14
+                <input type="file" class=" w-full text-md text-start text-gre p-2 
+                file:mr-5 file:py-1 
                 file:rounded-full file:border-0
                 file:text-md file:font-medium
-                file:bg-blue-900 file:text-slate-50
-                hover:file:cursor-pointer hover:file:bg-blue-800
-                hover:file:text-white-700
-                hover:bg-blue-800" id="photo" name="photo"/>
+                file:bg-gre file:text-slate-50 dark:bg-[#222738] dark:border dark:file:bg-[#222738]
+                hover:file:cursor-pointer hover:file:bg-gre
+                hover:file:text-amber-700
+                hover:bg-gre" id="photo" name="photo"/>
             </label>
             </div>
 
@@ -35,9 +35,9 @@
         <label for="message" class="block mt-2 text-xs font-semibold text-gray-600 uppercase dark:text-gray-100">Message</label>
         <textarea  class="block w-full p-3 mt-0 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" name="message">{{$data->message}}</textarea>
         
-        <button type="submit" class="w-full py-3 mt-6 font-medium  text-white uppercase bg-blue-800  shadow-lg focus:outline-none hover:bg-blue-900 hover:shadow-none  rounded-md">
+        <button type="submit" class="w-full py-3 mt-6 font-medium  text-white uppercase bg-gre  shadow-lg focus:outline-none hover:bg-gre hover:shadow-none hover:text-amber-700 rounded-md dark:bg-[#222738] dark:border">
             Update Announcement
-          </button>
+        </button>
 
       </form>
     </div>

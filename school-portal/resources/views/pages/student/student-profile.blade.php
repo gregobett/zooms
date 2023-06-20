@@ -26,20 +26,20 @@
             Add Photo
         </label>
     
-        <div class="border-3 rounded-md bg-gre lg:border-2 dark:border-none">
+        <div class="border-3 rounded-md bg-gre lg:border-2 ">
             <label>
                 <input type="file" class=" w-full text-sm text-grey-500 p-2 text-gre
                 file:mr-5 pl-1 file:py-1 file:px-2 file:lg:px-14 lg:pl-6
                 file:rounded-full file:border-0 
                 file:text-sm file:font-medium
-                file:bg-gre file:text-slate-50 dark:bg-[#222738] dark:border dark:file:bg-[#222738]
+                file:bg-gre file:text-slate-50 dark:bg-[#222738]  dark:file:bg-[#222738]
                 hover:file:cursor-pointer hover:file:bg-gre
                 hover:file:text-red-700
             " id="photo" name="photo" />
             </label>
             </div>
 
-        <button type="submit" class="bg-gre text-slate-50 hover:text-red-700 border-gray-200 rounded py-2 px-10 shadow-lg dark:bg-[#222738] dark:border">Update</button>
+        <button type="submit" class="bg-gre text-slate-50 hover:text-red-700 border-gray-200 rounded py-3 px-10 shadow-lg dark:bg-[#222738] dark:border">Update</button>
 
   
       </div>

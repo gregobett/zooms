@@ -1,5 +1,5 @@
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
  
  <div class="pl-2 pr-2 shadow-xl">
     <div class="w-full flex flex-col lg:flex-row  pb-10 ">
@@ -89,7 +89,6 @@
 
                     </td>
 
-                    {{-- <td class="border px-4 py-2">{{ $stud->created_at->diffForHumans() }}</td> --}}
                 </tr>
             @endforeach
         </tbody>
@@ -99,6 +98,7 @@
     @include('sweetalert::alert')
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
       function confirmation(ev) {

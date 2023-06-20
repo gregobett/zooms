@@ -33,6 +33,8 @@ class Gradesectiondropdown extends Component
     {
         if (!is_null($grade)) {
             $this->sections = Section::where('grade_id', $grade)->get();
+        }else{
+            $this->sections = collect();
         }
     }
 }

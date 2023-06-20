@@ -23,6 +23,6 @@
 
 
         @yield('content')
-    {{-- </div> --}}
+
     @include('sweetalert::alert')
 @endsection
