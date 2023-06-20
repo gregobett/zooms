@@ -62,10 +62,13 @@
         </div>
         @include('sweetalert::alert')
     </div>
-
+    @stack('scripts')
     <script src="{{ asset('vendor/sweetalert2/sweetalert2.min.js') }}"></script>
-
+   
 </body>
 {{-- @livewireScripts --}}
 
 </html>
+
+
+

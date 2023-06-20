@@ -20,6 +20,9 @@ use App\Http\Livewire\Gradesectiondropdown;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SeniorGeneralAverageController;
 use App\Http\Controllers\FullCalenderController;
+use App\Http\Controllers\SliderController;
+
+
 
 
 
@@ -133,3 +136,8 @@ Route::middleware(['auth', 'verified','admin-middleware'])->group(function () {
     });
 
  
+    Route::get('index', [SliderController::class,'Index'])->name('sliders.index');
+
+    Route::get('create', [SliderController::class,'Create'])->name('sliders.create');
+
+    Route::post('store', [SliderController::class, 'Store'])->name('sliders.store');
