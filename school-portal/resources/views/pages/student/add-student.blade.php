@@ -27,36 +27,34 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-12 bg-white dark:bg-dark-eval-1">
+    <div class="grid grid-cols-12 bg-white dark:bg-dark-eval-1 ">
   
-      <div class="col-span-12 w-full px-2 py-4 justify-center flex space-x-4 border-b border-solid md:space-x-0 dark:border-none md:space-y-4 md:flex-col md:col-span-2 md:justify-start ">
+      <div class="col-span-12 w-full px-2 py-4 justify-center flex space-x-4 border-b border-solid  dark:border-none md:space-y-4 md:flex-col xl:col-span-2 md:justify-start ">
   
+    
       
-        @livewireStyles
-        <div class="form-item w-full"> <livewire:gradesectiondropdown></div>
-        @livewireScripts
-      
-            <label class="hidden md:block uppercase tracking-wide text-gray-700 dark:text-white text-xs h-1 " for="photo">
+            <label class="hidden md:block pl-5 uppercase tracking-wide text-gray-700 dark:text-white text-xs h-1 " for="photo">
                 Add Photo
             </label>
        
             <div class="flex flex-col items-center justify-center gap-4 pr-3">
-            <div class=" border-1 rounded-md mt- lg:border-2 bg-gre dark:border-none">
-                <label>
-                    <input type="file" class=" w-full text-sm md:text-md text-grey-500 p-2 text-gre
-                    file:mr-2 ml-3 pl-2  file:py-0 file:px-2 file:lg:px-4 lg:pl-16 lg:ml-0
+            <div class="w-full border-1 rounded-md  lg:border-2 bg-gre dark:border-none ">
+            <label>
+                    <input type="file" class=" w-full text-sm text-grey-500 p-2 text-gre
+                    file:mr-5 pl-1 file:py-1 file:px-2 file:lg:px-14 lg:pl-6
                     file:rounded-full file:border-0
-                    file:text-md file:font-medium
-                    file:bg-gre file:text-slate-50
+                    file:text-sm file:font-medium
+                    file:bg-gre file:text-slate-50 dark:bg-[#222738] dark:border dark:file:bg-[#222738]
                     hover:file:cursor-pointer hover:file:bg-gre
-                    hover:file:text-red-700
-                    hover:bg-gre" id="photo" name="photo" required>
+                    hover:file:text-amber-700
+                " id="photo" name="photo" />
                 </label>
             </div>
 
+
      
      
-            <button type='submit' class=" w-full bg-gre hover:bg-gre text-sm md:text-md  mt-6 hover:text-red-700 text-slate-50 border-gray-200 rounded p-2 pt-2 px-10 shadow-lg">
+            <button type='submit' class=" w-full bg-gre hover:bg-gre text-sm md:text-md   mt-2 hover:text-red-700 text-slate-50 border-gray-200 rounded p-3 pt-2 shadow-lg dark:bg-[#222738] border">
                 Save
             </button>
             </div>
@@ -64,20 +62,17 @@
       </div>
   
     
-      <div class="col-span-12 md:border-solid md:border-l  md:border-black md:border-opacity-25  h-full pb-12 md:col-span-10">
+      <div class="col-span-12 md:border-solid md:border-l  md:border-black md:border-opacity-25  h-full pb-12 lg:col-span-10">
         <div class="px-4 pt-4">
 
             <div class="py-2">
               <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">Students basic information</h3>
               <hr>
             </div>
-{{-- 
-            @livewireStyles
-            <div class="block form-item w-full flex-col md:hidden "> <livewire:gradesectiondropdown></div>
-           
-            @livewireScripts --}}
+
+        
             
-            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+            <div class="flex flex-col space-y-4 md:space-y-0 lg:flex-row lg:space-x-4">
 
                
                
@@ -85,7 +80,7 @@
                 {{-- lastname --}}
                 <div class="form-item w-full ">
                     <label class="text-md ">Last Name</label>
-                    <input type="text" value="{{old('lastname')}}" class="w-full  appearance-none text-black  rounded shadow py-1 px-2  mr-2 lg:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="lastname" name="lastname" capitalize>
+                    <input type="text" value="{{old('lastname')}}" class="w-full  appearance-none text-black  rounded shadow py-1 px-2  mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="lastname" name="lastname" capitalize>
                     @error('lastname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -100,7 +95,7 @@
             
                 <div class="form-item w-full">
                     <label class="text-md ">First Name</label>
-                    <input type="text" value="{{old('firstname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="firstname" name="firstname" capitalize>
+                    <input type="text" value="{{old('firstname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="firstname" name="firstname" capitalize>
                     @error('firstname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -115,7 +110,7 @@
                 {{-- Middle name --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Middle Name</label>
-                    <input type="text" value="{{old('middlename')}}" class="w-full appearance-none text-black rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="middlename" name="middlename" capitalize>
+                    <input type="text" value="{{old('middlename')}}" class="w-full appearance-none text-black rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="middlename" name="middlename" capitalize>
                     @error('middlename')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -129,12 +124,12 @@
                 </div>
             </div>    
 
-            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">  
+            <div class="flex flex-col space-y-4 md:space-y-0 lg:flex-row lg:space-x-4">  
 
                 {{-- email --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Email</label>
-                    <input type="text" value="{{Auth::user()->email}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 lg:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200" id="email" name="email " disabled capitalize>
+                    <input type="text" value="{{Auth::user()->email}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400" id="email" name="email " disabled capitalize>
                     @error('email')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -145,12 +140,18 @@
                         </div>
                     </div>
                     @enderror
-                </div>                 
+                </div>                
+                
+                
+                  
+        @livewireStyles
+        <div class="form-item w-full"> <livewire:gradesectiondropdown></div>
+        @livewireScripts
                 
                 {{-- Date of birth --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Date of Birth</label>
-                    <input type="date" value="{{old('dateofbirth')}}" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="dateofbirth" name="dateofbirth">
+                    <input type="date" value="{{old('dateofbirth')}}" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400 uppercase" id="dateofbirth" name="dateofbirth">
                     @error('dob')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -166,12 +167,12 @@
             </div>
 
 
-            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+            <div class="flex flex-col space-y-4 md:space-y-0 lg:flex-row lg:space-x-4">
                 
                 {{-- Phone --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Phone</label>
-                    <input type="text" value="{{old('phone')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 lg:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="phone" name="phone">
+                    <input type="text" value="{{old('phone')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400 " id="phone" name="phone">
                     @error('phone')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -187,7 +188,7 @@
                 {{-- Gender --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Gender</label>
-                    <select class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="gender" name="gender" >
+                    <select class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline md:mb-4 focus:border-blue-200 dark:bg-gray-400  uppercase" id="gender" name="gender" >
                         <option value="">Select</option>
                         <option value="Male" @if (old('gender') == "Male") {{ 'selected' }} @endif>Male</option>
                         <option value="Female" @if (old('gender') == "Female") {{ 'selected' }} @endif>Female</option>               
@@ -208,7 +209,7 @@
                 {{-- Religion --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Religion</label>
-                    <input type="text" value="{{old('religion')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="religion" name="religion" capitalize>
+                    <input type="text" value="{{old('religion')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="religion" name="religion" capitalize>
                     @error('religion')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -224,7 +225,7 @@
                 {{-- Nationality --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Nationality</label>
-                    <input type="text" value="{{old('nationality')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="nationality" name="nationality" capitalize>
+                    <input type="text" value="{{old('nationality')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="nationality" name="nationality" capitalize>
                     @error('nationality')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -239,12 +240,12 @@
     
             </div>
 
-            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+            <div class="flex flex-col space-y-4 md:space-y-0 lg:flex-row lg:space-x-4">
                 
                 {{-- Fathers Name --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Fathers Name</label>
-                    <input type="text" value="{{old('fathersname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase"  id="fathersname" name="fathersname" capitalize>
+                    <input type="text" value="{{old('fathersname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase"  id="fathersname" name="fathersname" capitalize>
                     @error('fathersname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -260,7 +261,7 @@
                 {{-- Fathers Occupation --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Occupation</label>
-                    <input type="text" value="{{old('foccupation')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="foccupation" name="foccupation" capitalize>
+                    <input type="text" value="{{old('foccupation')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="foccupation" name="foccupation" capitalize>
                     @error('foccupation')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -276,7 +277,7 @@
                 {{-- Mothers Name --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Mothers Name</label>
-                    <input type="text" value="{{old('mothersname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="mothersname" name="mothersname" capitalize>
+                    <input type="text" value="{{old('mothersname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="mothersname" name="mothersname" capitalize>
                     @error('mothersname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -292,7 +293,7 @@
                 {{-- Mothers Occupation --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Occupation</label>
-                    <input type="text" value="{{old('moccupation')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="moccupation" name="moccupation" capitalize>
+                    <input type="text" value="{{old('moccupation')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="moccupation" name="moccupation" capitalize>
                     @error('moccupation')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -310,7 +311,7 @@
             {{-- Address --}}
             <div class="form-item w-full">
                 <label class="text-md ">Address</label>
-                <textarea type="text"  class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase"  id="address" name="address">{{old('address')}}</textarea>
+                <textarea type="text"  class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase"  id="address" name="address">{{old('address')}}</textarea>
                 @error('address')
            
                 <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -453,7 +454,7 @@
         
     </form>
     @include('sweetalert::alert')
-    </div>
+    {{-- </div> --}}
 
 <style>
 .table {

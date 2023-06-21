@@ -11,21 +11,34 @@ class Gradesectiondropdown extends Component
     
     public $grades;
     public $sections;
-
+    public $selectedSection = NULL;
     public $selectedGrade = NULL;
 
 
-    public function mount()
-    {
-        $this->grades = Grade::all();
+
+    public function mount($initialGradeId = null, $initialSectionName = null)
+{
+    $this->grades = Grade::all();
+
+    if (!is_null($initialGradeId)) {
+        $this->sections = Section::where('grade_id', $initialGradeId)->get();
+        $this->selectedGrade = $initialGradeId;
+        $this->selectedSection = $initialSectionName;
+    } else {
         $this->sections = collect();
+        $this->selectedGrade = null;
+        $this->selectedSection = null;
     }
+}
     
     
     
     public function render()
     {
-        return view('livewire.gradesectiondropdown');
+        return view('livewire.gradesectiondropdown', [
+            'grades' => $this->grades,
+            'sections' => $this->sections,
+        ]);
     }
 
 
@@ -33,8 +46,9 @@ class Gradesectiondropdown extends Component
     {
         if (!is_null($grade)) {
             $this->sections = Section::where('grade_id', $grade)->get();
-        }else{
+        } else {
             $this->sections = collect();
         }
+        $this->selectedSection = NULL; // Reset the selected section when the grade changes
     }
 }
