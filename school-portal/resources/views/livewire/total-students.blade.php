@@ -1,4 +1,4 @@
-<div class="flex items-center  text-gray-800">
+<div class="flex items-center pb-8  text-gray-800">
   <div class="p-4 w-full">
 
     <div class="grid grid-cols-12 gap-4">

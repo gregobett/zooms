@@ -8,13 +8,18 @@
       @if(Auth::user()->user_type === "Student")
 
         @livewireStyles
-        <div class="form-item w-full"> <livewire:student-goal></div>
+          <div class="form-item w-full"> <livewire:student-goal></div>
         @livewireScripts
 
       @elseif(Auth::user()->user_type === "Faculty")
 
-      @livewireStyles
-        <div class="form-item w-full"> <livewire:faculty-facts></div>
+  
+        @livewireStyles
+          <div class="form-item w-full"> <livewire:total-students></div>
+        @livewireScripts
+
+        @livewireStyles
+          <div class="form-item w-full"> <livewire:faculty-facts></div>
         @livewireScripts
 
 

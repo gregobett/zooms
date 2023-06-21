@@ -135,9 +135,3 @@ Route::middleware(['auth', 'verified','admin-middleware'])->group(function () {
         });
     });
 
- 
-    Route::get('index', [SliderController::class,'Index'])->name('sliders.index');
-
-    Route::get('create', [SliderController::class,'Create'])->name('sliders.create');
-
-    Route::post('store', [SliderController::class, 'Store'])->name('sliders.store');
