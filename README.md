@@ -1,3 +1,3 @@
-# school-portal
+# School-portal
 
-School Portal for St. Peter Paul Academy of Vizal Inc.
+
