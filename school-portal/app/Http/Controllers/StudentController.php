@@ -17,6 +17,7 @@ use App\Models\Fourthquartersenior;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Models\User;
 
 class StudentController extends Controller
 {
@@ -409,8 +410,8 @@ class StudentController extends Controller
     }
 
 
-    public function editStudent($id){
-        $data = Student::where('id', '=', $id)->first();   
+    public function editStudent($user_id){
+        $data = Student::where('user_id', '=', $user_id)->first();   
         return view('pages.student.edit-student', compact('data'));
     }
 
@@ -427,10 +428,20 @@ class StudentController extends Controller
     }
 
 
-    public function deleteStudent($id){
-        Student::where('id', '=', $id)->delete();
-        return redirect()->back()->with('success','Student deleted Succesfuly');
-    }
+    // public function deleteStudent($user_id){
+    //     Student::where('user_id', '=', $user_id)->delete();
+    //     User::where('id', '=', student()->$user_id)->delete();
+        
+    //     return redirect()->back()->with('success','Student deleted Succesfuly');
+    // }
+
+    public function deleteStudent($user_id)
+{
+    Student::where('user_id', $user_id)->delete();
+    User::where('id', $user_id)->delete();
+
+    return redirect()->back()->with('success', 'Student deleted successfully');
+}
 
 
     public function updateStudent(Request $request){

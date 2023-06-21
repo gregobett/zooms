@@ -33,7 +33,7 @@
                 {{-- logo --}}
                 <div class="flex items-center">
                     <a href="/">
-                        <img src="/images/logo.png" alt="main logo" class="w-12 h-12 mr-1 sm:mr-2 lg:mr-3">
+                        <img src="/images/logo.webp" alt="main logo" class="w-12 h-12 mr-1 sm:mr-2 lg:mr-3">
                     </a>
                     
                     {{-- primary --}}

@@ -85,7 +85,7 @@
                 {{-- lastname --}}
                 <div class="form-item w-full ">
                     <label class="text-md ">Last Name</label>
-                    <input type="text" value="{{old('lastname')}}" class="w-full  appearance-none text-black  rounded shadow py-1 px-2  mr-2 lg:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="lastname" name="lastname" capitalize>
+                    <input type="text" value="{{old('lastname')}}" class="w-full  appearance-none text-black  rounded shadow py-1 px-2  mr-2 lg:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="lastname" name="lastname" capitalize>
                     @error('lastname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -100,7 +100,7 @@
             
                 <div class="form-item w-full">
                     <label class="text-md ">First Name</label>
-                    <input type="text" value="{{old('firstname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="firstname" name="firstname" capitalize>
+                    <input type="text" value="{{old('firstname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="firstname" name="firstname" capitalize>
                     @error('firstname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -115,7 +115,7 @@
                 {{-- Middle name --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Middle Name</label>
-                    <input type="text" value="{{old('middlename')}}" class="w-full appearance-none text-black rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="middlename" name="middlename" capitalize>
+                    <input type="text" value="{{old('middlename')}}" class="w-full appearance-none text-black rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="middlename" name="middlename" capitalize>
                     @error('middlename')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -187,7 +187,7 @@
                 {{-- Gender --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Gender</label>
-                    <select class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="gender" name="gender" >
+                    <select class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="gender" name="gender" >
                         <option value="">Select</option>
                         <option value="Male" @if (old('gender') == "Male") {{ 'selected' }} @endif>Male</option>
                         <option value="Female" @if (old('gender') == "Female") {{ 'selected' }} @endif>Female</option>               
@@ -208,7 +208,7 @@
                 {{-- Religion --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Religion</label>
-                    <input type="text" value="{{old('religion')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="religion" name="religion" capitalize>
+                    <input type="text" value="{{old('religion')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="religion" name="religion" capitalize>
                     @error('religion')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -224,7 +224,7 @@
                 {{-- Nationality --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Nationality</label>
-                    <input type="text" value="{{old('nationality')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="nationality" name="nationality" capitalize>
+                    <input type="text" value="{{old('nationality')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="nationality" name="nationality" capitalize>
                     @error('nationality')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -244,7 +244,7 @@
                 {{-- Fathers Name --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Fathers Name</label>
-                    <input type="text" value="{{old('fathersname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white"  id="fathersname" name="fathersname" capitalize>
+                    <input type="text" value="{{old('fathersname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase"  id="fathersname" name="fathersname" capitalize>
                     @error('fathersname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -260,7 +260,7 @@
                 {{-- Fathers Occupation --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Occupation</label>
-                    <input type="text" value="{{old('foccupation')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="foccupation" name="foccupation" capitalize>
+                    <input type="text" value="{{old('foccupation')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="foccupation" name="foccupation" capitalize>
                     @error('foccupation')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -276,7 +276,7 @@
                 {{-- Mothers Name --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Mothers Name</label>
-                    <input type="text" value="{{old('mothersname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="mothersname" name="mothersname" capitalize>
+                    <input type="text" value="{{old('mothersname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="mothersname" name="mothersname" capitalize>
                     @error('mothersname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -292,7 +292,7 @@
                 {{-- Mothers Occupation --}}
                 <div class="form-item w-full">
                     <label class="text-md ">Occupation</label>
-                    <input type="text" value="{{old('moccupation')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white" id="moccupation" name="moccupation" capitalize>
+                    <input type="text" value="{{old('moccupation')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase" id="moccupation" name="moccupation" capitalize>
                     @error('moccupation')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -310,7 +310,7 @@
             {{-- Address --}}
             <div class="form-item w-full">
                 <label class="text-md ">Address</label>
-                <textarea type="text"  class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white"  id="address" name="address">{{old('address')}}</textarea>
+                <textarea type="text"  class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-600 dark:text-white uppercase"  id="address" name="address">{{old('address')}}</textarea>
                 @error('address')
            
                 <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">

@@ -52,12 +52,13 @@ Route::get('admin-dashboard',[DashboardController::class,'AdminDashboard'])
 // ******************* ADMIN MIDDLEWARE ***************************************************
 Route::middleware(['auth', 'verified', 'admin-middleware'])->group(function () {
         Route::get('student-all-list', [StudentController::class, 'studentAllList'])->name('student-all-list');
-        Route::get('edit-student/{id}', [StudentController::class, 'editStudent'])->name('edit-student');
+        Route::get('edit-student/{user_id}', [StudentController::class, 'editStudent'])->name('edit-student');
         Route::post('update-student', [StudentController::class, 'updateStudent']);
         Route::get('faculty-all-list', [FacultyController::class, 'facultyAllList']);
-        Route::get('edit-faculty/{id}', [FacultyController::class, 'editFaculty'])->name('edit-faculty');
+        Route::get('edit-faculty/{user_id}', [FacultyController::class, 'editFaculty'])->name('edit-faculty');
         Route::post('update-faculty', [FacultyController::class, 'updateFaculty']);
-        Route::get('delete-student/{id}', [StudentController::class, 'deleteStudent']);
+        Route::get('delete-student/{user_id}', [StudentController::class, 'deleteStudent']);
+        Route::get('delete-faculty/{user_id}', [FacultyController::class, 'deleteFaculty']);
         Route::get('announcement-all-list', [AnnouncementController::class, 'announcementAllList']);
         Route::post('save-announcement', [AnnouncementController::class, 'saveAnnouncement']);
         Route::get('add-announcement', [AnnouncementController::class, 'announcementsfunc']);

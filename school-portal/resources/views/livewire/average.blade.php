@@ -5,7 +5,7 @@
 
 
 <div class="flex items-center justify-center">
-    <img src="/images/logo.png" width="150">
+    <img src="/images/logo.webp" width="150">
 </div>
 <div class="flex flex-col items-center justify-center ">
 <h1 class="flex items-center text-sm md:text-xl justify-center font-extrabold mb-2 ">Tipas Integrated National Highschool</h1>

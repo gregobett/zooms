@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Faculty;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
+use App\Models\User;
 
 class FacultyController extends Controller
 {
@@ -14,9 +15,18 @@ class FacultyController extends Controller
       return view('pages.faculty.add-faculty');
   }
 
-  public function editFaculty($id){
-    $data = Faculty::where('id', '=', $id)->first();
+  public function editFaculty($user_id){
+    $data = Faculty::where('user_id', '=', $user_id)->first();
     return view('pages.faculty.edit-faculty', compact('data'));
+  }
+
+
+  public function deleteFaculty($user_id)
+  {
+      Faculty::where('user_id', $user_id)->delete();
+      User::where('id', $user_id)->delete();
+  
+      return redirect()->back()->with('success', 'Teacher deleted successfully');
   }
 
 
