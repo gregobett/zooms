@@ -453,7 +453,8 @@
                <div class="flex-auto">
                   <div class="sm:hidden text-sm font-normal uppercase pt-3 pl-3 text-gray-500"><span class="font-black">Step 14</span></div>
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl text-gray-800 font dark:text-gray-500">Stay persistent and persevere</div>
-                  <div class="px-3 pb-6">Remember that finishing your studies is a long-term commitment. Stay persistent and persevere through challenges and setbacks. Keep your end goal in mind and maintain your focus until you reach the finish line.</div>
+                  <div class="px-3 pb-6">Remember that finishing your studies is a long-term commitment. Stay persistent and persevere through 
+                     challenges and setbacks. Keep your end goal in mind and maintain your focus until you reach the finish line.</div>
                </div>
                <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/persevere.png" alt="step 4" class="object-scale-down"></div>
             </div>
