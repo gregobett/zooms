@@ -68,7 +68,7 @@
                         </td>
                         @else
                         <td class="border px-4 py-2  dark:border-gray-500">
-                            <a href="{{url('edit-student/'.$student->id)}}"><img src="{{asset('uploads/students/'.$student->photo)}}" width="20" height="20" alt="image" class="border rounded-full"></a>
+                            <a href="{{url('edit-student/'.$student->user_id)}}"><img src="{{asset('uploads/students/'.$student->photo)}}" width="20" height="20" alt="image" class="border rounded-full"></a>
                         </td>
 
                         @endif

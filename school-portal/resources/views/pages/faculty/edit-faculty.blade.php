@@ -18,7 +18,7 @@
     </div>
     <div class="grid grid-cols-12 bg-white dark:bg-[#222738]">
   
-    <div class="col-span-12 w-full md:pl-4  px-2 py-4 justify-center flex space-x-4  md:space-x-0 md:space-y-4 md:flex-col xl:col-span-2 md:justify-start ">
+            <div class="col-span-12 w-full md:pl-4  px-2 py-4 justify-center flex space-x-4  md:space-x-0 md:space-y-4 md:flex-col xl:col-span-2 md:justify-start ">
                     <label class="hidden md:block pb-2 uppercase tracking-wide text-gray-700 dark:text-white text-xs h-1 xl:pt-6" for="photo">
                         Add Photo
                     </label>
