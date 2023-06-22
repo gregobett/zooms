@@ -62,7 +62,7 @@
                 <tr>
 
                     <td class="border px-4 py-2 rounded-full dark:border-gray-500">
-                        <a href="{{url('edit-faculty/'.$teacher->id)}}"><img src="{{asset('uploads/faculty/'.$teacher->photo)}}" width="30" height="30" alt="image" class="border rounded-full"></a>
+                        <a href="{{url('edit-faculty/'.$teacher->user_id)}}"><img src="{{asset('uploads/faculty/'.$teacher->photo)}}" width="30" height="30" alt="image" class="border rounded-full"></a>
                     </td>
                     <td class="border px-4 py-2 dark:border-gray-500">{{ $teacher->id }}</td>
                     <td class="border px-4 py-2 dark:border-gray-500">{{ $teacher->lastname }}</td>

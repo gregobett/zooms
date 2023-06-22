@@ -19,29 +19,27 @@
     </div>
     <div class="grid grid-cols-12 bg-white dark:bg-[#222738]">
   
-      <div class="col-span-12 w-full px-3 py-6 justify-center flex space-x-4  md:space-x-0 md:space-y-4 md:flex-col md:col-span-2 md:justify-start ">
-  
+        <div class="col-span-12 w-full px-3 py-6 justify-center flex space-x-4  md:space-x-0 md:space-y-4 md:flex-col md:col-span-2 md:justify-start ">
+            <label class=" flex  uppercase tracking-wide text-gray-700 text-xs dark:text-gray-200 h-1" for="photo">
+                Add Photo
+            </label>
         
-        <label class=" flex  uppercase tracking-wide text-gray-700 text-xs dark:text-gray-200 h-1" for="photo">
-            Add Photo
-        </label>
-    
-        <div class="border-3 rounded-md bg-gre lg:border-2 dark:border">
-                <label>
-                    <input type="file" class=" w-full text-sm text-grey-500 p-2 text-gre
-                    file:mr-5 pl-1 file:py-1 file:px-2 file:lg:px-14 lg:pl-6
-                    file:rounded-full file:border-0
-                    file:text-sm file:font-medium
-                    file:bg-gre file:text-slate-50 dark:bg-[#222738] dark:border dark:file:bg-[#222738]
-                    hover:file:cursor-pointer hover:file:bg-gre
-                    hover:file:text-amber-700
-                " id="photo" name="photo" />
-                </label>
+                <div class="border-3 rounded-md bg-gre lg:border-2 dark:border">
+                    <label>
+                        <input type="file" class=" w-full text-sm text-grey-500 p-2 text-gre
+                        file:mr-5 pl-1 file:py-1 file:px-2 file:lg:px-14 lg:pl-6
+                        file:rounded-full file:border-0
+                        file:text-sm file:font-medium
+                        file:bg-gre file:text-slate-50 dark:bg-[#222738] dark:border dark:file:bg-[#222738]
+                        hover:file:cursor-pointer hover:file:bg-gre
+                        hover:file:text-amber-700
+                        " id="photo" name="photo" />
+                    </label>
                 </div>
-        <button type="submit" class="bg-gre text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-10 shadow-lg dark:bg-[#222738] dark:border">Update</button>
-
-  
-      </div>
+                    <button type="submit" class="bg-gre text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-10 shadow-lg dark:bg-[#222738] dark:border">
+                        Update
+                    </button>
+        </div>
   
       <div class="col-span-12 md:border-solid md:border-l md:border-black md:border-opacity-25 h-full pb-12 md:col-span-10">
         <div class="px-4 pt-4">
