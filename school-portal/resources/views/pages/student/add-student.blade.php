@@ -19,36 +19,30 @@
 
     <div class="grid grid-cols-12 bg-white dark:bg-dark-eval-1 ">
   
-      <div class="col-span-12 w-full px-2 py-4 justify-center flex space-x-4 border-b border-solid  dark:border-none md:space-y-4 md:flex-col xl:col-span-2 md:justify-start ">
-  
-    
-      
+        <div class="col-span-12 w-full px-2 py-4 justify-center flex space-x-4 border-b border-solid  dark:border-none md:space-y-4 md:flex-col xl:col-span-2 md:justify-start ">
             <label class="hidden md:block pl-5 uppercase tracking-wide text-gray-700 dark:text-white text-xs h-1 xl:pt-6" for="photo">
                 Add Photo
             </label>
        
             <div class="flex flex-col items-center justify-center gap-4 pr-3">
-            <div class="w-full border-1  lg:border-2 bg-gre dark:border-none rounded">
-            <label>
-                    <input type="file" class=" w-full text-sm text-grey-500 p-2 text-gre
-                     file:py-1 file:px-22 file:lg:px-22 file:2xl:px-12
-                    file:rounded-full file:border-0
-                    file:text-sm file:font-medium
-                    file:bg-gre file:text-slate-50 dark:bg-[#222738] dark:border dark:file:bg-[#222738]
-                    hover:file:cursor-pointer hover:file:bg-gre
-                    hover:file:text-amber-700
-                " id="photo" name="photo" />
-                </label>
-                
-            </div>
+                <div class="w-full border-1  lg:border-2 bg-gre dark:border-none rounded">
+                    <label>
+                        <input type="file" class=" w-full text-sm text-grey-500 p-2 text-gre
+                        file:py-1 file:px-22 file:lg:px-22 file:2xl:px-12
+                        file:rounded-full file:border-0
+                        file:text-sm file:font-medium
+                        file:bg-gre file:text-slate-50 dark:bg-[#222738] dark:border dark:file:bg-[#222738]
+                        hover:file:cursor-pointer hover:file:bg-gre
+                        hover:file:text-amber-700
+                        " id="photo" name="photo" />
+                    </label>
+                </div>
 
-     
-            <button type='submit' class=" w-full bg-gre hover:bg-gre text-sm md:text-md   mt-2 hover:text-red-700 text-slate-50 border-gray-200 rounded p-3 pt-2 shadow-lg dark:bg-[#222738] border">
-                Save
-            </button>
+                <button type='submit' class=" w-full bg-gre hover:bg-gre text-sm md:text-md   mt-2 hover:text-red-700 text-slate-50 border-gray-200 rounded p-3 pt-2 shadow-lg dark:bg-[#222738] border">
+                    Save
+                </button>
             </div>
-        
-      </div>
+        </div>
   
     
       <div class="col-span-12 md:border-solid md:border-l  md:border-black md:border-opacity-25  h-full pb-12 xl:col-span-10">
@@ -67,7 +61,7 @@
                
               
                 {{-- lastname --}}
-                <div class="form-item w-full ">
+                <div class="form-item w-full pt-4">
                     <label class="text-md ">Last Name</label>
                     <input type="text" value="{{old('lastname')}}" class="w-full  appearance-none text-black  rounded shadow py-1 px-2  mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="lastname" name="lastname" capitalize>
                     @error('lastname')
