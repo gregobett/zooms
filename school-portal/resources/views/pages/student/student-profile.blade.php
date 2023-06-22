@@ -19,32 +19,34 @@
     </div>
     <div class="grid grid-cols-12 bg-white dark:bg-[#222738]">
   
-      <div class="col-span-12 w-full px-3 py-6 justify-center flex space-x-4  md:space-x-0 md:space-y-4 md:flex-col md:col-span-2 md:justify-start ">
-  
+            <div class="col-span-12 w-full px-2 py-4 justify-center flex space-x-4  md:space-x-0 md:space-y-4 md:flex-col xl:col-span-2 md:justify-start ">
         
-        <label class=" flex  uppercase tracking-wide text-gray-700 text-xs dark:text-gray-200 h-1" for="photo">
-            Add Photo
-        </label>
-    
-        <div class="border-3 rounded-md bg-gre lg:border-2 ">
-            <label>
-                <input type="file" class=" w-full text-sm text-grey-500 p-2 text-gre
-                file:mr-5 pl-1 file:py-1 file:px-2 file:lg:px-14 lg:pl-6
-                file:rounded-full file:border-0 
-                file:text-sm file:font-medium
-                file:bg-gre file:text-slate-50 dark:bg-[#222738]  dark:file:bg-[#222738]
-                hover:file:cursor-pointer hover:file:bg-gre
-                hover:file:text-red-700
-            " id="photo" name="photo" />
-            </label>
+                
+                <label class="hidden md:block pl-5 uppercase tracking-wide text-gray-700 dark:text-white text-xs h-1 xl:pt-6" for="photo">
+                    Add Photo
+                </label>
+                
+                <div class="flex flex-col items-center justify-center gap-4 pr-3">
+                    <div class="w-full border-1  lg:border-2 bg-gre dark:border-none rounded">
+                        <label>
+                            <input type="file" class=" w-full text-sm text-grey-500 p-2 text-gre
+                            file:py-1 file:px-22 file:lg:px-22 file:2xl:px-12
+                            file:rounded-full file:border-0
+                            file:text-sm file:font-medium
+                            file:bg-gre file:text-slate-50 dark:bg-[#222738] dark:border dark:file:bg-[#222738]
+                            hover:file:cursor-pointer hover:file:bg-gre
+                            hover:file:text-amber-700
+                            " id="photo" name="photo" />
+                        </label>
+                            
+                    </div>
+
+                    <button type="submit" class="w-full bg-gre hover:bg-gre text-sm md-text-md mt-2 text-slate-50 hover:text-red-700 border-gray-200 rounded py-3 pt-2 shadow-lg dark:bg-[#222738] dark:border">Update</button>
+
+                </div>
             </div>
 
-        <button type="submit" class="bg-gre text-slate-50 hover:text-red-700 border-gray-200 rounded py-3 px-10 shadow-lg dark:bg-[#222738] dark:border">Update</button>
-
-  
-      </div>
-  
-      <div class="col-span-12 md:border-solid md:border-l md:border-black md:border-opacity-25 h-full pb-12 md:col-span-10">
+        <div class="col-span-12 md:border-solid md:border-l md:border-black md:border-opacity-25 h-full pb-12 xl:col-span-10">
         <div class="px-4 pt-4">
 
     
@@ -54,10 +56,10 @@
               <hr>
             </div>
   
-            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+            <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">
                 <div class="form-item w-full">
                     <label class="text-md ">Last Name</label>
-                    <input type="text" value="{{$data->lastname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 lg:mb-4 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200 uppercase" id="lastname" name="lastname">
+                    <input type="text" value="{{$data->lastname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 md:mb-4 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200 uppercase" id="lastname" name="lastname">
                     @error('lastname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -72,7 +74,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">First Name</label>
-                    <input type="text" value="{{$data->firstname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200 uppercase" id="firstname" name="firstname" >
+                    <input type="text" value="{{$data->firstname}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 md:mb-4 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200 uppercase" id="firstname" name="firstname" >
                     @error('firstname')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -102,11 +104,11 @@
             </div>
 
 
-            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">  
+            <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">  
 
                 <div class="form-item w-full">
                     <label class="text-md ">Email</label>
-                    <input type="text" value="{{ $data->email }}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 lg:mb-4 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200" id="email" name="email" disabled>
+                    <input type="text" value="{{ $data->email }}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200" id="email" name="email" disabled>
                     @error('email')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -119,80 +121,8 @@
                       @enderror
                 </div>                 
 
-                <div class="form-item w-full hidden">
-                    <label class="text-md ">Grade</label>
-                        <select class="w-full  appearance-none text-black text-opacity-70 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200 " id="grade" name="grade" >
-                            <option  @if($data->grade == '1') selected @endif>1</option>
-                            <option  @if($data->grade == '2') selected @endif>2</option>   
-                            <option  @if($data->grade == '3') selected @endif>3</option>
-                            <option  @if($data->grade == '4') selected @endif>4</option>   
-                            <option  @if($data->grade == '5') selected @endif>5</option>
-                            <option  @if($data->grade == '6') selected @endif>6</option>   
-                        </select>
-                    @error('grade')
-           
-                    <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
-                        <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                        <span class="sr-only">Info</span>
-                        <div>
-                            {{$message}}
-                        </div>
-                      </div>
-                      @enderror
-                    {{-- <input type="text" value="{{old('grade')}}" class="w-full appearance-none text-black text-opacity-50 rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200" id="grade" name="grade"> --}}
-                </div>
-
-
-                {{-- <div class="form-item w-full">
-                    <label class="text-md ">Section</label>
-                    <input type="text" value="{{$data->section}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200 dark:bg-gray-100 dark:text-black" placeholder="" id="section" name="section">
-                    @error('section')
-           
-                    <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
-                        <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                        <span class="sr-only">Info</span>
-                        <div>
-                            {{$message}}
-                        </div>
-                      </div>
-                      @enderror
-                </div> --}}
-
-                <div class="form-item w-full hidden">
-                    <label class="text-md ">Section</label>
-                        <select class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200 " id="section" name="section" readonly>
-                            <option  @if($data->section == 'Gold') selected @endif>Gold</option>
-                            <option  @if($data->section == 'Silver') selected @endif>Silver</option>   
-                            <option  @if($data->section == 'Bronze') selected @endif>Bronze</option>
-                            <option  @if($data->section == 'Narra') selected @endif>Narra</option>   
-                            <option  @if($data->section == 'Molave') selected @endif>Molave</option>
-                            <option  @if($data->section== 'Mahogany') selected @endif>Mahogany</option>   
-                            <option  @if($data->section == 'Joy') selected @endif>Joy</option>   
-                            <option  @if($data->section == 'Love') selected @endif>Love</option>
-                            <option  @if($data->section== 'Hope') selected @endif>Hope</option>  
-                            <option  @if($data->section == 'Diamond') selected @endif>Diamond</option>   
-                            <option  @if($data->section == 'Emerald') selected @endif>Emerald</option>
-                            <option  @if($data->section== 'Ruby') selected @endif>Ruby</option>  
-                            <option  @if($data->section == 'Rizal') selected @endif>Rizal</option>   
-                            <option  @if($data->section == 'Bonifacio') selected @endif>Bonifacio</option>
-                            <option  @if($data->section== 'Mabini') selected @endif>Mabini</option>  
-                            <option  @if($data->section == 'Blue') selected @endif>Blue</option>   
-                            <option  @if($data->section == 'Red') selected @endif>Red</option>
-                            <option  @if($data->section== 'Green') selected @endif>Green</option>  
-                        </select>
-                    @error('section')
-           
-                    <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
-                        <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                        <span class="sr-only">Info</span>
-                        <div>
-                            {{$message}}
-                        </div>
-                      </div>
-                      @enderror
-
-                </div>
-  
+               
+       
                 <div class="form-item w-full">
                     <label class="text-md ">Date of Birth</label>
                     <input type="date" value="{{$data->dateofbirth}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none dark:bg-gray-400 focus:shadow-outline focus:border-blue-200 " id="dateofbirth" name="dateofbirth">
@@ -211,11 +141,11 @@
             </div>
 
 
-            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+            <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">
 
                 <div class="form-item w-full">
                     <label class="text-md ">Phone</label>
-                    <input type="text" value="{{$data->phone}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 lg:mb-4 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200" id="phone" name="phone">
+                    <input type="text" value="{{$data->phone}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200" id="phone" name="phone">
                     @error('phone')
            
                     <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
@@ -230,7 +160,7 @@
 
                 <div class="form-item w-full">
                     <label class="text-md ">Gender</label>
-                        <select class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200 " id="gender" name="gender" >
+                        <select class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200 " id="gender" name="gender" >
                             <option  @if($data->gender == 'MALE') selected @endif>MALE</option>
                             <option @if($data->gender == "FEMALE") selected @endif>FEMALE</option>                
                         </select>
@@ -279,7 +209,7 @@
     
             </div>
 
-            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+            <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">
 
                 <div class="form-item w-full">
                     <label class="text-md ">Fathers Name</label>

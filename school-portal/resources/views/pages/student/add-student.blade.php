@@ -1,22 +1,12 @@
 
-
-
-
-
-
 @extends('layouts.home')
 @section('content')
 
-{{-- @livewireStyles
 
-<div> <livewire:gradesectiondropdown></div>
-
-
-@livewireScripts --}}
  <form method="post" action="{{url('save-student')}}" class="flex flex-col space-y-1" enctype="multipart/form-data">
                    
     @csrf
-<div class="w-full  shadow-2xl rounded my-24 overflow-hidden">
+<div class="w-full  shadow-2xl rounded my-24 overflow-hidden lg:pl-16 lg:pr-16">
     <div class="top h-60 w-full bg-blue-600 overflow-hidden relative" >
       <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="bg w-full h-full object-cover object-center absolute z-0">
       <div class="flex flex-col justify-center items-center relative h-full bg-black bg-opacity-50 text-white">
@@ -33,15 +23,15 @@
   
     
       
-            <label class="hidden md:block pl-5 uppercase tracking-wide text-gray-700 dark:text-white text-xs h-1 " for="photo">
+            <label class="hidden md:block pl-5 uppercase tracking-wide text-gray-700 dark:text-white text-xs h-1 xl:pt-6" for="photo">
                 Add Photo
             </label>
        
             <div class="flex flex-col items-center justify-center gap-4 pr-3">
-            <div class="w-full border-1 rounded-md  lg:border-2 bg-gre dark:border-none ">
+            <div class="w-full border-1  lg:border-2 bg-gre dark:border-none rounded">
             <label>
                     <input type="file" class=" w-full text-sm text-grey-500 p-2 text-gre
-                    file:mr-5 pl-1 file:py-1 file:px-2 file:lg:px-14 lg:pl-6
+                     file:py-1 file:px-22 file:lg:px-22 file:2xl:px-12
                     file:rounded-full file:border-0
                     file:text-sm file:font-medium
                     file:bg-gre file:text-slate-50 dark:bg-[#222738] dark:border dark:file:bg-[#222738]
@@ -49,10 +39,9 @@
                     hover:file:text-amber-700
                 " id="photo" name="photo" />
                 </label>
+                
             </div>
 
-
-     
      
             <button type='submit' class=" w-full bg-gre hover:bg-gre text-sm md:text-md   mt-2 hover:text-red-700 text-slate-50 border-gray-200 rounded p-3 pt-2 shadow-lg dark:bg-[#222738] border">
                 Save
@@ -62,7 +51,7 @@
       </div>
   
     
-      <div class="col-span-12 md:border-solid md:border-l  md:border-black md:border-opacity-25  h-full pb-12 lg:col-span-10">
+      <div class="col-span-12 md:border-solid md:border-l  md:border-black md:border-opacity-25  h-full pb-12 xl:col-span-10">
         <div class="px-4 pt-4">
 
             <div class="py-2">
@@ -72,7 +61,7 @@
 
         
             
-            <div class="flex flex-col space-y-4 md:space-y-0 lg:flex-row lg:space-x-4">
+            <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">
 
                
                
@@ -124,7 +113,7 @@
                 </div>
             </div>    
 
-            <div class="flex flex-col space-y-4 md:space-y-0 lg:flex-row lg:space-x-4">  
+            <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">  
 
                 {{-- email --}}
                 <div class="form-item w-full">
@@ -167,7 +156,7 @@
             </div>
 
 
-            <div class="flex flex-col space-y-4 md:space-y-0 lg:flex-row lg:space-x-4">
+            <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">
                 
                 {{-- Phone --}}
                 <div class="form-item w-full">
@@ -240,7 +229,7 @@
     
             </div>
 
-            <div class="flex flex-col space-y-4 md:space-y-0 lg:flex-row lg:space-x-4">
+            <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">
                 
                 {{-- Fathers Name --}}
                 <div class="form-item w-full">
@@ -326,8 +315,9 @@
             </div>
 
         </div>
-    
-      </div>
+
+
+    </div>
 
         {{-- Add subject for junior highschool --}}
         <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="mothertongue" hidden>
