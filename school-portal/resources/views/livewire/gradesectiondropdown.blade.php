@@ -15,7 +15,7 @@
     <div class="form-item w-full">
         <label for="section" class="text-md">Section</label>
 
-        <select wire:model="selectedSection" class="w-full appearance-none text-black  rounded shadow py-1 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="section" name="section" required>
+        <select wire:model="selectedSection" class="w-full appearance-none text-black  md:mb-2 rounded shadow py-1 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="section" name="section" required>
             <option value="" selected>Choose</option>
             @foreach($sections as $section)
                 <option value="{{ $section->name }}" @if ($selectedSection == $section->name) {{ 'selected' }} @endif>{{ $section->name }}</option>

@@ -118,9 +118,6 @@
             <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">  
 
 
-           
-              
-
                 <div class="form-item w-full">
                     <label class="text-md ">Email</label>
                     <input type="text" value="{{ $data->email }}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  lg:mb-4 focus:outline-none dark:bg-gray-400  focus:shadow-outline focus:border-blue-200" id="email" name="email" >
@@ -138,14 +135,10 @@
 
             
                 @livewireStyles
-                    {{-- <div class="form-item w-full"> <livewire:gradesectiondropdown :initialGradeId="$data->grade" :initialSectionName="$data->section" /></div> --}}
                     <livewire:gradesectiondropdown :initialGradeId="$data->grade ?? null" :initialSectionName="$data->section ?? null" />
                 @livewireScripts
 
              
-            
-               
-
            
                 <div class="form-item w-full">
                     <label class="text-md ">Date of Birth</label>
