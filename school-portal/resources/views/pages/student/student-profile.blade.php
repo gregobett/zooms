@@ -6,7 +6,7 @@
                    
     @csrf
     <input type="hidden" value="{{ $data->id }}" name="id" />
-<div class="w-full  mt-4 shadow-2xl rounded my-24  overflow-hidden lg:pl-16 lg:pr-16">
+<div class="w-full  mt-4  rounded my-24  overflow-hidden lg:pl-16 lg:pr-16">
     <div class="top h-60 w-full bg-blue-600 overflow-hidden  relative" >
       <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="bg w-full h-full object-cover object-center absolute z-0">
       

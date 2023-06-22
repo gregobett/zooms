@@ -5,7 +5,7 @@
                    
     @csrf
     <input type="hidden" value="{{ $data->id }}" name="id" />
-<div class="w-full  mt-4 shadow-2xl rounded my-24 overflow-hidden lg:pl-16 lg:pr-16">
+<div class="w-full  mt-4  rounded my-24 overflow-hidden lg:pl-16 lg:pr-16">
     <div class="top h-60 w-full bg-blue-600 overflow-hidden relative" >
       <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="bg w-full h-full object-cover object-center absolute z-0">
       <div class="flex flex-col justify-center items-center relative h-full bg-black bg-opacity-50 text-white">
@@ -35,14 +35,14 @@
                         </label>     
                     </div>
 
-                    <button type="submit" class="w-full bg-gre hover:bg-gre text-sm md-text-md mt-2 text-slate-50 hover:text-red-700 border-gray-200 rounded p-3 pt-2 shadow-lg dark:bg-[#222738] dark:border">
+                    <button type="submit" class="w-full bg-gre hover:bg-gre text-sm md-text-md  mt-2 text-slate-50 hover:text-red-700 border-gray-200 rounded p-3 pt-2 shadow-lg dark:bg-[#222738] dark:border">
                         Update
                     </button>
 
                 </div>
             </div>
   
-      <div class="col-span-12 md:border-solid md:border-l md:border-black md:border-opacity-25 h-full pb-12 xl:col-span-10">
+      <div class="col-span-12 md:border-solid md:border-l  md:border-opacity-25 h-full pb-12 xl:col-span-10">
         <div class="px-4 pt-4">
 
        

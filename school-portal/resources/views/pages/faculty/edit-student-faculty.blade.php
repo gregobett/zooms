@@ -6,7 +6,7 @@
     @csrf
     <input type="hidden" value="{{ $data->id }}" name="id" />
     <input type="hidden" value="{{ $data->user_id }}" name="user_id" />
-<div class="w-full  mt-4 shadow-2xl rounded my-24  overflow-hidden lg:pl-16 lg:pr-16">
+<div class="w-full  mt-4 rounded my-24  overflow-hidden lg:pl-16 lg:pr-16">
     <div class="top h-60 w-full bg-blue-600 overflow-hidden  relative" >
       <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="bg w-full h-full object-cover object-center absolute z-0">
       
@@ -19,15 +19,15 @@
     </div>
     <div class="grid grid-cols-12 bg-white dark:bg-[#222738]">
   
-        <div class="col-span-12 w-full md:pl-4  px-2 py-4 justify-center flex space-x-4  md:space-x-0 md:space-y-4 md:flex-col xl:col-span-2 md:justify-start ">
+        <div class="col-span-12 w-full md:pl-4  px-2 py-4 justify-center flex space-x-4  md:space-x-0 md:space-y-4 md:flex-col xl:col-span-2 md:justify-start xl:mt-4 ">
             <label class=" hidden  lg:block  uppercase tracking-wide text-gray-700 text-xs dark:text-gray-200 h-1" for="photo">
                 Add Photo
             </label>
             <div class="flex flex-col items-center justify-center gap-4 pr-3">
                     <div class="w-full border-1  lg:border-2 bg-gre dark:border-none rounded">
                         <label>
-                            <input type="file" class=" w-full text-sm text-grey-500 p-1 text-gre xl:text-xs
-                            file:py-1 file:px-22 file:lg:px-22 file:2xl:px-12
+                            <input type="file" class=" w-full text-sm text-grey-500 p-1 text-gre xl:text-xs xl:pt-3 xl:pb-3
+                            file:py-1 file:px-22 file:lg:px-22 file:2xl:px-12 file:xl:pl-5
                             file:rounded-full file:border-0
                             file:text-sm file:font-medium
                             file:bg-gre file:text-slate-50 dark:bg-[#222738] dark:border dark:file:bg-[#222738]
@@ -38,17 +38,17 @@
                     </div>
 
             
-                <button type="submit" class="w-full bg-gre text-slate-50 text-xs lg:text-base hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 mt-2 lg:mb-4 lg:mt-4 dark:bg-[#222738] dark:border xl:text-xs">Update</button>
+                <button type="submit" class="w-full bg-gre text-slate-50 text-xs lg:text-base hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center xl:pt-4 xl:pb-4 mb-2 mt-2 lg:mb-4 xl:mb-0 lg:mt-4 xl:mt-0 dark:bg-[#222738] dark:border xl:text-xs">Update</button>
                 @if($data->grade === '11' || $data->grade === '12')
-                <a href="{{url('edit-student-grade-senior1/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border ">Add 1st Quarter Grade</a>
-                <a href="{{url('edit-student-grade-senior2/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border">Add 2nd Quarter Grade</a>
-                <a href="{{url('edit-student-grade-senior3/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border">Add 3rd Quarter Grade</a>
-                <a href="{{url('edit-student-grade-senior4/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center dark:bg-[#222738] border">Add 4th Quarter Grade</a>
+                <a href="{{url('edit-student-grade-senior1/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 hover:bg-gray-500 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 xl:mb-0  lg:mb-4 dark:bg-[#222738] dark:border xl:pt-4 xl:pb-4">Add 1st Quarter Grade</a>
+                <a href="{{url('edit-student-grade-senior2/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 xl:mb-0 dark:bg-[#222738] dark:border xl:pt-4 xl:pb-4">Add 2nd Quarter Grade</a>
+                <a href="{{url('edit-student-grade-senior3/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 xl:mb-0 dark:bg-[#222738] dark:border xl:pt-4 xl:pb-4">Add 3rd Quarter Grade</a>
+                <a href="{{url('edit-student-grade-senior4/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center dark:bg-[#222738] border xl:pt-4 xl:pb-4">Add 4th Quarter Grade</a>
                 @else
-                <a href="{{url('edit-student-grade1/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border xl:text-xs">Add 1st Quarter Grade</a>
-                <a href="{{url('edit-student-grade2/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border xl:text-xs">Add 2nd Quarter Grade</a>
-                <a href="{{url('edit-student-grade3/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 dark:bg-[#222738] dark:border xl:text-xs">Add 3rd Quarter Grade</a>
-                <a href="{{url('edit-student-grade4/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center dark:bg-[#222738] dark:border xl:text-xs">Add 4th Quarter Grade</a>
+                <a href="{{url('edit-student-grade1/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700  border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 xl:mt-0 xl:mb-0  dark:bg-[#222738] dark:border xl:text-xs xl:pt-4 xl:pb-4">Add 1st Quarter Grade</a>
+                <a href="{{url('edit-student-grade2/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 xl:mb-0  dark:bg-[#222738] dark:border xl:text-xs xl:pt-4 xl:pb-4">Add 2nd Quarter Grade</a>
+                <a href="{{url('edit-student-grade3/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 xl:mb-0  dark:bg-[#222738] dark:border xl:text-xs xl:pt-4 xl:pb-4">Add 3rd Quarter Grade</a>
+                <a href="{{url('edit-student-grade4/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center dark:bg-[#222738] dark:border xl:text-xs xl:pt-4 xl:pb-4">Add 4th Quarter Grade</a>
                 @endif
             </div>
         </div>
