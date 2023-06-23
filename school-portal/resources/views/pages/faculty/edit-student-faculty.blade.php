@@ -40,10 +40,10 @@
             
                 <button type="submit" class="w-full bg-gre text-slate-50 text-xs lg:text-base hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center xl:pt-4 xl:pb-4 mb-2 mt-2 lg:mb-4 xl:mb-0 lg:mt-4 xl:mt-0 dark:bg-[#222738] dark:border xl:text-xs">Update</button>
                 @if($data->grade === '11' || $data->grade === '12')
-                <a href="{{url('edit-student-grade-senior1/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 hover:bg-gray-500 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 xl:mb-0  lg:mb-4 dark:bg-[#222738] dark:border xl:pt-4 xl:pb-4">Add 1st Quarter Grade</a>
-                <a href="{{url('edit-student-grade-senior2/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 xl:mb-0 dark:bg-[#222738] dark:border xl:pt-4 xl:pb-4">Add 2nd Quarter Grade</a>
-                <a href="{{url('edit-student-grade-senior3/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 xl:mb-0 dark:bg-[#222738] dark:border xl:pt-4 xl:pb-4">Add 3rd Quarter Grade</a>
-                <a href="{{url('edit-student-grade-senior4/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center dark:bg-[#222738] border xl:pt-4 xl:pb-4">Add 4th Quarter Grade</a>
+                <a href="{{url('edit-student-grade-senior1/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 hover:bg-gray-500 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 xl:mb-0  lg:mb-4 dark:bg-[#222738] dark:border xl:text-xs xl:pt-4 xl:pb-4">Add 1st Quarter Grade</a>
+                <a href="{{url('edit-student-grade-senior2/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 xl:mb-0 dark:bg-[#222738] dark:border xl:text-xs xl:pt-4 xl:pb-4">Add 2nd Quarter Grade</a>
+                <a href="{{url('edit-student-grade-senior3/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 xl:mb-0 dark:bg-[#222738] dark:border xl:text-xs xl:pt-4 xl:pb-4">Add 3rd Quarter Grade</a>
+                <a href="{{url('edit-student-grade-senior4/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center dark:bg-[#222738] border xl:text-xs xl:pt-4 xl:pb-4">Add 4th Quarter Grade</a>
                 @else
                 <a href="{{url('edit-student-grade1/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700  border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 xl:mt-0 xl:mb-0  dark:bg-[#222738] dark:border xl:text-xs xl:pt-4 xl:pb-4">Add 1st Quarter Grade</a>
                 <a href="{{url('edit-student-grade2/'.$data->user_id )}}" type="btn" class="w-full bg-gre text-xs lg:text-base text-slate-50 hover:text-amber-700 border-gray-200 rounded py-2 px-5 shadow-lg flex  justify-center mb-2 lg:mb-4 xl:mb-0  dark:bg-[#222738] dark:border xl:text-xs xl:pt-4 xl:pb-4">Add 2nd Quarter Grade</a>
@@ -306,6 +306,130 @@
         </div>
         </div>
       </div>
+
+
+      {{-- Add subject for junior highschool --}}
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="mothertongue" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="filipino"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="english"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="mathematics"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="science"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="ap" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="esp"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="music"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="arts"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="pe"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="health"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="epp"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="tle" hidden>
+
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="mothertongue2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="filipino2"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="english2"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="mathematics2"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="science2"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="ap2"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="esp2"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="music2"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="arts2"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="pe2"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="health2"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="epp2"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="tle2"  hidden>
+
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="mothertongue3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="filipino3"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="english3"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="mathematics3"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="science3"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="ap3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="esp3"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="music3"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="arts3"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="pe3"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="health3"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="epp3"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="tle3" hidden>
+
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="mothertongue4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="filipino4"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="english4"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="mathematics4"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="science4"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="ap4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="esp4"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="music4"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="arts4"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="pe4"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="health4"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="epp4"  hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="tle4" hidden>
+
+        {{-- Add subject for senior highschool --}}
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="oral" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="reading" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="komunikasyon" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="pagbasa" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="century" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="contemporary" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="media" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="math" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="statistics" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="earth" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="science" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="philosophy" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="health" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="personal" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="culture"  hidden>
+
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="oral2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="reading2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="komunikasyon2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="pagbasa2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="century2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="contemporary2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="media2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="math2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="statistics2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="earth2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="science2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="philosophy2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="health2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="personal2" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="culture2"  hidden>
+
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="oral3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="reading3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="komunikasyon3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="pagbasa3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="century3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="contemporary3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="media3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="math3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="statistics3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="earth3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="science3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="philosophy3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="health3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="personal3" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="culture3"  hidden>
+
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="oral4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="reading4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="komunikasyon4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="pagbasa4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="century4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="contemporary4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="media4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="math4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="statistics4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="earth4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="science4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="philosophy4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800" type="text" name="health4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="personal4" hidden>
+        <input value="0" class="border py-0 px-3 text-grey-800 mb-2" type="text" name="culture4"  hidden>
+
     </form>
     @include('sweetalert::alert')
     
