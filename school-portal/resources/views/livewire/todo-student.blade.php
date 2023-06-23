@@ -22,10 +22,11 @@
                 <li  wire:key="{{ $todo->id }}">
                     <div class="flex mt-4"> 
 
-                        <div class="p-0 lg:p-2 w-full  shadow-md pl-2">
+                        <div class="p-0 lg:p-2 w-full shadow-md pl-2">
                             <input type="checkbox" wire:click="toggleCompletion({{ $todo->id }})" {{ $todo->completed ? 'checked' : '' }}>
-                            <span class="w-full text-grey-darkest text-sm  lg:pl-2 uppercase ">{{ $todo->title }}</span>
+                            <span class="w-full text-grey-darkest text-sm lg:pl-2 uppercase {{ $todo->completed ? 'line-through' : '' }}">{{ $todo->title }}</span>
                         </div>
+
 
                         <div>
                             <button class="flex-no-shrink p-1 md:p-2 ml-2 shadow-md border-2 rounded-lg text-white border-red bg-red-800 hover:text-white hover:bg-red-900" wire:click="delete({{ $todo->id }})">

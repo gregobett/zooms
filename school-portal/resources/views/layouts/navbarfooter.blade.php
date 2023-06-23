@@ -77,18 +77,17 @@
                                 
                                 @if(Auth::user()->user_type === "Student")
                                     <a href="{{ url('dashboard') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Dashboard</a>
-                                @else
-                                    <a href="{{ url('/dashboard') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Dashboard</a>
+                                @elseif(Auth::user()->user_type === "Faculty")
+                                    <a href="{{ url('/faculty-dashboard') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Dashboard</a>
+                                @elseif(Auth::user()->user_type === "Admin")
+                                    <a href="{{ url('/admin-dashboard') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Dashboard</a>
                                 @endif
                                     
                                 @else
-                                {{-- <a href="{{ url('contact-us') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Contacts</a>
-                                <a href="{{ url('/about') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">About</a> --}}
-                                    {{-- <a href="{{ route('login') }}" class="md:text-lg font-light text-sky-50 hover:underline hover:text-sky-200">Log in</a> --}}
-
-                                        <a href="{{ url('login') }}" x-data="{ open: false }" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">
-                                        Log in
-                                        </a>
+                               
+                                    <a href="{{ url('login') }}" x-data="{ open: false }" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">
+                                    Log in
+                                    </a>
 
                                     @if (Route::has('register'))
                                         <a href="{{ route('register') }}" class="md:text-lg hover:text-sky-200 duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-sky-200 after:absolute hover:after:translate-x-full after:duration-300">Register</a>

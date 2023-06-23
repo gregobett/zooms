@@ -2,7 +2,7 @@
 
 <!-- component -->
 <div class=" bg-gray-50 flex items-center h-1/2">
-	<section class=" bg-center py-12 w-full xl:py-32 opacity-80 dark:opacity-90" style="background-image: url('images/goal-background.jpg');">
+	<section class=" bg-center py-12 w-full xl:py-32 opacity-80 dark:opacity-90" style="background-image: url('images/goal-background.webp');">
 		<div class="container mx-auto text-center xl:text-start text-white">
 			<div class="flex flex-col xl:flex-row items-center">
 				<div class="w-full flex-col xl:w-1/2">
@@ -11,7 +11,7 @@
 					<!-- <a href="#" class="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600">Demo</a> -->
 				</div>
 				<div class=" w-full items-center pl-4 pr-4 xl:pl-16 xl:w-1/2 xl:rounded-full">
-					<img src="images/flag.png" class=" h-64 w-full xl:rounded-xl " alt="Layout Image">
+					<img src="images/flag.webp" class=" h-64 w-full xl:rounded-xl " alt="Layout Image">
                 </div>
 				</div>
 			</div>
@@ -37,7 +37,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl text-gray-800 dark:text-gray-500 font">Set clear goals</div>
                   <div class="px-3 pb-6">Define what you want to achieve by finishing your studies. Determine the degree or qualification you are pursuing and understand the requirements for completion.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5 "><img src="images/goal.png" alt="step 1" class="object-scale-down dark:filter dark:brightness-75 "></div>
+               <div class="hidden lg:block md:w-96 w-full p-5 "><img src="images/goal.webp" alt="step 1" class="object-scale-down dark:filter dark:brightness-75 "></div>
             </div>
          </div>
       </div>
@@ -69,7 +69,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl text-gray-800 dark:text-gray-500 font">Create a study plan</div>
                   <div class="px-3 pb-6">Develop a comprehensive study plan that outlines the courses you need to complete, the number of credits required, and the timeline for finishing each course. Consider factors such as workload, personal commitments, and available resources while creating your plan.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/plan.png" alt="step 2" class="object-scale-down dark:filter dark:brightness-75"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/plan.webp" alt="step 2" class="object-scale-down dark:filter dark:brightness-75"></div>
             </div>
          </div>
       </div>
@@ -101,7 +101,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl text-gray-800 dark:text-gray-500 font">Seek guidance</div>
                   <div class="px-3 pb-6"> Consult with academic advisors, professors, or mentors who can provide guidance on your academic path. They can help you understand course requirements, recommend study materials, and offer insights on career opportunities related to your field of study.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/guidance.png" alt="step 3" class="object-scale-down"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/guidance.webp" alt="step 3" class="object-scale-down"></div>
             </div>
          </div>
       </div>
@@ -133,7 +133,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl text-gray-800 dark:text-gray-500 font">Manage your time effectively</div>
                   <div class="px-3 pb-6">Develop good time management skills to balance your studies with other responsibilities. Create a schedule that allows for focused study sessions, breaks, and time for relaxation. Avoid procrastination and stick to your study plan.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/time.png" alt="step 4" class="object-scale-down dark:filter dark:brightness-75"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/time.webp" alt="step 4" class="object-scale-down dark:filter dark:brightness-75"></div>
             </div>
          </div>
       </div>
@@ -165,7 +165,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl  text-gray-800 dark:text-gray-500 font">Stay organized</div>
                   <div class="px-3 pb-6">Keep track of deadlines, assignments, and exams by using a planner or digital tools. Organize your study materials, notes, and resources in a systematic manner. This will help you stay on top of your coursework and reduce stress.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/organized.png" alt="step 3" class="object-scale-down"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/organized.webp" alt="step 3" class="object-scale-down"></div>
             </div>
          </div>
       </div>
@@ -197,7 +197,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl md:text-2xl lg:text-3xl text-gray-800 dark:text-gray-500 font">Attend classes and participate actively</div>
                   <div class="px-3 pb-6">Regularly attend classes, engage in discussions, and actively participate in academic activities. This will enhance your understanding of the subject matter and improve your overall learning experience.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/participate.png" alt="step 2" class="object-scale-down dark:filter dark:brightness-75"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/participate.webp" alt="step 2" class="object-scale-down dark:filter dark:brightness-75"></div>
             </div>
          </div>
       </div>
@@ -229,7 +229,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl text-gray-800 dark:text-gray-500 font">Utilize available resources</div>
                   <div class="px-3 pb-6">Take advantage of libraries, online databases, and educational resources provided by your institution. Join study groups or form study partnerships with classmates to exchange knowledge and support each other.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/utilize.png" alt="step 3" class="object-scale-down"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/utilize.webp" alt="step 3" class="object-scale-down"></div>
             </div>
          </div>
       </div>
@@ -261,7 +261,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl text-gray-800 dark:text-gray-500 font">Seek help when needed</div>
                   <div class="px-3 pb-6">If you're struggling with certain concepts or subjects, don't hesitate to seek help from professors, tutors, or classmates. Many educational institutions offer support services such as tutoring centers or writing labs that can assist you in areas where you need additional help.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/help.png" alt="step 2" class="object-scale-down dark:filter dark:brightness-75"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/help.webp" alt="step 2" class="object-scale-down dark:filter dark:brightness-75"></div>
             </div>
          </div>
       </div>
@@ -293,7 +293,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl text-gray-800 dark:text-gray-500 font">Stay motivated and focused</div>
                   <div class="px-3 pb-6">Maintain a positive mindset throughout your studies. Remind yourself of your goals and the benefits of completing your education. Celebrate small victories along the way and find ways to stay motivated during challenging times.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/motivate.png" alt="step 3" class="object-scale-down"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/motivate.webp" alt="step 3" class="object-scale-down"></div>
             </div>
          </div>
       </div>
@@ -326,7 +326,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl text-gray-800 dark:text-gray-500 font">Review and revise</div>
                   <div class="px-3 pb-6">Regularly review your progress and adjust your study plan if necessary. Reflect on your strengths and weaknesses, and identify areas where you can improve. Use feedback from professors and assessments to refine your approach.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/review.png" alt="step 2" class="object-scale-down dark:filter dark:brightness-75"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/review.webp" alt="step 2" class="object-scale-down dark:filter dark:brightness-75"></div>
             </div>
          </div>
       </div>
@@ -358,7 +358,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl text-gray-800 dark:text-gray-500 font">Prepare for exams and assessments</div>
                   <div class="px-3 pb-6"> Prioritize exam preparation by reviewing course materials, taking practice tests, and seeking clarification on challenging topics. Develop effective study techniques that work best for you, such as creating summaries, flashcards, or mnemonic devices.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/exam.png" alt="step 3" class="object-scale-down"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/exam.webp" alt="step 3" class="object-scale-down"></div>
             </div>
          </div>
       </div>
@@ -391,7 +391,7 @@
                   <div class="p-3 text-xl md:text-2xl lg:text-3xl text-gray-800 dark:text-gray-500 font">Complete assignments and projects on time</div>
                   <div class="px-3 pb-6">Be diligent in completing assignments, papers, and projects within the given deadlines. Pay attention to detail, proofread your work, and ensure it meets the required standards.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/assignment.png" alt="step 2" class="object-scale-down dark:filter dark:brightness-75"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/assignment.webp" alt="step 2" class="object-scale-down dark:filter dark:brightness-75"></div>
             </div>
          </div>
       </div>
@@ -425,7 +425,7 @@
 
 </div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/grad.png" alt="step 3" class="object-scale-down"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/grad.webp" alt="step 3" class="object-scale-down"></div>
             </div>
          </div>
       </div>
@@ -456,7 +456,7 @@
                   <div class="px-3 pb-6">Remember that finishing your studies is a long-term commitment. Stay persistent and persevere through 
                      challenges and setbacks. Keep your end goal in mind and maintain your focus until you reach the finish line.</div>
                </div>
-               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/persevere.png" alt="step 4" class="object-scale-down"></div>
+               <div class="hidden lg:block md:w-96 w-full p-5"><img src="images/persevere.webp" alt="step 4" class="object-scale-down"></div>
             </div>
          </div>
       </div>
