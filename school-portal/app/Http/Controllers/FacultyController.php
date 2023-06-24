@@ -30,12 +30,7 @@ class FacultyController extends Controller
   }
 
 
-  public function facultySchedule(){
 
-    $data = Faculty::where('user_id', '=', auth()->id())->first();
-    return view('dashboard', compact('data'));
-
-}
 
 public function facultyTodo(){
     return view('faculty-todo');

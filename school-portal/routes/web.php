@@ -107,7 +107,6 @@ Route::middleware(['auth', 'verified', 'faculty-middleware'])->group(function ()
         Route::post('update-thirdquarter', [ThirdquarterController::class, 'updateThirdquarter']);
         Route::get('edit-student-grade4/{user_id}', [FourthquarterController::class, 'editStudentGrade4']);
         Route::post('update-fourthquarter', [FourthquarterController::class, 'updateFourthquarter']);
-        Route::get('faculty-dashboard', [FacultyController::class, 'facultySchedule'])->name('faculty-dashboard');
         Route::get('edit-student-grade-senior1/{user_id}', [FirstquarterseniorController::class, 'editStudentGradeSenior1']);
         Route::post('update-firstquarter-senior', [FirstquarterseniorController::class, 'updateFirstquarterSenior'])->name('update-firstquarter-senior');
         Route::get('edit-student-grade-senior2/{user_id}', [SecondquarterseniorController::class, 'editStudentGradeSenior2']);

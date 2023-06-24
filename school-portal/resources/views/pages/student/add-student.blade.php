@@ -76,7 +76,7 @@
                       @enderror
                 </div>
             
-                <div class="form-item w-full">
+                <div class="form-item w-full xl:pt-4">
                     <label class="text-md ">First Name</label>
                     <input type="text" value="{{old('firstname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="firstname" name="firstname" capitalize>
                     @error('firstname')
@@ -91,7 +91,7 @@
                       @enderror
                 </div>
                 {{-- Middle name --}}
-                <div class="form-item w-full">
+                <div class="form-item w-full xl:pt-4">
                     <label class="text-md ">Middle Name</label>
                     <input type="text" value="{{old('middlename')}}" class="w-full appearance-none text-black rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="middlename" name="middlename" capitalize>
                     @error('middlename')

@@ -26,7 +26,7 @@
 
 <body class="font-sans antialiased " x-data="mainState" :class="{dark: isDarkMode}" x-cloak>
     {{-- nav bar goes heres --}}
-    <nav class="bg-gre opacity-75 dark:bg-[#222738]  py-2 fixed top-0 left-0 right-0 z-10 " >
+    <nav class="bg-gre opacity-75 dark:bg-[#222738] dark:opacity-100  py-2 fixed top-0 left-0 right-0 z-10 " >
         <div x-data="{isOpen: false}" class="mx-auto px-5 md:px-12.5 lg:px-20">
             
             <div class="md:flex md:justify-between items-center">
