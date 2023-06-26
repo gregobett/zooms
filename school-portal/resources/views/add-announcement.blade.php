@@ -14,7 +14,7 @@
       <form  method="post" action="{{url('save-announcement')}}" class="mt-6 shadow-xl" enctype="multipart/form-data">
         @csrf
      
-        <div class=" rounded-md bg-gre ">
+          <div class=" rounded-md bg-gre ">
             <label>
                 <input type="file" class=" w-full text-sm text-grey-500 p-2 text-gre dark:bg-[#222738]
                 file:mr-5 pl-6 file:py-1 file:px-18
@@ -26,18 +26,18 @@
                 
                 " id="photo" name="photo" required>
             </label>
-        </div>
+          </div>
 
-        <label for="title" class="block mt-4 text-xs font-semibold text-gray-600 dark:text-gray-100 uppercase">Title</label>
-        <input id="title" value="{{old('title')}}" type="text" name="title"   class="block w-full text-sm  mt-0 text-gray-700 bg-gray-200  appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
-     
+          <label for="title" class="block mt-4 text-xs font-semibold text-gray-600 dark:text-gray-100 uppercase">Title</label>
+          <input id="title" value="{{old('title')}}" type="text" name="title"   class="block w-full text-sm  mt-0 text-gray-700 bg-gray-200  appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+      
 
-        <label for="message" class="block mt-4 text-xs font-semibold text-gray-600 dark:text-gray-100 uppercase">Message</label>
-        <textarea  class="block w-full p-3 mt-0 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" name="message" required>{{old('message')}}</textarea>
-        
-        <button type="submit" class="w-full text-sm py-3 mt-6 font-medium tracking-widest text-white uppercase bg-gre  dark:bg-[#222738] border shadow-lg focus:outline-none hover:text-red-700 hover:shadow-none  rounded-md">
-          Create Announcement
-        </button>
+          <label for="message" class="block mt-4 text-xs font-semibold text-gray-600 dark:text-gray-100 uppercase">Message</label>
+          <textarea  class="block w-full p-3 mt-0 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" name="message" required>{{old('message')}}</textarea>
+          
+          <button type="submit" class="w-full text-sm py-3 mt-6 font-medium tracking-widest text-white uppercase bg-gre  dark:bg-[#222738] border shadow-lg focus:outline-none hover:text-red-700 hover:shadow-none  rounded-md">
+            Create Announcement
+          </button>
 
       </form>
     </div>

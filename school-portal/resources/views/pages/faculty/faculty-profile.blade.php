@@ -6,18 +6,19 @@
     @csrf
     <input type="hidden" value="{{ $data->id }}" name="id" />
 <div class="w-full  mt-4  rounded my-24 overflow-hidden lg:pl-16 lg:pr-16">
-    <div class="top h-60 w-full bg-blue-600 overflow-hidden relative" >
-      <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="bg w-full h-full object-cover object-center absolute z-0">
-      <div class="flex flex-col justify-center items-center relative h-full bg-black bg-opacity-50 text-white">
-        
-        <img src="{{asset('uploads/faculty/'.$data->photo)}}"  alt="image" class="h-24 w-24 object-cover rounded-full">
-        <h1 class="text-2xl font-semibold"></h1>
-        <h4 class="text-sm font-semibold"></h4>
-      </div>
-    </div>
+        <div class="top h-60 w-full bg-blue-600 overflow-hidden relative" >
+            <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="bg w-full h-full object-cover object-center absolute z-0">
+            <div class="flex flex-col justify-center items-center relative h-full bg-black bg-opacity-50 text-white">
+                
+                <img src="{{asset('uploads/faculty/'.$data->photo)}}"  alt="image" class="h-24 w-24 object-cover rounded-full">
+                <h1 class="text-2xl font-semibold"></h1>
+                <h4 class="text-sm font-semibold"></h4>
+            </div>
+        </div>
+
     <div class="grid grid-cols-12 bg-white dark:bg-[#222738]">
   
-    <div class="col-span-12 w-full md:pl-4  px-2 py-4 justify-center flex space-x-4  md:space-x-0 md:space-y-4 md:flex-col xl:col-span-2 md:justify-start ">
+            <div class="col-span-12 w-full md:pl-4  px-2 py-4 justify-center flex space-x-4  md:space-x-0 md:space-y-4 md:flex-col xl:col-span-2 md:justify-start ">
                     <label class="hidden md:block pb-2 uppercase tracking-wide text-gray-700 dark:text-white text-xs h-1 xl:pt-6" for="photo">
                         Add Photo
                     </label>
@@ -38,19 +39,16 @@
                     <button type="submit" class="w-full bg-gre hover:bg-gre text-sm md-text-md  mt-2 text-slate-50 hover:text-red-700 border-gray-200 rounded p-3 pt-2 shadow-lg dark:bg-[#222738] dark:border">
                         Update
                     </button>
-
                 </div>
             </div>
   
-      <div class="col-span-12 md:border-solid md:border-l  md:border-opacity-25 h-full pb-12 xl:col-span-10">
-        <div class="px-4 pt-4">
+        <div class="col-span-12 md:border-solid md:border-l  md:border-opacity-25 h-full pb-12 xl:col-span-10">
+            <div class="px-4 pt-4">
 
-       
-  
-            <div>
-              <h3 class="text-2xl font-semibold">Edit Information</h3>
-              <hr>
-            </div>
+                <div>
+                    <h3 class="text-2xl font-semibold">Edit Information</h3>
+                    <hr>
+                </div>
   
             <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">
                 <div class="form-item w-full pt-4">
@@ -64,7 +62,7 @@
                         <div>
                             {{$message}}
                         </div>
-                      </div>
+                    </div>
                       @enderror
                 </div>
 
@@ -79,8 +77,8 @@
                         <div>
                             {{$message}}
                         </div>
-                      </div>
-                      @enderror
+                    </div>
+                    @enderror
                 </div>
 
                 <div class="form-item w-full xl:pt-4">
@@ -94,14 +92,13 @@
                         <div>
                             {{$message}}
                         </div>
-                      </div>
-                      @enderror
+                    </div>
+                    @enderror
                 </div>
             </div>
 
 
             <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">  
-
                 <div class="form-item w-full">
                     <label class="text-md ">Email</label>
                     <input type="text" value="{{$data->email}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline dark:bg-gray-400 focus:border-blue-200" id="email" name="email">
@@ -113,15 +110,15 @@
                         <div>
                             {{$message}}
                         </div>
-                      </div>
+                    </div>
                       @enderror
                 </div>    
                 
-                  <div class="w-full">
-                @livewireStyles
-                    <livewire:gradesectiondropdown :initialGradeId="$data->grade ?? null" :initialSectionName="$data->section ?? null" />
-                @livewireScripts
-</div>
+                <div class="w-full">
+                    @livewireStyles
+                        <livewire:gradesectiondropdown :initialGradeId="$data->grade ?? null" :initialSectionName="$data->section ?? null" />
+                    @livewireScripts
+                </div>
   
                 <div class="form-item w-full">
                     <label class="text-md ">Date of Birth</label>
@@ -134,10 +131,9 @@
                         <div>
                             {{$message}}
                         </div>
-                      </div>
+                    </div>
                       @enderror
                 </div>
-             
             </div>
 
 
@@ -154,7 +150,7 @@
                         <div>
                             {{$message}}
                         </div>
-                      </div>
+                    </div>
                       @enderror
                 </div>
 
@@ -172,9 +168,8 @@
                         <div>
                             {{$message}}
                         </div>
-                      </div>
-                      @enderror
-
+                    </div>
+                    @enderror
                 </div>
 
                 <div class="form-item w-full">
@@ -188,7 +183,7 @@
                         <div>
                             {{$message}}
                         </div>
-                      </div>
+                    </div>
                       @enderror
                 </div>
   
@@ -203,10 +198,9 @@
                         <div>
                             {{$message}}
                         </div>
-                      </div>
+                    </div>
                       @enderror
                 </div>
-    
             </div>
 
 
@@ -222,12 +216,9 @@
                     <div>
                         {{$message}}
                     </div>
-                  </div>
+                </div>
                   @enderror
-           
-            </div>
-
-           
+            </div>  
 
         </div>
         

@@ -8,13 +8,13 @@
     @csrf
 <div class="w-full  shadow-2xl rounded my-24 overflow-hidden lg:pl-16 lg:pr-16">
     <div class="top h-60 w-full bg-blue-600 overflow-hidden relative" >
-      <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="bg w-full h-full object-cover object-center absolute z-0">
-      <div class="flex flex-col justify-center items-center relative h-full bg-black bg-opacity-50 text-white">
-        
-        <img src="{{'uploads/students/profile-default.jpg'}}"  alt="image" class="h-24 w-24 object-cover rounded-full">
-        <h1 class="text-2xl font-semibold"></h1>
-        <h4 class="text-md font-semibold"></h4>
-      </div>
+        <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="bg w-full h-full object-cover object-center absolute z-0">
+        <div class="flex flex-col justify-center items-center relative h-full bg-black bg-opacity-50 text-white">
+            
+            <img src="{{'uploads/students/profile-default.jpg'}}"  alt="image" class="h-24 w-24 object-cover rounded-full">
+            <h1 class="text-2xl font-semibold"></h1>
+            <h4 class="text-md font-semibold"></h4>
+        </div>
     </div>
 
     <div class="grid grid-cols-12 bg-white dark:bg-dark-eval-1 ">
@@ -45,91 +45,88 @@
         </div>
   
     
-      <div class="col-span-12 md:border-solid md:border-l  md:border-black md:border-opacity-25  h-full pb-12 xl:col-span-10">
+    <div class="col-span-12 md:border-solid md:border-l  md:border-black md:border-opacity-25  h-full pb-12 xl:col-span-10">
         <div class="px-4 pt-4">
 
             <div class="py-2">
               <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">Students basic information</h3>
               <hr>
             </div>
-
-        
             
             <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">
 
-               
-               
-              
-                {{-- lastname --}}
-                <div class="form-item w-full pt-4">
-                    <label class="text-md ">Last Name</label>
-                    <input type="text" value="{{old('lastname')}}" class="w-full  appearance-none text-black  rounded shadow py-1 px-2  mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="lastname" name="lastname" capitalize>
-                    @error('lastname')
-           
-                    <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
-                        <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                        <span class="sr-only">Info</span>
-                        <div>
-                            {{$message}}
-                        </div>
-                      </div>
-                      @enderror
+                
+            {{-- lastname --}}
+            <div class="form-item w-full pt-4">
+                <label class="text-md ">Last Name</label>
+                <input type="text" value="{{old('lastname')}}" class="w-full  appearance-none text-black  rounded shadow py-1 px-2  mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="lastname" name="lastname" capitalize>
+                @error('lastname')
+        
+                <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
+                    <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Info</span>
+                    <div>
+                        {{$message}}
+                    </div>
                 </div>
+                @enderror
+            </div>
             
-                <div class="form-item w-full xl:pt-4">
-                    <label class="text-md ">First Name</label>
-                    <input type="text" value="{{old('firstname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="firstname" name="firstname" capitalize>
-                    @error('firstname')
-           
-                    <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
-                        <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                        <span class="sr-only">Info</span>
-                        <div>
-                            {{$message}}
-                        </div>
-                      </div>
-                      @enderror
+            <div class="form-item w-full xl:pt-4">
+                <label class="text-md ">First Name</label>
+                <input type="text" value="{{old('firstname')}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2  mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="firstname" name="firstname" capitalize>
+                @error('firstname')
+        
+                <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
+                    <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Info</span>
+                    <div>
+                        {{$message}}
+                    </div>
                 </div>
+                @enderror
+            </div>
+
                 {{-- Middle name --}}
-                <div class="form-item w-full xl:pt-4">
+            <div class="form-item w-full xl:pt-4">
                     <label class="text-md ">Middle Name</label>
                     <input type="text" value="{{old('middlename')}}" class="w-full appearance-none text-black rounded shadow py-1 px-2 mb-4 mr-2 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400  uppercase" id="middlename" name="middlename" capitalize>
                     @error('middlename')
            
-                    <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
+                <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
                         <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
                         <span class="sr-only">Info</span>
                         <div>
                             {{$message}}
                         </div>
-                      </div>
+                      <!-- </div> -->
                       @enderror
                 </div>
             </div>    
 
             <div class="flex flex-col space-y-4 md:space-y-0 xl:flex-row xl:space-x-4">  
 
-                {{-- email --}}
-                <div class="form-item w-full">
-                    <label class="text-md ">Email</label>
-                    <input type="text" value="{{Auth::user()->email}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400" id="email" name="email " disabled capitalize>
-                    @error('email')
-           
-                    <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
-                        <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                        <span class="sr-only">Info</span>
-                        <div>
-                            {{$message}}
-                        </div>
+            {{-- email --}}
+            <div class="form-item w-full">
+                <label class="text-md ">Email</label>
+                <input type="text" value="{{Auth::user()->email}}" class="w-full appearance-none text-black  rounded shadow py-1 px-2 mr-2 md:mb-4 focus:outline-none focus:shadow-outline focus:border-blue-200 dark:bg-gray-400" id="email" name="email " disabled capitalize>
+                @error('email')
+        
+                <div class="flex p-1 mb-1 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800 shadow-lg" role="alert">
+                    <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Info</span>
+                    <div>
+                        {{$message}}
                     </div>
-                    @enderror
-                </div>                
+                </div>
+                @enderror
+            </div>                
                 
                 
                   
-        @livewireStyles
-        <div class="form-item w-full"> <livewire:gradesectiondropdown></div>
-        @livewireScripts
+            @livewireStyles
+            <div class="form-item w-full"> <livewire:gradesectiondropdown></div>
+            @livewireScripts
                 
                 {{-- Date of birth --}}
                 <div class="form-item w-full">
@@ -143,7 +140,7 @@
                         <div>
                             <p>Date of birth field is required</p>
                         </div>
-                      </div>
+                    </div>
                       @enderror
                 </div>
              

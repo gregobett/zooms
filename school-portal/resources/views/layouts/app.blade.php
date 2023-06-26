@@ -64,6 +64,14 @@
     </div>
     @stack('scripts')
     <script src="{{ asset('vendor/sweetalert2/sweetalert2.min.js') }}"></script>
+
+    <script>
+    const backgroundImage = new Image();
+    backgroundImage.src = "{{ url('images/header.webp') }}";
+    backgroundImage.addEventListener('load', function() {
+        document.getElementById('page-content').classList.remove('hide-content');
+    });
+</script>
    
 </body>
 {{-- @livewireScripts --}}

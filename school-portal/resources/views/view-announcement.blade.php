@@ -1,6 +1,7 @@
 @extends('layouts.home')
 @section('content')
 
+
     @foreach($querys as $query)
     <div class="p-10 flex flex-row bg-gray-200 dark:bg-gray-800 mb-8 rounded-md shadow-xl ml-8 mr-8 mt-8" >
       <!--Card 1-->
@@ -22,7 +23,7 @@
     @endforeach
 
 
-        @yield('content')
+    @yield('content')
 
-    @include('sweetalert::alert')
+  @include('sweetalert::alert')
 @endsection

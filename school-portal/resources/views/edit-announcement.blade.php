@@ -26,7 +26,7 @@
                 hover:file:text-amber-700
                 hover:bg-gre" id="photo" name="photo"/>
             </label>
-            </div>
+        </div>
 
         <label for="title" class="block mt-2 text-xs font-semibold text-gray-600 dark:text-gray-100 uppercase">Title</label>
         <input id="title" value="{{$data->title}}" type="text" name="title"   class="block w-full p-3 mt-0 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
