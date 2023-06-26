@@ -77,7 +77,7 @@ Route::middleware(['auth', 'verified', 'student-middleware'])->group(function ()
         Route::get('gradesectiondropdown', [Gradesectiondropdown::class, 'gradeSection'])->name('gradesectiondropdown');
         Route::post('save-student', [StudentController::class, 'saveStudent']);
         Route::get('student-profile', [StudentController::class, 'showStudentData'])->name('student-profile');
-        Route::post('student-profile-update', [StudentController::class, 'updateStudent']);
+        Route::post('student-profile-update', [StudentController::class, 'updateStudentProfile']);
         Route::get('ave', [GeneralAverageController::class, 'averageall'])->name('ave');
         Route::get('ave', [GeneralAverageController::class, 'showAverage'])->name('ave');
         Route::get('ave-senior', [SeniorGeneralAverageController::class, 'averageall2'])->name('ave-senior');

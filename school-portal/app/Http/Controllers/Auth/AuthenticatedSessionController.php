@@ -60,7 +60,7 @@ class AuthenticatedSessionController extends Controller
             else{
                 return redirect()->route('add-student'); 
             }
-            // return redirect()->route('dashboard'); 
+    
         }
 
         

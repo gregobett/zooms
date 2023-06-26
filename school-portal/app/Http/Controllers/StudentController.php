@@ -834,5 +834,65 @@ class StudentController extends Controller
     }
 
 
+    public function updateStudentProfile(Request $request){
+        $request-> validate([
+            'lastname'=>'required',
+            'firstname'=>'required',
+            'middlename'=>'required',
+            'dateofbirth'=>'required',
+            'gender'=>'required',
+            'religion'=>'required',
+            'grade'=>'required',
+            'section'=>'required',
+            'nationality'=>'required',
+            'phone'=>'required',
+            // 'email'=>'required',
+            'fathersname'=>'required',
+            'foccupation'=>'required',
+            'mothersname'=>'required',
+            'moccupation'=>'required',
+            'address'=>'required',
+        ]);
+
+        $data = Student::find($request->id);
+
+
+        $data->lastname = $request->lastname;
+        $data->firstname = $request->firstname;
+        $data->middlename = $request->middlename;
+        $data->dateofbirth = $request->dateofbirth;
+        $data->gender = $request->gender;
+        $data->religion = $request->religion;
+        $data->grade = $request->grade;
+        $data->section = $request->section;
+        $data->nationality = $request->nationality;
+        $data->phone = $request->phone;
+        $data->email = auth()->user()->email;
+        $data->fathersname = $request->fathersname;
+        $data->foccupation = $request->foccupation;
+        $data->mothersname = $request->mothersname;
+        $data->moccupation = $request->moccupation;
+        $data->address = $request->address;
+
+        if($request->hasfile('photo'))
+            {
+                $destination = 'uploads/students/'.$data->photo;
+                if(File::exists($destination))
+                {
+                File::delete($destination);
+                }
+
+                $file = $request->file('photo');
+                $extension = $file->getClientOriginalExtension();
+                $filename = time().'.'.$extension;
+                $file->move('uploads/students/',$filename);
+                $data->photo = $filename;
+            }
+
+            $data->save();
+            return redirect()->back()->with('success','Student Updated Succesfuly');   
+
+    }
+
 
 }
