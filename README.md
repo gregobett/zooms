@@ -1,4 +1,4 @@
 # School-portal
 
-Please Give a Stars, Thanks
+Please Give a Star, Thanks
 
