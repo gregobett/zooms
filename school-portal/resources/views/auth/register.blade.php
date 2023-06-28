@@ -84,21 +84,24 @@
 
                 <div class="space-y-2">
                     <x-label for="user_type" :value="__('User Type')" />
-                    <x-input-with-icon-wrapper>
+                    <x-input-with-icon-wrapper >
                         <x-slot name="icon">
-                            {{-- <x-heroicon-o-lock-closed aria-hidden="true" class="w-5 h-5" /> --}}
+                            <x-heroicon-o-users aria-hidden="true" class="w-5 h-5" /> 
                         </x-slot>
-                        <select x-model="color" id="user_type" name="user_type" class=" w-full py-2 border-gray-400 rounded-md focus:border-gray-400 focus:ring-gre">
-
+                 
+                       
+                        <select x-model="color" id="user_type" name="user_type" class="pl-11 w-full py-2 border-gray-400  rounded-md  focus:border-gray-400 focus:ring-gre dark:border-gray-600 dark:bg-dark-eval-1">
+                     
                         <option value = "">Select</option>
                         <option value="Student" @if (old('user_type') == "Student") {{ 'selected' }} @endif>Student</option>
                         <option value="Faculty" @if (old('user_type') == "Faculty") {{ 'selected' }} @endif>Faculty</option>
                         <option value="Admin" @if (old('user_type') == "Admin") {{ 'selected' }} @endif>Admin</option>
-                       
-                    </select>
+                     
+                         </select>
+
                     @if ($errors->has('user_type'))
-            <span class="text-danger">{{ $errors->first('user_type') }}</span>
-        @endif
+                        <span class="text-danger">{{ $errors->first('user_type') }}</span>
+                    @endif
                        
                     </x-input-with-icon-wrapper>
                     @include('sweetalert::alert')
