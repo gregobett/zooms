@@ -456,7 +456,7 @@ class StudentController extends Controller
             'section'=>'required',
             'nationality'=>'required',
             'phone'=>'required',
-            // 'email'=>'required',
+            'email'=>'required',
             'fathersname'=>'required',
             'foccupation'=>'required',
             'mothersname'=>'required',
