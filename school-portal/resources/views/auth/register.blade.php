@@ -90,7 +90,7 @@
                         </x-slot>
                  
                        
-                        <select x-model="color" id="user_type" name="user_type" class="pl-11 w-full py-2 border-gray-400  rounded-md  focus:border-gray-400 focus:ring-gre dark:border-gray-600 dark:bg-dark-eval-1">
+                        <select  id="user_type" name="user_type" class="pl-11 w-full py-2 border-gray-400  rounded-md  focus:border-gray-400 focus:ring-gre dark:border-gray-600 dark:bg-dark-eval-1">
                      
                         <option value = "">Select</option>
                         <option value="Student" @if (old('user_type') == "Student") {{ 'selected' }} @endif>Student</option>
