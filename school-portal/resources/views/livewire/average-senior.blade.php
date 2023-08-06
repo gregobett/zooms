@@ -16,7 +16,7 @@
 <div class="overflow-auto pl-2 pr-2">
     
   <div >
-    <h1 class="flex items-center justify-center text-xl mb-6 mt-4">Learning Progress and Achievement</h1>
+    <h1 class="flex items-center justify-center text-sm md:text-xl mb-6 mt-4">Learning Progress and Achievement</h1>
 <div class="overflow-auto pl-2 pr-2 flex items-center justify-center ">
     <table class="table-auto w-full mb-6 text-xs md:text-base dark:bg-[#222738]">
         <thead>

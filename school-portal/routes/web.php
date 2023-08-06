@@ -65,7 +65,7 @@ Route::middleware(['auth', 'verified', 'admin-middleware'])->group(function () {
         Route::get('edit-announcement/{id}', [AnnouncementController::class, 'editAnnouncement']);
         Route::post('update-announcement', [AnnouncementController::class, 'updateAnnouncement']);
         Route::get('delete-announcement/{id}', [AnnouncementController::class, 'deleteAnnouncement']);
-        Route::get('todos', [StudentController::class, 'toDos'])->name('todos');
+        Route::get('todos', [StudentController::class, 'toDos'])->name('admin.todos');
       
     });
     

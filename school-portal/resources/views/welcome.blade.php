@@ -24,7 +24,7 @@
 
         <!--Right Col-->
         <div class="w-full xl:w-3/5  lg:w-4/5 lg:items-center mx-auto p-12 overflow-hidden ">
-          <img class="mx-auto w-full md:w-4/5  transform -rotate-6  transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 " src="images/board.webp" />
+          <img class="mx-auto w-full md:w-2/4 lg:w-4/6  transform -rotate-6  transition hover:scale-105 duration-700 ease-in-out hover:rotate-6 " src="images/board.webp" />
         </div>
 
   </div>
